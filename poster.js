@@ -92,7 +92,7 @@ function apply(moving){
  var inv=1/S.s,lw=COLW*S.s;
  secs.forEach(function(b){if(b.label){b.label.style.transform='scale('+inv+')';b.label.style.width=Math.max(lw,60)+'px'}});
  mini();
- if(moving){pc.classList.add('moving');clearTimeout(settle);settle=setTimeout(function(){pc.classList.remove('moving')},160)}
+ if(moving){pc.classList.add('moving');clearTimeout(settle);settle=setTimeout(function(){pc.classList.remove('moving');if(window.RNTmotionCheck)window.RNTmotionCheck()},160)}
 }
 function zoomAt(px,py,ns){ns=Math.max(minS(),Math.min(maxS(),ns));S.x=px-(px-S.x)*(ns/S.s);S.y=py-(py-S.y)*(ns/S.s);S.s=ns}
 function tween(to,ms){
