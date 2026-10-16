@@ -11,7 +11,13 @@ function load(){
 }
 function init(){
  box.innerHTML='';
- var map=L.map(box,{scrollWheelZoom:false,tap:true}).setView([49.27,-123.08],11);
+ var map=L.map(box,{scrollWheelZoom:false,dragging:false,touchZoom:false,doubleClickZoom:false,tap:false}).setView([49.27,-123.08],11);
+ var act=document.createElement('button');act.type='button';act.className='activate';act.textContent='Tap to explore the map';box.appendChild(act);
+ var done=document.createElement('button');done.type='button';done.className='done';done.textContent='Done';box.appendChild(done);
+ function on(){box.classList.add('active');map.dragging.enable();map.touchZoom.enable();map.doubleClickZoom.enable();map.scrollWheelZoom.enable()}
+ function off(){box.classList.remove('active');map.dragging.disable();map.touchZoom.disable();map.doubleClickZoom.disable();map.scrollWheelZoom.disable();map.closePopup()}
+ L.DomEvent.disableClickPropagation(act);L.DomEvent.disableClickPropagation(done);
+ act.addEventListener('click',on);done.addEventListener('click',off);
  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
  function line(pts,o,html,g){return L.polyline(pts,o).bindPopup(html).addTo(g)}
  function pt(ll,col,html,g,r){return L.circleMarker(ll,{radius:r||8,color:'#fff',weight:2,fillColor:col,fillOpacity:.95}).bindPopup(html).addTo(g)}
@@ -57,7 +63,6 @@ function init(){
  pt([49.3005,-123.1440],'#2b6e5a','<b>Remnant old-growth stand (approx.)</b><br>A small stand next to Tunnel Trail and Pipeline Road. The exact location is approximate.'+src(L2(FMP,'Forest Management Plan')),pk);
  [fw,nb,st,sp,pk].forEach(function(g){g.addTo(map)});
  L.control.layers(null,{'Unbuilt freeways (approx.)':fw,'Chinatown / Strathcona / Hogan\'s Alley':nb,'SkyTrain & SeaBus':st,'Tunnels & ferries (speculative)':sp,'Stanley Park':pk},{collapsed:window.innerWidth<700}).addTo(map);
- map.on('click',function(){map.scrollWheelZoom.enable()});
 }
 if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){io.disconnect();load()}},{rootMargin:'400px'});io.observe(box)}else load();
 })();

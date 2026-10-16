@@ -3,12 +3,13 @@ var m=document.getElementById('menu'),nl=document.getElementById('navlist');
 m.onclick=function(){var o=nl.classList.toggle('open');m.setAttribute('aria-expanded',o);m.setAttribute('aria-label',o?'Close menu':'Open menu')};
 nl.onclick=function(e){if(e.target.tagName==='A'){nl.classList.remove('open');m.setAttribute('aria-expanded',false)}};
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){nl.classList.remove('open');m.setAttribute('aria-expanded',false)}});
-var MAP={timeline:'timeline',kept:'kept','explore-map':'explore-map',future:'future',park:'park',bio:'park',terrain:'terrain',models:'terrain',articles:'sources',sources:'sources'};
+var MAP={timeline:'timeline',kept:'kept',gained:'kept',lesson:'kept','explore-map':'explore-map',terrain:'explore-map',future:'future',models:'models',park:'park',bio:'park',act:'act',articles:'sources',sources:'sources'};
 var links={};[].forEach.call(nl.querySelectorAll('a'),function(a){links[a.dataset.nav]=a});
 var secs=[].slice.call(document.querySelectorAll('main > section[id]'));
 var tt=document.getElementById('totop');
 function spy(){var y=window.scrollY+90,cur=null;secs.forEach(function(s){if(s.getBoundingClientRect().top+window.scrollY<=y)cur=s.id});
  if(window.innerHeight+window.scrollY>=document.body.scrollHeight-4)cur='sources';
+ var ov=document.getElementById('overview'),zo=document.getElementById('zoomout');if(ov&&zo)zo.classList.toggle('show',ov.offsetParent!==null&&window.scrollY>ov.getBoundingClientRect().top+window.scrollY+ov.offsetHeight-60);
  var k=MAP[cur];for(var n in links){links[n].classList.toggle('active',n===k);if(n===k)links[n].setAttribute('aria-current','true');else links[n].removeAttribute('aria-current')}
  tt.classList.toggle('show',window.scrollY>700)}
 var tk=false;window.addEventListener('scroll',function(){if(!tk){tk=true;setTimeout(function(){spy();tk=false},60)}},{passive:true});window.addEventListener('resize',spy);window.addEventListener('load',spy);spy();
@@ -61,6 +62,47 @@ document.querySelector('.map-legend').onclick=function(e){var k=e.target.dataset
 
 
 var ts=document.getElementById('terrain-slot');
-fetch(ts.dataset.src,{method:'HEAD'}).then(function(res){if(res.ok){ts.innerHTML='<iframe src="'+ts.dataset.src+'" title="3D terrain model, North Shore to False Creek" loading="lazy"></iframe>'}}).catch(function(){});
+function loadTerrain(){ts.innerHTML='<iframe src="'+ts.dataset.src+'" title="3D terrain model, North Shore to False Creek"></iframe>'}
+ts.innerHTML='<button class="btn load3d" type="button">Load the 3D terrain model</button>';ts.querySelector('button').onclick=loadTerrain;
 [].forEach.call(document.querySelectorAll('[data-placeholder]'),function(a){a.onclick=function(e){if(a.getAttribute('href')==='#'){e.preventDefault();alert('Article link coming soon.')}}});
+
+/* ---- Mobile overview: zoom into a section, zoom back out ---- */
+var ov=document.getElementById('overview'),zo=document.getElementById('zoomout');
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
+var lastTile=null;
+function jump(el){document.documentElement.style.scrollBehavior='auto';el.scrollIntoView({block:'start'});document.documentElement.style.scrollBehavior='';}
+function focusIn(el){var h=el.querySelector('h2');if(h){h.setAttribute('tabindex','-1');h.focus({preventScroll:true})}}
+function zoomTo(tile,target){
+ lastTile=tile;var r=tile.getBoundingClientRect();
+ var ox=(r.left+r.width/2)/window.innerWidth*100,oy=(r.top+r.height/2)/window.innerHeight*100;
+ document.documentElement.style.setProperty('--zx',ox+'%');document.documentElement.style.setProperty('--zy',oy+'%');
+ if(reduce.matches){jump(target);focusIn(target);return}
+ if(document.startViewTransition){document.documentElement.classList.add('vt-in');
+  var t=document.startViewTransition(function(){jump(target)});
+  t.finished.finally(function(){document.documentElement.classList.remove('vt-in');focusIn(target)});return}
+ // fallback: scale the overview up around the tile, then jump
+ ov.style.transformOrigin=ox+'% '+(r.top+r.height/2-ov.getBoundingClientRect().top)+'px';
+ ov.classList.add('zooming');
+ setTimeout(function(){jump(target);ov.classList.remove('zooming');target.classList.add('arrive');focusIn(target);setTimeout(function(){target.classList.remove('arrive')},400)},280);
+}
+function zoomOut(){
+ if(!ov||ov.offsetParent===null)return;
+ var back=function(){jump(ov);if(lastTile)lastTile.focus({preventScroll:true})};
+ if(reduce.matches){back();return}
+ if(document.startViewTransition){document.documentElement.classList.add('vt-out');
+  document.startViewTransition(back).finished.finally(function(){document.documentElement.classList.remove('vt-out')});return}
+ back();ov.classList.add('arrive-out');setTimeout(function(){ov.classList.remove('arrive-out')},400);
+}
+if(ov){[].forEach.call(ov.querySelectorAll('.tile'),function(t){t.addEventListener('click',function(){var el=document.getElementById(t.dataset.target);if(el)zoomTo(t,el)})})}
+if(zo)zo.addEventListener('click',zoomOut);
+// pinch-out (two fingers moving together) while not natively zoomed in => back to overview.
+// Listeners are passive and never preventDefault, so native pinch-zoom keeps working.
+function natScale(){return window.visualViewport?window.visualViewport.scale:1}
+var g0=null;
+window.addEventListener('gesturestart',function(e){g0=natScale()},{passive:true}); // iOS Safari
+window.addEventListener('gestureend',function(e){if(g0!==null&&g0<=1.01&&e.scale<0.8&&window.scrollY>(ov?ov.offsetHeight:0))zoomOut();g0=null},{passive:true});
+var d0=0,s0=1;function dist(t){var a=t[0],b=t[1];return Math.hypot(a.clientX-b.clientX,a.clientY-b.clientY)}
+window.addEventListener('touchstart',function(e){if(e.touches.length===2&&!('ongesturestart' in window)){d0=dist(e.touches);s0=natScale()}},{passive:true});
+window.addEventListener('touchmove',function(e){if(d0&&e.touches.length===2&&s0<=1.01&&dist(e.touches)/d0<0.7&&!e.target.closest('.leaflet-box.active,.m3d.active')){d0=0;zoomOut()}},{passive:true});
+window.addEventListener('touchend',function(){d0=0},{passive:true});
 })();

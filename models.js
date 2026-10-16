@@ -35,14 +35,19 @@ forest(g){const r=rng(7),ground=new THREE.Mesh(new THREE.BoxGeometry(16,.2,8),M(
 function start(el){
  const w=el.clientWidth,h=el.clientHeight,sc=new THREE.Scene();sc.background=new THREE.Color(0xe9ece6);
  const cam=new THREE.PerspectiveCamera(40,w/h,.1,200),rd=new THREE.WebGLRenderer({antialias:true});
- rd.setPixelRatio(Math.min(devicePixelRatio,2));rd.setSize(w,h);el.appendChild(rd.domElement);
+ rd.setPixelRatio(Math.min(devicePixelRatio,1.5));rd.setSize(w,h);el.appendChild(rd.domElement);
  sc.add(new THREE.HemisphereLight(0xffffff,0x88806a,1.6));const d=new THREE.DirectionalLight(0xffffff,1.6);d.position.set(5,10,7);sc.add(d);
  const g=new THREE.Group();sc.add(g);const dist=builders[el.dataset.model](g);
  cam.position.set(dist*.75,dist*.5,dist*.85);const ctl=new OrbitControls(cam,rd.domElement);ctl.target.set(0,el.dataset.model==='tunnel'?-1.5:2,0);ctl.enableDamping=true;ctl.autoRotate=true;ctl.autoRotateSpeed=.6;
- ctl.addEventListener('start',()=>ctl.autoRotate=false);ctl.update();
+ ctl.addEventListener('start',()=>ctl.autoRotate=false);ctl.enabled=false;ctl.update();
+ const a=document.createElement('button');a.type='button';a.className='activate';a.textContent='Tap to rotate';el.appendChild(a);
+ const dn=document.createElement('button');dn.type='button';dn.className='done';dn.textContent='Done';el.appendChild(dn);
+ a.onclick=()=>{ctl.enabled=true;el.classList.add('active')};dn.onclick=()=>{ctl.enabled=false;el.classList.remove('active')};
  let vis=true;new IntersectionObserver(e=>vis=e[0].isIntersecting).observe(el);
  new ResizeObserver(()=>{const W=el.clientWidth,H=el.clientHeight;rd.setSize(W,H);cam.aspect=W/H;cam.updateProjectionMatrix()}).observe(el);
  const clk=new THREE.Clock();rd.setAnimationLoop(()=>{if(!vis)return;g.userData.tick&&g.userData.tick(clk.getElapsedTime());ctl.update();rd.render(sc,cam)});
 }
+function ok(){try{const c=document.createElement('canvas');return !!(c.getContext('webgl2')||c.getContext('webgl'))}catch(e){return false}}
+if(!ok())document.querySelectorAll('.m3d').forEach(el=>el.innerHTML='<div class="ph">3D preview needs WebGL, which this browser does not have.</div>');
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){io.unobserve(e.target);try{start(e.target)}catch(err){e.target.textContent='3D needs WebGL.'}}}),{rootMargin:'300px'});
-document.querySelectorAll('.m3d').forEach(el=>io.observe(el));
+if(ok())document.querySelectorAll('.m3d').forEach(el=>io.observe(el));
