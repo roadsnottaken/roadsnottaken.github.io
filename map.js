@@ -17,7 +17,7 @@ function init(){
  function on(){box.classList.add('active');map.dragging.enable();map.touchZoom.enable();map.doubleClickZoom.enable();map.scrollWheelZoom.enable()}
  function off(){box.classList.remove('active');map.dragging.disable();map.touchZoom.disable();map.doubleClickZoom.disable();map.scrollWheelZoom.disable();map.closePopup()}
  L.DomEvent.disableClickPropagation(act);L.DomEvent.disableClickPropagation(done);
- act.addEventListener('click',on);done.addEventListener('click',off);
+ act.addEventListener('click',on);done.addEventListener('click',off);window.RNTmap=map;if(box.closest('.pov'))on();
  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
  function line(pts,o,html,g){return L.polyline(pts,o).bindPopup(html).addTo(g)}
  function pt(ll,col,html,g,r){return L.circleMarker(ll,{radius:r||8,color:'#fff',weight:2,fillColor:col,fillOpacity:.95}).bindPopup(html).addTo(g)}
@@ -64,5 +64,6 @@ function init(){
  [fw,nb,st,sp,pk].forEach(function(g){g.addTo(map)});
  L.control.layers(null,{'Unbuilt freeways (approx.)':fw,'Chinatown / Strathcona / Hogan\'s Alley':nb,'SkyTrain & SeaBus':st,'Tunnels & ferries (speculative)':sp,'Stanley Park':pk},{collapsed:window.innerWidth<700}).addTo(map);
 }
-if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){io.disconnect();load()}},{rootMargin:'400px'});io.observe(box)}else load();
+window.RNTloadMap=function(){if(!window.L)load();else if(!box._leaflet_id)init()};
+if(document.documentElement.classList.contains('poster')){}else if('IntersectionObserver' in window){var io=new IntersectionObserver(function(e){if(e[0].isIntersecting){io.disconnect();load()}},{rootMargin:'400px'});io.observe(box)}else load();
 })();

@@ -37,7 +37,7 @@ var T=[
 ['1997','later','Transportation Plan','Priorities were set as walking, cycling, transit, goods movement, then private cars.'],
 ['Oct 27, 2015','later','Vote to remove viaducts','Council voted to remove the viaducts. The 2018 Northeast False Creek Plan would replace them with streets, parks and housing.'],
 ['2026','later','Still standing','The viaducts remain. Demolition was first targeted for 2019 and has slipped since. Repairs to Georgia Viaduct expansion joints began in October and are expected to run into spring 2027. The City says the removal timeline "is still uncertain."']];
-var tl=document.getElementById('tl'),det=document.getElementById('tl-detail'),cat={plan:'Plans',renewal:'Urban renewal',revolt:'Resistance',later:'Viaducts & later'};
+window.RNT_T=T;var tl=document.getElementById('tl'),det=document.getElementById('tl-detail'),cat={plan:'Plans',renewal:'Urban renewal',revolt:'Resistance',later:'Viaducts & later'};
 function show(i,b){[].forEach.call(tl.querySelectorAll('button'),function(x){x.classList.remove('sel')});b.classList.add('sel');var t=T[i];det.innerHTML='<p class="tag">'+cat[t[1]]+'</p><h3>'+t[0]+': '+t[2]+'</h3><p>'+t[3]+'</p>'}
 T.forEach(function(t,i){var li=document.createElement('li');li.dataset.c=t[1];var b=document.createElement('button');b.innerHTML='<b>'+t[0]+'</b><small>'+t[2]+'</small>';b.onclick=function(){show(i,b)};li.appendChild(b);tl.appendChild(li);if(i===0)show(0,b)});
 document.querySelector('.tl-filter').onclick=function(e){var f=e.target.dataset.f;if(!f)return;[].forEach.call(this.children,function(x){x.classList.toggle('on',x===e.target)});[].forEach.call(tl.children,function(li){li.style.display=(f==='all'||li.dataset.c===f)?'':'none'})};

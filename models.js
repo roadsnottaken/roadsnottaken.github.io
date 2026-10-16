@@ -50,4 +50,5 @@ function start(el){
 function ok(){try{const c=document.createElement('canvas');return !!(c.getContext('webgl2')||c.getContext('webgl'))}catch(e){return false}}
 if(!ok())document.querySelectorAll('.m3d').forEach(el=>el.innerHTML='<div class="ph">3D preview needs WebGL, which this browser does not have.</div>');
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){io.unobserve(e.target);try{start(e.target)}catch(err){e.target.textContent='3D needs WebGL.'}}}),{rootMargin:'300px'});
-if(ok())document.querySelectorAll('.m3d').forEach(el=>io.observe(el));
+window.RNTstartModel=el=>{if(el.dataset.started)return;el.dataset.started=1;start(el);const a=el.querySelector('.activate');if(a)a.click()};
+if(ok()&&!document.documentElement.classList.contains('poster'))document.querySelectorAll('.m3d').forEach(el=>io.observe(el));
