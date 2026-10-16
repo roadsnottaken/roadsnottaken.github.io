@@ -1,7 +1,17 @@
 (function(){
 var m=document.getElementById('menu'),nl=document.getElementById('navlist');
-m.onclick=function(){var o=nl.classList.toggle('open');m.setAttribute('aria-expanded',o)};
-nl.onclick=function(e){if(e.target.tagName==='A')nl.classList.remove('open')};
+m.onclick=function(){var o=nl.classList.toggle('open');m.setAttribute('aria-expanded',o);m.setAttribute('aria-label',o?'Close menu':'Open menu')};
+nl.onclick=function(e){if(e.target.tagName==='A'){nl.classList.remove('open');m.setAttribute('aria-expanded',false)}};
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){nl.classList.remove('open');m.setAttribute('aria-expanded',false)}});
+var MAP={timeline:'timeline',kept:'kept','explore-map':'explore-map',future:'future',park:'park',bio:'park',terrain:'terrain',models:'terrain',articles:'sources',sources:'sources'};
+var links={};[].forEach.call(nl.querySelectorAll('a'),function(a){links[a.dataset.nav]=a});
+var secs=[].slice.call(document.querySelectorAll('main > section[id]'));
+var tt=document.getElementById('totop');
+function spy(){var y=window.scrollY+90,cur=null;secs.forEach(function(s){if(s.getBoundingClientRect().top+window.scrollY<=y)cur=s.id});
+ if(window.innerHeight+window.scrollY>=document.body.scrollHeight-4)cur='sources';
+ var k=MAP[cur];for(var n in links){links[n].classList.toggle('active',n===k);if(n===k)links[n].setAttribute('aria-current','true');else links[n].removeAttribute('aria-current')}
+ tt.classList.toggle('show',window.scrollY>700)}
+var tk=false;window.addEventListener('scroll',function(){if(!tk){tk=true;setTimeout(function(){spy();tk=false},60)}},{passive:true});window.addEventListener('resize',spy);window.addEventListener('load',spy);spy();
 
 var T=[
 ['1928–29','plan','First comprehensive plan','The St. Louis firm Harland Bartholomew and Associates prepared Vancouver\'s first comprehensive plan. It was revised after Point Grey and South Vancouver amalgamated with the city. It proposed wider arterials and "pleasure drives", not high-speed parkways. Follow-up reports came in 1944–48.'],

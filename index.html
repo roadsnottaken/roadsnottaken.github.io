@@ -5,8 +5,8 @@
 <link rel="stylesheet" href="style.css"></head>
 <body>
 <nav class="top"><a href="#top" class="brand">Roads Not Taken</a>
-<button id="menu" aria-label="Menu" aria-expanded="false">☰</button>
-<ul id="navlist"><li><a href="#timeline">Timeline</a></li><li><a href="#kept">What we kept</a></li><li><a href="#future">Future</a></li><li><a href="#explore-map">Map</a></li><li><a href="#park">Stanley Park</a></li><li><a href="#bio">Biodiversity</a></li><li><a href="#terrain">3D</a></li><li><a href="#articles">Articles</a></li><li><a href="#sources">Sources</a></li></ul></nav>
+<button id="menu" aria-label="Open menu" aria-expanded="false" aria-controls="navlist"><span></span><span></span><span></span></button>
+<ul id="navlist"><li><a href="#timeline" data-nav="timeline">History</a></li><li><a href="#kept" data-nav="kept">What we kept</a></li><li><a href="#explore-map" data-nav="explore-map">Map</a></li><li><a href="#future" data-nav="future">Future</a></li><li><a href="#park" data-nav="park">Stanley Park</a></li><li><a href="#terrain" data-nav="terrain">3D</a></li><li><a href="#sources" data-nav="sources">Sources</a></li></ul></nav>
 
 <header id="top" class="hero">
 <img class="ridges" src="assets/north-shore-ridges.svg" alt="Layered North Shore mountain ridgelines at sunset, drawn from elevation data" fetchpriority="high">
@@ -18,7 +18,17 @@
 </header>
 
 <main>
+<section id="start" class="start" aria-label="Start here"><h2>Start here</h2>
+<p class="summary">This is a nonpartisan guide for Vancouver residents. Pick a starting point:</p>
+<div class="jump">
+<a href="#timeline"><b>How the freeway was stopped</b><span>An interactive timeline from 1928 to 2026</span></a>
+<a href="#explore-map"><b>See it on a map</b><span>Unbuilt routes, transit and speculative ideas</span></a>
+<a href="#future"><b>What could come next</b><span>Transit, waterfront and the rising sea</span></a>
+<a href="#park"><b>Stanley Park's forest</b><span>Facts, sources and the road to old growth</span></a>
+</div></section>
+
 <section id="timeline"><h2>The freeway fight, year by year</h2>
+<p class="summary">From the 1959 freeway plan to the 1972 defeat of the third crossing, and the viaducts that still stand.</p>
 <p class="intro">Tap a year to read what happened. Everything here comes from the history essay listed under Sources.</p>
 <div class="tl-filter" role="group" aria-label="Filter"><button data-f="all" class="on">All</button><button data-f="plan">Plans</button><button data-f="renewal">Urban renewal</button><button data-f="revolt">Resistance</button><button data-f="later">Viaducts &amp; later</button></div>
 <figure class="wide"><img loading="lazy" src="assets/georgia-seymour-log.jpg" alt="Huge log at Georgia and Seymour streets, 1886"><figcaption>Huge log at Georgia and Seymour streets, 1886. Photo: J.A. Brock. City of Vancouver Archives, Tr P13. Public domain.</figcaption></figure>
@@ -27,6 +37,7 @@
 </section>
 
 <section id="kept" class="alt"><h2>What we kept, and what we lost</h2>
+<p class="summary">The neighbourhoods the freeway would have cut through, and what was lost anyway.</p>
 <div class="cards">
 <article class="card"><h3>Chinatown</h3><p>The 1967 study's elevated waterfront freeway would have swung through Gastown's Maple Tree Square and the heart of Chinatown at Carrall Street. Chinese merchants, local architects and Alderman Harry Rankin forced public hearings, and the Chinatown route was dropped in 1968. <strong>Chinatown survived.</strong></p></article>
 <article class="card"><h3>Strathcona</h3><p>The city's oldest residential neighbourhood, home to Chinese, Italian, Japanese, Ukrainian and Black families, was targeted for "urban renewal". Residents formed SPOTA in 1968 at the kitchen table of Mary Lee Chan and Walter Chan, 658 Keefer Street. They got federal clearance money frozen and argued for repairing homes instead of bulldozing them. The rehabilitation won the Vincent Massey Award in 1975.</p></article>
@@ -34,7 +45,13 @@
 </div>
 </section>
 
+<section id="explore-map"><h2>Explore the map</h2>
+<p class="summary">Switch layers on and off to see unbuilt freeways, transit, speculative ideas and Stanley Park sites.</p>
+<p class="intro">Turn the layers on and off with the control in the corner, then tap any feature for details and sources. Freeway routes are <strong>approximate</strong>, and the tunnels and ferries are <span class="tag spec">Speculative</span>.</p>
+<div id="leaflet" class="leaflet-box" role="region" aria-label="Interactive map of Vancouver"><div class="ph">Loading map…</div></div>
+<p class="caption">All lines are approximate and drawn for this site. Unbuilt freeway routes are traced from the history essay's descriptions, not from engineering drawings. Map data © OpenStreetMap contributors.</p></section>
 <section id="future"><h2>What the future could look like</h2>
+<p class="summary">What is underway, from the viaducts to the Broadway Subway to sea-level rise, with speculation clearly marked.</p>
 <p class="intro">Some of this is on the public record. Some is speculation, and it is labelled <span class="tag spec">Speculative</span>.</p>
 <div class="cards">
 <article class="card"><h3>Viaducts &amp; Northeast False Creek</h3><p>Council voted to remove the viaducts on October 27, 2015. The 2018 plan calls for an at-grade street network, 32 acres of new and renewed parks and open space, and about 1,800 social housing units. As of October 2026 the viaducts are still standing, and the City says the removal timeline "is still uncertain." Expansion-joint work on the Georgia Viaduct started October 2 and is expected to run until spring 2027.</p></article>
@@ -50,11 +67,8 @@
 <p class="caption">This is a schematic drawn for this site, and station positions are approximate. Solid lines exist or are under construction. The UBC extension is proposed. The tunnel mesh and the electric ferry routes are illustrative concepts. Nobody has proposed them.</p>
 </section>
 
-<section id="explore-map"><h2>Explore the map</h2>
-<p class="intro">Turn the layers on and off with the control in the corner, then tap any feature for details and sources. Freeway routes are <strong>approximate</strong>, and the tunnels and ferries are <span class="tag spec">Speculative</span>.</p>
-<div id="leaflet" class="leaflet-box" role="region" aria-label="Interactive map of Vancouver"><div class="ph">Loading map…</div></div>
-<p class="caption">All lines are approximate and drawn for this site. Unbuilt freeway routes are traced from the history essay's descriptions, not from engineering drawings. Map data © OpenStreetMap contributors.</p></section>
 <section id="park" class="alt"><h2>Stanley Park: renewing the forest</h2>
+<p class="summary">Why about 14,000 trees came down, and how replanting aims for a more diverse forest.</p>
 <div class="stats">
 <div><b>~160,000</b><span>of about 600,000 trees dead or dying after the hemlock looper outbreak identified in 2020 <a href="https://vancouver.ca/parks-recreation-culture/stanley-park-forest-management.aspx">[FM]</a></span></div>
 <div><b>~14,000</b><span>trees removed for safety (Park Board's rounded figure; the phase counts add up to about 11,500) <a href="https://vancouver.ca/parks-recreation-culture/stanley-park-forest-management.aspx">[FM]</a></span></div>
@@ -90,6 +104,7 @@
 </section>
 
 <section id="bio"><h2>Biodiversity: a city that shares its edges</h2>
+<p class="summary">Herons, beavers, salmon and other wildlife that share the park and the waterfront.</p>
 <div class="cards">
 <article class="card"><h3>Great blue herons</h3><p>The colony at 2099 Beach Ave has been there since 2001, and herons have nested in the park since at least 1921. It is one of the largest urban colonies in North America. <a href="https://vancouver.ca/parks-recreation-culture/wildlife-.aspx">[WL]</a> In 2025, monitors counted about 100 nests. <a href="https://stanleyparkecology.ca/wp-content/uploads/2026/06/SP-Heron-Final-Report-2025.pdf">[SPES 2025]</a></p></article>
 <article class="card"><h3>Beaver Lake</h3><p>Beavers came back in 2008 after more than 60 years away. The lake is filling in quickly because of water lilies planted in 1937 and sediment. River otters also live at the lake. <a href="https://vancouver.ca/parks-recreation-culture/wildlife-.aspx">[WL]</a> <a href="https://vancouver.ca/files/cov/Beaver-Lake-enhancement-proposal.pdf">[BLE]</a> <a href="https://stanleyparkecology.ca/event/wildlife-of-beaver-lake/">[SPBL]</a></p></article>
@@ -102,10 +117,12 @@
 </section>
 
 <section id="terrain"><h2>Explore the terrain (3D) <span class="tag">Concept model</span></h2>
+<p class="summary">Rotate a model of the land from the North Shore to False Creek.</p>
 <p class="intro">A rotatable model of the land from the North Shore to False Creek. Drag to rotate.</p>
 <div class="terrain" id="terrain-slot" data-src="terrain.html"><div class="ph">3D terrain model coming soon</div></div>
 <p class="caption"><span class="tag">Concept model</span> Elevation data from AWS Terrain Tiles, shown with 2× vertical exaggeration. The towers are concept, not real buildings or plans. Labels can overlap when you zoom out. <a href="terrain.html">Open full screen</a>.</p></section>
 <section id="models" class="alt"><h2>Three ideas in 3D <span class="tag">Concept model</span></h2>
+<p class="summary">Three simple models drawn in code to illustrate ideas from the essays.</p>
 <p class="intro">These are simple models drawn in code. They are not designs or real plans. Drag to rotate, and pinch or scroll to zoom.</p>
 <div class="models">
 <figure><div class="m3d" data-model="timber"></div><figcaption><span class="tag">Concept model</span> A mass-timber span, the kind of structure imagined for a market hall.</figcaption></figure>
@@ -113,12 +130,14 @@
 <figure><div class="m3d" data-model="forest"></div><figcaption><span class="tag">Concept model</span> A young mixed replanting (left) next to an old-growth-style stand (right). Not to scale.</figcaption></figure>
 </div></section>
 <section id="articles" class="alt"><h2>Read the full articles</h2>
+<p class="summary">The two long-form essays this site is based on.</p>
 <div class="cards">
 <a class="card link" href="#" data-placeholder="history"><h3>The Roads Not Taken →</h3><p>How Vancouver grew up without freeways: the plans, the resident revolt, the viaducts and what grew in their place.</p><small>Link coming soon</small></a>
 <a class="card link" href="#" data-placeholder="future"><h3>The City That Kept Its Options Open →</h3><p>Vancouver's next fifty years: transit, the waterfront, the rising sea, Stanley Park and density.</p><small>Link coming soon</small></a>
 </div></section>
 
 <section id="sources"><h2>Sources</h2>
+<p class="summary">Every source cited on this site, plus image credits.</p>
 <p>This site summarizes three project essays: a history essay, a future essay (v2) and a Stanley Park fact file researched on 2026-10-16. Those essays draw on the City of Vancouver, City of Vancouver Archives, Vancouver Heritage Foundation, the Canadian Encyclopedia (Wayde Compton), The Province and CBC. The links below are the primary sources the essays cite directly.</p>
 <ul class="src">
 <li>[FM] <a href="https://vancouver.ca/parks-recreation-culture/stanley-park-forest-management.aspx">Park Board: Stanley Park forest management</a></li>
@@ -153,6 +172,7 @@
 </section>
 </main>
 <footer><p>A nonpartisan civic project. It does not endorse any candidate or party. Municipal election: October 17, 2026.</p><p class="small">Ridgelines drawn from elevation data (AWS Terrain Tiles; vertically exaggerated).</p></footer>
+<a href="#top" id="totop" class="totop" aria-label="Back to top">↑</a>
 <script src="app.js"></script>
 <script src="map.js" defer></script>
 <script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
