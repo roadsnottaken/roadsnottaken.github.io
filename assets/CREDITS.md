@@ -154,3 +154,30 @@ All retrieved October 17, 2026. These are official or news sources; no party or 
 - City of Vancouver, *2025 Annual Review of Water Rates and Water Works By-law Amendments* (Council report, Dec 3, 2024), https://council.vancouver.ca/20241203/documents/spec1b.pdf. Source for: 22% of waterworks assets in poor condition, projected 26% within a decade; more main breaks and leaks expected; renewal rate raised from 0.9% to 1.1% during the 2023–2026 Capital Plan.
 
 Note: the City's PDF servers blocked automated download from this machine. The figures above come from the search index's quotations of these documents, and should be spot-checked in a browser before relying on them.
+
+**09 Room for dogs** (added October 17, 2026, retrieved the same day)
+- *People, Parks, and Dogs Strategy* (Vancouver Park Board, Oct 23, 2017): https://vancouver.ca/files/cov/people-parks-dogs-strategy-report.pdf, appendix https://vancouver.ca/files/cov/people-parks-dogs-strategy-appendix.pdf, board report https://parkboardmeetings.vancouver.ca/2017/20171023/REPORT-PeopleParksDogsStrategy-20171023.pdf, summary page https://vancouver.ca/parks-recreation-culture/people-parks-dogs-strategy.aspx. Source for:
+  - 36 off-leash areas (6 fenced, 30 shared)
+  - 5.9% of parkland, the second highest of the North American cities reviewed
+  - 21,332 licensed dogs in 2016
+  - an estimated 32,390 to 55,947 dogs, from a 2016 phone survey of 400 residents in which fewer than 15% of households had dogs
+  - unequal distribution, with 6 neighbourhoods under-served
+  - the Spanish Banks off-leash area
+- Vancouver Sun, "Vancouver unleashes consultation on shared use of dog parks" (2016): https://vancouversun.com/news/local-news/vancouver-unleashes-consultation-on-shared-use-of-dog-parks-and-green-space. Source for: about 68 ha across 36 parks; uneven allocation.
+- Vancouver Is Awesome, "Vancouver dog licences: 2025 registration info": https://www.vancouverisawesome.com/animal-stories/dog-licence-registration-owners-vancouver-bc-2025-10087274. Source for: 23,000 dogs in the City registry in 2024.
+- TransLink, "Etiquette on Transit: Pets on Transit": https://www.translink.ca/rider-guide/etiquette-on-transit. Source for: pets only in small, hand-held, fully enclosed carriers that fit on the lap; SeaBus kennel rules. TransLink, "How to Use Accessible Transit: Guide and Service Dogs": https://www.translink.ca/rider-guide/transit-accessibility/how-to-use-accessible-transit. Source for: the service dog exception. Daily Hive (Dec 2018): https://dailyhive.com/vancouver/translink-pet-policy-retained-december-2018. Source for: the policy was reviewed and kept in 2018.
+- Spanish Banks parking:
+  - Park Board report, May 6, 2024: https://parkboardmeetings.vancouver.ca/2024/20240506/REPORT-SpanishBanksParking-20240506.pdf. Source for: a 12-month paid-parking pilot from July 2024 at $1/hour in peak season; the report notes limited transit options.
+  - CBC News, "Paid parking now permanent at Vancouver's Spanish Banks": https://www.cbc.ca/news/canada/british-columbia/spanish-banks-pay-parking-1.7563568. Source for: made permanent in June 2025 at $1.50/hour; it was the last Vancouver beach with free parking.
+- Other paid parking, context only and not stated in the item:
+  - Park Board decision, Oct 20, 2025: https://parkboardmeetings.vancouver.ca/2025/20251020/DECISION-ParkBoardParkingStrategy-ReportBack-20251020.pdf
+  - Daily Hive: https://dailyhive.com/vancouver/vancouver-community-centres-pay-parking
+  - Trout Lake CC guide (2026): https://troutlakecc.com/wp-content/uploads/2026/05/TLCC-Spring-Summer-2026-Recreation-Guide-FINAL-compressed.pdf
+  - Together these report $3.50/hour at all John Hendry (Trout Lake) Park lots from about Feb 16, 2026, under a 12-month pilot.
+- Calculations, using only the figures above:
+  - Households vs. parkland: fewer than 15% of households have a dog (2016 survey, ±4.9%), and 5.9% of parkland is off-leash. Up to 15% of households, compared with 5.9% of park area, is at most about 2.5 to 1 (15 ÷ 5.9 ≈ 2.54). Because the survey gives only an upper bound ("less than 15%"), the true gap is smaller than that by an unknown amount, so the site does not print a ratio.
+  - Implied parkland base: 68 ha ÷ 0.059 ≈ 1,153 ha. The Sun's base excludes pocket parks and golf courses.
+  - Per dog: 68 ha ÷ 55,947 dogs × 10,000 ≈ 12.2 ha, and 68 ha ÷ 32,390 × 10,000 ≈ 21.0 ha, per 10,000 dogs. This matches the strategy's own "12 ha to 21 ha per 10,000 dogs." That is roughly 12 to 21 m² of off-leash space per dog.
+  - Neighbourhood figure: the strategy appendix (Table A-1) lists neighbourhoods with more than 1,000 licensed dogs per hectare of off-leash area. The site doesn't name them, because the indexed text wasn't legible enough to verify the list.
+- Context: the 2017 strategy itself calls 5.9% "the second highest percentage among the North American cities reviewed" (only Calgary is higher, at 6%), and it puts Vancouver's dogs per capita on the low side (54 to 93 per 10,000 people). The citywide share is high compared with other cities; the gap is in distribution and in how close to home off-leash space is.
+- Note: the "Why it matters" line is this site's reasoning from the transit rules above. No source states it directly.
