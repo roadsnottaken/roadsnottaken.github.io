@@ -114,3 +114,10 @@ a{color:inherit}
 .now .vote b{display:block;font:700 clamp(2.4rem,11vw,5rem)/.9 var(--cond);font-style:normal;text-transform:uppercase;color:var(--bone);margin-bottom:.4rem}
 .now .vote span{display:block;margin-top:.6rem;font:500 .72rem var(--cond);font-style:normal;letter-spacing:.22em;text-transform:uppercase;color:var(--dim)}
 @media(min-width:900px){.now li{grid-template-columns:5rem 1fr 1fr;gap:0 2rem;align-items:start}.now .n{grid-row:auto;font-size:2.4rem}.now h3{grid-column:2}.now p{grid-column:2;grid-row:2}.now .echo{grid-column:3;grid-row:1/3;margin-top:.2rem}}
+.now li.sub-h{display:block;padding:2.2rem 0 .4rem;border-top:3px solid var(--amber)}
+.now li.sub-h span{font:700 clamp(1.4rem,5.5vw,2.4rem)/1 var(--serif);font-style:italic;color:var(--amber)}
+.now span.echo{cursor:default}
+.now .echo.why{border-left-color:var(--amber);background:linear-gradient(90deg,rgba(255,179,71,.12),transparent 70%)}
+.now .echo.why b{color:var(--amber)}
+.now .srcnote{margin:1rem 0 0;font:13px/1.5 system-ui,sans-serif;color:var(--dim);max-width:46rem}
+.now .srcnote a{color:var(--bone)}

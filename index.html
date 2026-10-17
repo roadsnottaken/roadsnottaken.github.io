@@ -41,7 +41,18 @@
   <li class="rv"><span class="n">05</span><h3>Stanley Park's forest, regrowing</h3>
    <p>After a hemlock looper outbreak first identified in 2020, about 160,000 of roughly 600,000 trees are dead or dying. The Park Board has removed about 14,000 hazard trees and planted more than 75,000, with nearly 100,000 expected. The final stage began October 13, 2026 and runs to spring 2027.</p>
    <a class="echo" href="#map" data-mode="planned"><b>Last time</b>The crossing's causeway would have landed at Brockton Point, at the park's edge. See the map →</a></li>
+  <li class="sub-h rv"><span>Also on the table: the city under our feet</span></li>
+  <li class="rv"><span class="n">06</span><h3>Aging sewers, overflowing into the water</h3>
+   <p>At the end of 2023, 57.8% of Vancouver's sewer mains were separated, leaving 536 km of combined pipes that carry sewage and rainwater together. In heavy rain these can overflow into False Creek and Burrard Inlet. The regional deadline to end overflows is 2050. The City estimated in 2022 that meeting it would take about $99 million a year, up from about $36 million.</p>
+   <span class="echo"><b>Last time</b>Vancouver began replacing its combined pipes with separate ones in the 1970s. Half a century later, the job is a little over half done.</span></li>
+  <li class="rv"><span class="n">07</span><h3>Parks within reach</h3>
+   <p>About 80% of residents live within a 5-minute walk of a park or green space, and 99% within 10 minutes. Neighbourhood parkland averages 1.06 hectares per 1,000 people, against a target of 1.1 set in 1992. Grandview–Woodland and Fairview have less than 0.6.</p>
+   <span class="echo why"><b>Why it matters</b>The Park Board says buying land in dense areas keeps getting harder, so growing neighbourhoods will rely more on making existing parks work harder.</span></li>
+  <li class="rv"><span class="n">08</span><h3>Water mains reaching their end</h3>
+   <p>About 22% of the City's waterworks assets are in poor condition, and the City projects 26% within a decade as pipes reach the end of their lives. It expects more main breaks and leaks, and it raised its yearly renewal rate from 0.9% to 1.1% in the 2023–2026 capital plan.</p>
+   <span class="echo why"><b>Why it matters</b>The City says the capacity of its pipes is a key uncertainty for population growth and new housing.</span></li>
  </ol>
+ <p class="srcnote rv">Items 06–08: City of Vancouver Healthy Waters Plan reports (2022, 2025), Metro Vancouver Liquid Waste Management Plan, VanPlay parks analysis, and the City's 2025 water rates report. <a href="assets/CREDITS.md#city-issues-sources">Sources</a></p>
  <p class="vote rv"><b>October 17, 2026</b>Election day. In 1967, people shaped the city by showing up at hearings, signing petitions and talking to neighbours, whoever they voted for. <span>Nonpartisan: this site names no candidates or parties.</span></p>
 </section>
 
@@ -90,5 +101,5 @@ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isInter
 els.forEach(function(el){io.observe(el)});
 setTimeout(function(){els.forEach(function(el){el.classList.add('in')})},3000);})();
 </script>
-<script>document.addEventListener('click',function(e){var a=e.target.closest('.echo');if(!a)return;var m=document.querySelector('#map .cmap');if(m&&m.cmapSet)m.cmapSet(a.dataset.mode)});</script>
+<script>document.addEventListener('click',function(e){var a=e.target.closest('a.echo');if(!a||!a.dataset.mode)return;var m=document.querySelector('#map .cmap');if(m&&m.cmapSet)m.cmapSet(a.dataset.mode)});</script>
 </body></html>
