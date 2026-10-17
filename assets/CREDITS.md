@@ -216,3 +216,390 @@ Note: the City's PDF servers blocked automated download from this machine. The f
 assets/zoom/*-s.jpg (480 px wide) and *-l.jpg (1400 px wide) are resized, duotone-tinted copies of the credited images above. They include the archive photographs, the 1898 map, and the hub-*.jpg and thumb-*.jpg site screenshots. They were made with Python/PIL (grayscale, contrast, then multiplied by this site's vermilion or amber), so that the zoomable homepage does not need CSS blend modes or filters on iPhone. They contain no new imagery and no AI imagery. Credits and licences are as listed for each original.
 
 On the zoom homepage, these same images now also appear inside the canvas: as thumbnails beside each theme and item, as the archive wall, and with the 1898 panoramic map (Library and Archives Canada, public domain) as a faint backdrop behind the theme rows. Each one carries its caption and credit in fine print. A thumbnail next to an item is period context and does not show that item's subject. The margin text beside the themes and the map is quoted from this site's own history and future essays. The future essay is labelled as speculation.
+
+## More archive images for the zoom homepage (added October 17, 2026)
+
+These 40 images were found on Wikimedia Commons, mostly in its categories for the City of Vancouver Archives, Vancouver Public Library Historical Photographs, the British Columbia Electric Railway, Chinatown, Kitsilano Beach and English Bay. Only files tagged public domain, CC0 or "no known copyright restrictions" were used. CC BY-SA files and files with unclear rights were skipped. The text in each entry comes from the Commons file page. Where an archive date was given only as "190-" or "19--", it is kept as given. Each one is a resized, duotone-tinted copy (assets/zoom/<name>-s.jpg and -l.jpg, made with Python/PIL). None of these images is new or AI-made.
+
+Not found with clear rights, so not used: photos of the Georgia viaducts, of Hogan's Alley in Vancouver, of sewer or water-main construction, and of the 1900–1958 North Vancouver ferries. Commons has a file called "Boarding North Vancouver ferry" with no date or creator, so it was skipped. VPL's April 1972 Gore and Pender photo was also skipped, as the rights for a 1972 photograph are unclear.
+
+### a2-lonsdale-avenue-north-vancouver-streetcars.jpg
+- **Title:** Lonsdale Avenue north vancouver streetcars
+- **Date:** circa 1908
+- **Creator:** Matthews, James Skitt, Major (1878-1970)
+- **Source:** https://commons.wikimedia.org/wiki/File:Lonsdale_Avenue_north_vancouver_streetcars.jpg
+- **Original holding / ID:** as listed on the Commons page
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** Streetcars and interurbans
+
+### a2-street-car-number-21-at-the.jpg
+- **Title:** Street car number 21 at the entrance to Stanley Park
+- **Date:** circa 1900
+- **Creator:** Matthews, James Skitt, Major (1878-1970)
+- **Source:** https://commons.wikimedia.org/wiki/File:Street_car_number_21_at_the_entrance_to_Stanley_Park.jpg
+- **Original holding / ID:** https://searcharchives.vancouver.ca/street-car-number-21-at-entrance-to-stanley-park
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** Streetcars and interurbans
+
+### a2-b-c-electric-railway-co-car.jpg
+- **Title:** B.C. Electric Railway Co. car no. 35 "Robson" at the English Bay Beach stop on Denman St
+- **Date:** between 1900 and 1902
+- **Creator:** Matthews, James Skitt, Major (1878-1970)
+- **Source:** https://commons.wikimedia.org/wiki/File:B.C._Electric_Railway_Co._car_no._35_%22Robson%22_at_the_English_Bay_Beach_stop_on_Denman_St.jpg
+- **Original holding / ID:** https://searcharchives.vancouver.ca/b-c-electric-railway-co-car-35-robson-at-english-bay-beach-stop-on-denman-st
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** Streetcars and interurbans
+
+### a2-streetcars-passing-at-the-400-block.jpg
+- **Title:** Streetcars passing at the 400 Block of Granville Street, Vancouver, in 1908
+- **Date:** 1908
+- **Creator:** Philip Timms
+- **Source:** https://commons.wikimedia.org/wiki/File:Streetcars_passing_at_the_400_Block_of_Granville_Street,_Vancouver,_in_1908.jpg
+- **Original holding / ID:** CVA 677-585
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** Streetcars and interurbans
+
+### a2-looking-south-at-streetcars-on-granville.jpg
+- **Title:** Looking South at streetcars on Granville Street, Vancouver, in 1923
+- **Date:** 1923
+- **Creator:** Philip Timms
+- **Source:** https://commons.wikimedia.org/wiki/File:Looking_South_at_streetcars_on_Granville_Street,_Vancouver,_in_1923.jpg
+- **Original holding / ID:** CVA 677-975
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** Streetcars and interurbans
+
+### a2-pcc-streetcar-in-vancouver.jpg
+- **Title:** PCC streetcar in Vancouver
+- **Date:** 1945-06
+- **Creator:** Williams Bros. Photographers Ltd. (Donn Williams (1920-09-20 - 1999-11-01) &amp; Warner Williams (d. 1980))
+- **Source:** https://commons.wikimedia.org/wiki/File:PCC_streetcar_in_Vancouver.jpg
+- **Original holding / ID:** CVA 586-3877
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** Streetcars and interurbans
+
+### a2-passengers-climbing-aboard-the-joyce-street.jpg
+- **Title:** Passengers climbing aboard the Joyce Street street car
+- **Date:** 1943
+- **Creator:** Jack Lindsay
+- **Source:** https://commons.wikimedia.org/wiki/File:Passengers_climbing_aboard_the_Joyce_Street_street_car.jpg
+- **Original holding / ID:** https://searcharchives.vancouver.ca/passengers-climbing-aboard-joyce-street-street-car
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** Streetcars and interurbans
+
+### a2-bcer-streetcar-advertising-and-crowds-on.jpg
+- **Title:** BCER streetcar advertising and crowds on Broadway
+- **Date:** 1944
+- **Creator:** Williams, Donn B.A.
+- **Source:** https://commons.wikimedia.org/wiki/File:BCER_streetcar_advertising_and_crowds_on_Broadway.jpg
+- **Original holding / ID:** https://searcharchives.vancouver.ca/b-c-e-r-street-car-advertising-and-crowds-on-broadway-3
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** Streetcars and interurbans
+
+### a2-b-c-electric-lulu-island-richmond.jpg
+- **Title:** B.C. Electric Lulu Island (Richmond) Interurban tram station on the west side of the Granville Street Bridge at 3rd Avenue
+- **Date:** 1922-10
+- **Creator:** Moore, W.J. (Photographer)
+- **Source:** https://commons.wikimedia.org/wiki/File:B.C._Electric_Lulu_Island_(Richmond)_Interurban_tram_station_on_the_west_side_of_the_Granville_Street_Bridge_at_3rd_Avenue.jpg
+- **Original holding / ID:** CVA ref. Bu N60
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** Streetcars and interurbans
+
+### a2-two-coupled-interurban-cars-at-station.jpg
+- **Title:** Two coupled interurban cars at station on the B.C.E.R. Central Park lines
+- **Date:** 1930s
+- **Creator:** Unknown
+- **Source:** https://commons.wikimedia.org/wiki/File:Two_coupled_interurban_cars_at_station_on_the_B.C.E.R._Central_Park_lines.jpg
+- **Original holding / ID:** https://searcharchives.vancouver.ca/two-linked-streetcars-at-at-station-on-b-c-e-r-central-park-lines
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** Streetcars and interurbans
+
+### a2-british-columbia-electric-railway-co-system.jpg
+- **Title:** British Columbia Electric Railway Co. System Map, 1912
+- **Date:** 1912
+- **Creator:** British Columbia Electric Railway Co. Ltd
+- **Source:** https://commons.wikimedia.org/wiki/File:British_Columbia_Electric_Railway_Co._System_Map,_1912.jpg
+- **Original holding / ID:** https://open.library.ubc.ca/collections/bcbooks/items/1.0376494 British Columbia Electric Railway Co. Ltd. : N.E.L.A. Convention, Seattle, June 10-14, 1912  Page 28
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** Maps
+
+### a2-union-steamship-company-service-map.jpg
+- **Title:** Union Steamship Company service map
+- **Date:** circa 1925
+- **Creator:** Union Steamship Company of British Columbia
+- **Source:** https://commons.wikimedia.org/wiki/File:Union_Steamship_Company_service_map.png
+- **Original holding / ID:** as listed on the Commons page
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** Maps
+
+### a2-admiralty-chart-no-922-burrard-inlet.jpg
+- **Title:** Admiralty Chart No 922 Burrard Inlet - Vancouver Harbour - First Narrows - Second Narrows, Published 1893
+- **Date:** 1905
+- **Creator:** United Kingdom Hydrographic Office
+- **Source:** https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_922_Burrard_Inlet_-_Vancouver_Harbour_-_First_Narrows_-_Second_Narrows,_Published_1893.jpg
+- **Original holding / ID:** as listed on the Commons page
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** Maps
+
+### a2-bathers-at-kitsilano-beach-showing-a.jpg
+- **Title:** Bathers at Kitsilano Beach showing a Canadian Pacific Railway car in foreground, Vancouver, British Columbia, between 1915 and (AL+CA 2148)
+- **Date:** circa 1920
+- **Creator:** Unknown
+- **Source:** https://commons.wikimedia.org/wiki/File:Bathers_at_Kitsilano_Beach_showing_a_Canadian_Pacific_Railway_car_in_foreground,_Vancouver,_British_Columbia,_between_1915_and_(AL%2BCA_2148).jpg
+- **Original holding / ID:** University of Washington Libraries, AL+CA 2148
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** Waterfront and beaches
+
+### a2-english-bay-pier-from-stanley-park.jpg
+- **Title:** English Bay Pier from Stanley Park, Vancouver, B.C.
+- **Date:** 1912
+- **Creator:** Rosetti Photographic Studios
+- **Source:** https://commons.wikimedia.org/wiki/File:English_Bay_Pier_from_Stanley_Park,_Vancouver,_B.C..jpg
+- **Original holding / ID:** http://digitalcollections.library.ubc.ca/cdm4/item_viewer.php?CISOROOT=/coll0610-10&CISOPTR=17
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** Waterfront and beaches
+
+### a2-english-bay-bathhouse-vpl-5393.jpg
+- **Title:** English Bay bathhouse VPL 5393
+- **Date:** 190- (bathing pavilion built 1905)
+- **Creator:** Philip Timms
+- **Source:** https://commons.wikimedia.org/wiki/File:English_Bay_bathhouse_VPL_5393_(17587169414).jpg
+- **Original holding / ID:** VPL 5393
+- **Licence:** No known copyright restrictions (as tagged on Wikimedia Commons; Vancouver Public Library Flickr Commons)
+- **Theme:** Waterfront and beaches
+
+### a2-english-bay-swim-race-vpl-5454.jpg
+- **Title:** English Bay swim race VPL 5454
+- **Date:** 190-
+- **Creator:** Philip Timms
+- **Source:** https://commons.wikimedia.org/wiki/File:English_Bay_swim_race_VPL_5454_(20193160429).jpg
+- **Original holding / ID:** VPL 5454
+- **Licence:** No known copyright restrictions (as tagged on Wikimedia Commons; Vancouver Public Library Flickr Commons)
+- **Theme:** Waterfront and beaches
+
+### a2-joe-fortes-lifeguard-at-english-bay.jpg
+- **Title:** Joe Fortes, lifeguard at English Bay Beach with children
+- **Date:** 19--
+- **Creator:** Unknown
+- **Source:** https://commons.wikimedia.org/wiki/File:Joe_Fortes,_lifeguard_at_English_Bay_Beach_with_children_(18022040890).jpg
+- **Original holding / ID:** VPL 50133
+- **Licence:** No known copyright restrictions (as tagged on Wikimedia Commons; Vancouver Public Library Flickr Commons)
+- **Theme:** Waterfront and beaches
+
+### a2-kitsilano-swimming-pool-vpl-23379.jpg
+- **Title:** Kitsilano Swimming Pool VPL 23379
+- **Date:** August 15, 1931
+- **Creator:** Vancouver Public Library Historical Photographs
+- **Source:** https://commons.wikimedia.org/wiki/File:Kitsilano_Swimming_Pool_VPL_23379_(20551654776).jpg
+- **Original holding / ID:** VPL 23379
+- **Licence:** No known copyright restrictions (as tagged on Wikimedia Commons; Vancouver Public Library Flickr Commons)
+- **Theme:** Waterfront and beaches
+
+### a2-second-beach-with-swimmers-vpl-6170.jpg
+- **Title:** Second Beach with swimmers. VPL 6170
+- **Date:** 1930
+- **Creator:** Leonard Frank
+- **Source:** https://commons.wikimedia.org/wiki/File:Second_Beach_with_swimmers._VPL_6170_(10196482383).jpg
+- **Original holding / ID:** VPL 6170
+- **Licence:** No known copyright restrictions (as tagged on Wikimedia Commons; Vancouver Public Library Flickr Commons)
+- **Theme:** Waterfront and beaches
+
+### a2-people-leaning-on-the-seawall-stanley.jpg
+- **Title:** People leaning on the seawall, Stanley Park. VPL
+- **Date:** 193-
+- **Creator:** Leonard Frank
+- **Source:** https://commons.wikimedia.org/wiki/File:People_leaning_on_the_seawall,_Stanley_Park._VPL_(10197902373).jpg
+- **Original holding / ID:** VPL 7856
+- **Licence:** No known copyright restrictions (as tagged on Wikimedia Commons; Vancouver Public Library Flickr Commons)
+- **Theme:** Waterfront and beaches
+
+### a2-waterfront-station-vancouver-1923.jpg
+- **Title:** Waterfront Station Vancouver 1923
+- **Date:** circa 1923
+- **Creator:** Matthews, James Skitt, Major (1878-1970)
+- **Source:** https://commons.wikimedia.org/wiki/File:Waterfront_Station_Vancouver_1923.jpg
+- **Original holding / ID:** CVA ref. Wat N44.4
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** Waterfront and beaches
+
+### a2-view-of-coal-harbour-from-stanley.jpg
+- **Title:** View of Coal Harbour from Stanley Park. VPL 7719
+- **Date:** 190-
+- **Creator:** Philip Timms
+- **Source:** https://commons.wikimedia.org/wiki/File:View_of_Coal_Harbour_from_Stanley_Park._VPL_7719_(10197806975).jpg
+- **Original holding / ID:** VPL 7719
+- **Licence:** No known copyright restrictions (as tagged on Wikimedia Commons; Vancouver Public Library Flickr Commons)
+- **Theme:** Waterfront and beaches
+
+### a2-shallow-sandbanks-extended-far-across-burrard.jpg
+- **Title:** Shallow sandbanks extended far across Burrard Inlet's First Narrows before they were extensively dredged from 1912-1917
+- **Date:** circa 1900-1911
+- **Creator:** Unknown
+- **Source:** https://commons.wikimedia.org/wiki/File:Shallow_sandbanks_extended_far_across_Burrard_Inlet%27s_First_Narrows_before_they_were_extensively_dredged_from_1912-1917.png
+- **Original holding / ID:** as listed on the Commons page
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** Waterfront and beaches
+
+### a2-aerial-photo-oblique-false-creek-vancouver.jpg
+- **Title:** Aerial photo, oblique, False Creek, Vancouver, 1947
+- **Date:** 1947
+- **Creator:** Harold G Prenter, Pacific Survey Corporation, Vancouver
+- **Source:** https://commons.wikimedia.org/wiki/File:Aerial_photo,_oblique,_False_Creek,_Vancouver,_1947.jpg
+- **Original holding / ID:** CVA 59-03
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** False Creek and city works
+
+### a2-view-of-the-reclamation-of-false.jpg
+- **Title:** View of the reclamation of False Creek Flats showing the reconstruction of Main Street at the bascule bridge
+- **Date:** 1921-06-30
+- **Creator:** William John Moore
+- **Source:** https://commons.wikimedia.org/wiki/File:-View_of_the_reclamation_of_False_Creek_Flats_showing_the_reconstruction_of_Main_Street_at_the_bascule_bridge-_(5456682913).jpg
+- **Original holding / ID:** CVA AM54-S4-3-: PAN N158
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** False Creek and city works
+
+### a2-view-of-false-creek-showing-the.jpg
+- **Title:** View of False Creek showing the Granville Island reclamation
+- **Date:** 1917-08-20
+- **Creator:** William John Moore
+- **Source:** https://commons.wikimedia.org/wiki/File:-View_of_False_Creek_showing_the_Granville_Island_reclamation-_(5457288014).jpg
+- **Original holding / ID:** CVA AM54-S4-3-: PAN N98
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** False Creek and city works
+
+### a2-false-creek-vancouver-circa-1890.jpg
+- **Title:** False Creek Vancouver circa 1890
+- **Date:** circa 1890
+- **Creator:** unknown. from the collection of Matthews, James Skitt, Major (1878-1970)
+- **Source:** https://commons.wikimedia.org/wiki/File:False_Creek_Vancouver_circa_1890.jpg
+- **Original holding / ID:** CVA ref. Sc P41.3
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** False Creek and city works
+
+### a2-granville-island-vancouver-1932.jpg
+- **Title:** Granville Island Vancouver 1932
+- **Date:** 1932
+- **Creator:** unknown. from the collection of Matthews, James Skitt, Major (1878-1970)
+- **Source:** https://commons.wikimedia.org/wiki/File:Granville_Island_Vancouver_1932.jpg
+- **Original holding / ID:** CVA 20-67
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** False Creek and city works
+
+### a2-men-excavating-road-with-machinery-near.jpg
+- **Title:** Men excavating road with machinery near B.C. Electric car barns, for reconstruction of streetcar lines for Hastings, Main and Harris (Georgia) Streets
+- **Date:** circa 1912
+- **Creator:** Matthews, James Skitt, Major (1878-1970)
+- **Source:** https://commons.wikimedia.org/wiki/File:Men_excavating_road_with_machinery_near_B.C._Electric_car_barns,_for_reconstruction_of_streetcar_lines_for_Hastings,_Main_and_Harris_(Georgia)_Streets.jpg
+- **Original holding / ID:** https://searcharchives.vancouver.ca/men-excavating-road-with-machinery-near-b-c-electric-car-barns-for-reconstruction-of-streetcar-lines-for-hastings-main-and-harris-georgia-streets
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** False Creek and city works
+
+### a2-old-and-new-granville-street-bridges.jpg
+- **Title:** Old and new Granville Street bridges
+- **Date:** 1909-06-01
+- **Creator:** Matthews, James Skitt, Major (1878-1970)
+- **Source:** https://commons.wikimedia.org/wiki/File:Old_and_new_Granville_Street_bridges.jpg
+- **Original holding / ID:** https://searcharchives.vancouver.ca/old-and-new-granville-street-bridges
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** False Creek and city works
+
+### a2-chinatown-vancouver-british-columbia-i0001689.jpg
+- **Title:** Chinatown, Vancouver, British Columbia (I0001689)
+- **Date:** 1927
+- **Creator:** M.O. Hammond fonds, Archives of Ontario
+- **Source:** https://commons.wikimedia.org/wiki/File:Chinatown,_Vancouver,_British_Columbia_(I0001689).tif
+- **Original holding / ID:** Archives of Ontario I0001689
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** Chinatown, Strathcona and the False Creek Flats
+
+### a2-chinese-men-on-the-street-in.jpg
+- **Title:** Chinese men on the street in Chinatown, Vancouver, British Columbia, 1917 (AL+CA 2146)
+- **Date:** 1917
+- **Creator:** Unknown
+- **Source:** https://commons.wikimedia.org/wiki/File:Chinese_men_on_the_street_in_Chinatown,_Vancouver,_British_Columbia,_1917_(AL%2BCA_2146).jpg
+- **Original holding / ID:** University of Washington Libraries, AL+CA 2146
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** Chinatown, Strathcona and the False Creek Flats
+
+### a2-chinatown-street-scene-vpl-5238.jpg
+- **Title:** Chinatown street scene VPL 5238
+- **Date:** 1906
+- **Creator:** Timms, Philip
+- **Source:** https://commons.wikimedia.org/wiki/File:Chinatown_street_scene_VPL_5238_(10561296584).jpg
+- **Original holding / ID:** VPL 5238
+- **Licence:** No known copyright restrictions (as tagged on Wikimedia Commons; Vancouver Public Library Flickr Commons)
+- **Theme:** Chinatown, Strathcona and the False Creek Flats
+
+### a2-sam-kee-building-vpl-17079.jpg
+- **Title:** Sam Kee Building VPL 17079
+- **Date:** 1936
+- **Creator:** Unknown
+- **Source:** https://commons.wikimedia.org/wiki/File:Sam_Kee_Building_VPL_17079_(10935370504).jpg
+- **Original holding / ID:** VPL 17079
+- **Licence:** No known copyright restrictions (as tagged on Wikimedia Commons; Vancouver Public Library Flickr Commons)
+- **Theme:** Chinatown, Strathcona and the False Creek Flats
+
+### a2-gnr-union-station-cnr-station-thornton.jpg
+- **Title:** GNR Union Station, CNR Station, Thornton Park, and Hotel Ivanhoe - 1924-09-08
+- **Date:** 1924-09-08
+- **Creator:** J. S. Matthews
+- **Source:** https://commons.wikimedia.org/wiki/File:GNR_Union_Station,_CNR_Station,_Thornton_Park,_and_Hotel_Ivanhoe_-_1924-09-08.jpg
+- **Original holding / ID:** as listed on the Commons page
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** Chinatown, Strathcona and the False Creek Flats
+
+### a2-view-of-stanley-park-entrance-with.jpg
+- **Title:** View of Stanley Park entrance with streetcars in foreground
+- **Date:** circa 1940
+- **Creator:** Vancouver Park Board
+- **Source:** https://commons.wikimedia.org/wiki/File:View_of_Stanley_Park_entrance_with_streetcars_in_foreground.jpg
+- **Original holding / ID:** https://searcharchives.vancouver.ca/view-of-stanley-park-entrance-with-streetcars-in-foreground
+- **Licence:** Public domain (as tagged on Wikimedia Commons)
+- **Theme:** Parks and Stanley Park
+
+### a2-carriage-in-the-hollow-tree-stanley.jpg
+- **Title:** Carriage in the Hollow Tree, Stanley Park. VPL
+- **Date:** 190-
+- **Creator:** Philip Timms
+- **Source:** https://commons.wikimedia.org/wiki/File:Carriage_in_the_Hollow_Tree,_Stanley_Park._VPL_(10196290984).jpg
+- **Original holding / ID:** VPL 7185
+- **Licence:** No known copyright restrictions (as tagged on Wikimedia Commons; Vancouver Public Library Flickr Commons)
+- **Theme:** Parks and Stanley Park
+
+### a2-cyclists-in-stanley-park-vpl-5448.jpg
+- **Title:** Cyclists in Stanley Park. VPL 5448
+- **Date:** 190-
+- **Creator:** Philip Timms
+- **Source:** https://commons.wikimedia.org/wiki/File:Cyclists_in_Stanley_Park._VPL_5448_(10159144366).jpg
+- **Original holding / ID:** VPL 5448
+- **Licence:** No known copyright restrictions (as tagged on Wikimedia Commons; Vancouver Public Library Flickr Commons)
+- **Theme:** Parks and Stanley Park
+
+### a2-men-in-military-uniforms-with-dog.jpg
+- **Title:** Men in military uniforms with dog VPL 17415
+- **Date:** 1918
+- **Creator:** Thomson, Stuart
+- **Source:** https://commons.wikimedia.org/wiki/File:Men_in_military_uniforms_with_dog_VPL_17415_(15359393428).jpg
+- **Original holding / ID:** VPL 17415
+- **Licence:** No known copyright restrictions (as tagged on Wikimedia Commons; Vancouver Public Library Flickr Commons)
+- **Theme:** Parks and Stanley Park
+
+## Diagrams drawn for the zoom homepage (added October 17, 2026)
+These are SVG files drawn with Python (shapely) from the open data listed. No figures were typed in by hand. The scripts are kept with the site's build tools.
+
+### dg-ferries.svg: "Across the water"
+- Coastline and the current ferry routes: OpenStreetMap contributors (ODbL), queried with Overpass on Oct 17, 2026. This covers `natural=coastline` and `route=ferry`: SeaBus (TransLink), the Aquabus and False Creek Ferries routes, and the Hullo route as far as the map edge.
+- SeaBus start year 1977: already sourced on this site (item 10).
+- Historic North Vancouver ferries, 1900–1958, from the foot of Lonsdale Avenue to downtown Vancouver: North Vancouver Museum and Archives (MONOVA), https://monova.ca/education/history/ ("1900 – Ferry Across the Inlet … Service continues until 1958"). The City of North Vancouver historic walking tour (https://www.cnv.org/-/media/City-of-North-Vancouver/Documents/Heritage/Historic-walking-tour.pdf) says "the ferry stopped running in 1958". The Vancouver landing at the foot of Columbia Street comes from a secondary history page (https://www.oocities.org/ferries_bc/history/nvanferries.html). The route is drawn as a straight dashed line between the two landings and is labelled approximate.
+- Studied Port Moody–Belcarra–Deep Cove ferry: this is the 2022 Metro Vancouver study already sourced in item 10. Only approximate town locations are marked. No route is drawn, because none was sourced.
+
+### dg-sewers.svg: "Where the combined sewers are"
+- Source: City of Vancouver Open Data, "Sewer mains" (https://opendata.vancouver.ca/explore/dataset/sewer-mains/), field `effluent_type`, downloaded Oct 17, 2026. The file has 39,927 segments.
+- Lengths were computed from the line geometry. The totals are Combined 634 km, Sanitary 760 km and Storm 884 km. Each roughly 300 m cell is coloured by the combined share of its mapped length.
+- These totals are not the City's reported figure of 536 km of combined sewers, which this site uses in item 06. The diagram says so. It shows where combined mains remain, not an official count. Shoreline: City of Vancouver Open Data, "Shoreline 2002".
+
+### dg-watermains.svg: "When the water mains went in"
+- Source: City of Vancouver Open Data, "Water distribution mains" (https://opendata.vancouver.ca/explore/dataset/water-distribution-mains/), fields `installation_date` and `material`, downloaded Oct 17, 2026. Kilometres by decade were computed from the line geometry: 1940s 125, 1950s 188, 1960s 307, 1970s 162 and so on. Cast iron is shown separately. About 22 km with no date are left out.
+- Age is not the same as condition. The 22% "poor" figure on this site comes from the City's own source (item 07).
+
+### dg-offleash.svg: "Where dogs can run"
+- Source: City of Vancouver Open Data, "Dog off-leash parks" (https://opendata.vancouver.ca/explore/dataset/dog-off-leash-parks/). It lists 54 mapped polygons in 42 parks, and its `area_in_square_meters` field sums to 65.0 ha. Also used: "Parks polygon representation" and "Shoreline 2002", downloaded Oct 17, 2026. These dataset counts differ from the Park Board figures in item 09 (36 areas, about 68 ha), and the diagram says so.
