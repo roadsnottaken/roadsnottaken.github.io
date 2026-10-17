@@ -133,3 +133,24 @@ Used on alt-a, alt-b, alt-c and in the main site's "1. The plan" figure.
 
 ## Homepage thumbnails (October 2026)
 assets/hub-a.jpg, hub-b.jpg, hub-c.jpg and hub-s.jpg are screenshots of this project's own pages (alt-a, alt-b, alt-c, story). They contain only the licensed archive photos and OSM-derived map credited above. No AI imagery.
+
+<a id="city-issues-sources"></a>
+## Sources: homepage items 06–08 (city infrastructure), added October 17, 2026
+
+All retrieved October 17, 2026. These are official or news sources; no party or campaign material is used.
+
+**06 Aging sewers**
+- City of Vancouver, *Key Directions for the Healthy Waters Plan* (Council report, Feb 4, 2025), https://council.vancouver.ca/20250204/documents/r3.pdf (also https://vancouver.ca/files/cov/key-directions-for-the-healthy-waters-plan.pdf). Source for: 57.8% of mainline sewers separated and 536 km combined remaining as of Dec 31, 2023; 40% of properties have combined connections; 1% per year separation commitment; 2050 target.
+- City of Vancouver, *Healthy Waters Plan Phase 1 Foundations* and Council memo (June 17, 2022), https://vancouver.ca/files/cov/healthy-waters-plan-phase-1-foundations.PDF and https://vancouver.ca/files/cov/2022-06-17-council%20memo-update-on-the-healthy-waters-plan-rts-13902.pdf. Source for: full separation by 2050 would require spending to rise from $36M to $99M a year (2019–2022 capital plan baseline); the City has fallen short of the 1% rate; overflows directed to Burrard Inlet's Inner Harbour; growth depends on sewer and drainage capacity.
+- City of Vancouver news release, "City Council commits to Healthy Waters Plan for Vancouver", https://vancouver.ca/news-calendar/city-council-commits-to-healthy-waters-plan-for-vancouver.aspx. Source for: combined pipes have been replaced with separated pipes since the 1970s.
+- City of Vancouver, *Mobile Pump-out Service Provision and Aquatic Environments Action Plan Progress Update* (Apr 15, 2025), https://council.vancouver.ca/20250415/documents/r8.pdf. Source for: three City outfalls and one Metro Vancouver outfall still receive periodic overflows in False Creek.
+- Metro Vancouver, *Liquid Waste Management Plan* (2026), https://metrovancouver.org/services/liquid-waste/Documents/lwmp-2026.pdf. Source for: combined sewer overflows to be eliminated by 2050 in the Vancouver Sewerage Area.
+
+**07 Parks within reach**
+- City of Vancouver / Vancouver Park Board, *VanPlay: Guiding Principles, Asset Needs (Parks)*, https://vancouver.ca/files/cov/guiding-principles-asset-needs-parks.pdf and https://vancouver.ca/parks-recreation-culture/63708.aspx. Source for: 1.1 ha per 1,000 target set in 1992; 1.06 ha per 1,000 citywide; 99% within a 10-minute walk and 80% within 5 minutes; Grandview–Woodland and Fairview below 0.6 ha per 1,000; acquisition in dense areas increasingly difficult.
+- Vancouver Park Board, *Park Provision Study* (2016), https://vancouver.ca/files/cov/park-provision-study.pdf, and *VanPlay Report 1, Chapter 2* (https://vancouver.ca/files/cov/vanplay-report-1-chapter-2-parks.pdf). Background on the walk-time method. Note: another VanPlay chapter reports 73% within five minutes using a stricter method.
+
+**08 Water mains**
+- City of Vancouver, *2025 Annual Review of Water Rates and Water Works By-law Amendments* (Council report, Dec 3, 2024), https://council.vancouver.ca/20241203/documents/spec1b.pdf. Source for: 22% of waterworks assets in poor condition, projected 26% within a decade; more main breaks and leaks expected; renewal rate raised from 0.9% to 1.1% during the 2023–2026 Capital Plan.
+
+Note: the City's PDF servers blocked automated download from this machine. The figures above come from the search index's quotations of these documents, and should be spot-checked in a browser before relying on them.
