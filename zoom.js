@@ -4,7 +4,7 @@
 var VP=document.getElementById('vp'),W=document.getElementById('world');
 if(!VP||!W)return;
 var RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
-var T1=0.3,T2=0.9,MAXS=6;           // LOD thresholds (on-screen scale) and max zoom
+var T1=0.3,T2=0.9,MAXS=10;           // LOD thresholds (on-screen scale) and max zoom
 var s=1,tx=0,ty=0,minS=0.02,lod=-1,box={x:0,y:0,w:1,h:1},homeR=null,allR=null,mode='';
 var VV=window.visualViewport,TOP=56,BOT=0;
 function vsize(){return VV?{w:Math.round(VV.width),h:Math.round(VV.height)}:{w:innerWidth,h:innerHeight}}
@@ -33,7 +33,7 @@ function layout(){
   var BG=document.getElementById('bgmap');if(BG){var y0=R.t1._r.y-30,y1=m==='port'?R.t3._r.y+R.t3._r.h:R.t1._r.y+Math.max(R.t1._r.h,R.t2._r.h,R.t3._r.h);BG.style.cssText='left:0;top:'+y0+'px;width:'+box.w+'px;height:'+(y1-y0+30)+'px'}
   // never zoom out past the point where the content fills the frame: on a phone this is width-fit
   minS=Math.max(vw/box.w,(vh-TOP)/box.h);
-  cacheImgs();buildMinimap();
+  depthReset();cacheImgs();cacheDepth();buildMinimap();
 }
 function union(a){var x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;a.forEach(function(r){x0=Math.min(x0,r.x);y0=Math.min(y0,r.y);x1=Math.max(x1,r.x+r.w);y1=Math.max(y1,r.y+r.h)});return{x:x0,y:y0,w:x1-x0,h:y1-y0}}
 function fitScale(r,pad){pad=pad==null?14:pad;return Math.min((vw-2*pad)/r.w,(vh-TOP-BOT-2*pad)/r.h)}
@@ -42,17 +42,68 @@ function wrect(el){var b=el.getBoundingClientRect();return{x:(b.left-tx)/s,y:(b.
 function clampS(v){return Math.max(minS,Math.min(MAXS,v))}
 function clampT(){var ww=box.w*s,wh=box.h*s;
   if(ww<=vw)tx=(vw-ww)/2;else tx=Math.min(0,Math.max(vw-ww,tx));
-  if(wh<=vh-TOP)ty=TOP+(vh-TOP-wh)/2;else ty=Math.min(TOP,Math.max(vh-wh,ty))}
+  if(wh<=vh-TOP)ty=TOP+(vh-TOP-wh)/2;else ty=Math.min(TOP,Math.max(vh-wh,ty));
+  // reading lock: after a reading fit, horizontal pan stays on the text column (with its margins) until a pinch-out
+  if(lock){if(s<lock.s*0.85){lock=null;return}var lw=(lock.x1-lock.x0)*s;
+    if(lw<=vw+1)tx=vw/2-(lock.x0+lock.x1)/2*s;else tx=Math.min(-lock.x0*s,Math.max(vw-lock.x1*s,tx))}}
+var lock=null,pendLock=null;
+// reading fit: the tapped column of text, plus a side margin, fills the screen width at a comfortable size
+var READ='.marg,.card .body,.essay .cols,.colo,.reads,.tiles .d,.hero .short';
+function readFit(el,x,y){var rs=el.getClientRects(),r=null,bd=1e9;
+  for(var i=0;i<rs.length;i++){var q=rs[i];var d=(x<q.left?q.left-x:x>q.right?x-q.right:0)+(y<q.top?q.top-y:y>q.bottom?y-q.bottom:0);if(d<bd){bd=d;r=q}}
+  if(!r)return false;
+  var x0=(r.left-tx)/s,cw=r.width/s,fs=parseFloat(getComputedStyle(el).fontSize)||10,m=vw<600?20:56;
+  var ns=Math.min((vw-2*m)/cw,19/fs);ns=clampS(ns);
+  var wy=(y-ty)/s,cx=x0+cw/2,cy=wy+((vh+TOP-BOT)/2-y)/ns;
+  var mw=Math.max(m/ns,((vw/ns)-cw)/2);
+  fly(cx,cy,ns,450);pendLock={x0:x0-mw,x1:x0+cw+mw,s:ns};return true}
 var raf=0;
 function apply(){clampT();W.style.transform='translate('+tx.toFixed(2)+'px,'+ty.toFixed(2)+'px) scale('+s.toFixed(5)+')';
   var L=s>=T2?2:s>=T1?1:0;if(L!==lod){lod=L;W.setAttribute('data-lod',L);setLvl();lazy()}
   // hide a text level only when its glyphs would be under ~2 screen px (l2 ~9-10u, l3 ~6-8u)
   var V=s>=0.28?'2':s>=0.2?'1':'0';if(V!==W.getAttribute('data-v'))W.setAttribute('data-v',V);
-  if(!raf)raf=requestAnimationFrame(function(){raf=0;drawMM()})}
+  if(!raf)raf=requestAnimationFrame(function(){raf=0;drawMM()});depth()}
 function zoomAt(px,py,ns){ns=clampS(ns);tx=px-(px-tx)*(ns/s);ty=py-(py-ty)*(ns/s);s=ns}
+// ---- depth: a few px of parallax and a 2-3 degree tilt, only while the camera moves.
+// transform only (no filters, no will-change); every element returns to no transform at rest so text is crisp.
+var DEPTH=window.__depth||{bg:1,fig:1,tilt:1};var DF=[],DC=[],BGM=null,dv={x:0,y:0,z:0},dLast=null,dRaf=0,dTouched=[],dN=0;
+function cacheDepth(){BGM=document.getElementById('bgmap');
+  DF=[].slice.call(W.querySelectorAll('.ph,.thm,.wall figure,.tiles .ph,.dg')).map(function(el){return{el:el,r:wrect(el)}});
+  DC=[].slice.call(W.querySelectorAll('.card')).map(function(el){return{el:el,r:wrect(el)}});
+  if(!RM){var v=view();DF.forEach(function(o){var im=o.el.querySelector('img,svg');if(im&&!hit(o.r,v,0)&&!im._in){im.classList.add('pre')}else if(im)im._in=1})}}
+function enter(){var v=view();DF.forEach(function(o){var im=o.el.querySelector('img,svg');if(im&&!im._in&&hit(o.r,v,0)){im._in=1;im.classList.remove('pre')}})}
+var bgOn=0;function depthReset(){if(bgOn&&BGM){BGM.firstChild.style.objectPosition='';bgOn=0}dTouched.forEach(function(el){el.style.transform=''});dTouched=[];dv={x:0,y:0,z:0};dLast=null}
+function cl(v,m){return Math.max(-m,Math.min(m,v))}
+function depth(){if(!dRaf)dRaf=requestAnimationFrame(dstep)}
+var dT=0,dEma=16,dCnt=0,FORCED=!!window.__depth;
+function dstep(){dRaf=0;var nowT=performance.now();if(dT&&(ptr.size||anim||inert)){dEma=dEma*.9+(nowT-dT)*.1;dCnt++;
+    // if this device can't hold ~30fps while moving, drop the depth effects for the rest of the visit
+    if(!FORCED&&dCnt>24&&dEma>34&&(DEPTH.bg||DEPTH.fig||DEPTH.tilt)){DEPTH={bg:0,fig:0,tilt:0};depthReset()}}dT=nowT;var cx=(vw/2-tx)/s,cy=(vh/2-ty)/s;
+  if(++dN%5===0||!dLast)enter();
+  if(RM)return;
+  if(dLast){var rx=-(cx-dLast.x)*s,ry=-(cy-dLast.y)*s,rz=Math.log(s/dLast.s);
+    dv.x+=(rx-dv.x)*.3;dv.y+=(ry-dv.y)*.3;dv.z+=(rz-dv.z)*.3}
+  dLast={x:cx,y:cy,s:s};
+  var busy=ptr.size||anim||inert;
+  if(!busy){dv.x*=.6;dv.y*=.6;dv.z*=.6}
+  if(!busy)dT=0;
+  if(!busy&&Math.abs(dv.x)+Math.abs(dv.y)<.15&&Math.abs(dv.z)<.0008){var had=dTouched.length;depthReset();if(had)repaint();return}
+  var nt=[],v=view();
+  // backdrop drifts a little behind the camera, photos lead a little: a few screen px
+  if(BGM&&DEPTH.bg){var bi=BGM.firstChild;bi.style.objectPosition='calc(50% + '+(cl(-dv.x*.3,6)/s).toFixed(1)+'px) calc(50% + '+(cl(-dv.y*.3,6)/s).toFixed(1)+'px)';bgOn=1}
+  var fx=cl(dv.x*.18,4)/s,fy=cl(dv.y*.18,4)/s,fz=1+cl(dv.z*1.5,.012);
+  // only the few photos nearest the centre move, to keep per-frame work small
+  var vis=[];if(DEPTH.fig){DF.forEach(function(o){if(hit(o.r,v,0))vis.push([Math.abs(o.r.x+o.r.w/2-cx)+Math.abs(o.r.y+o.r.h/2-cy),o])});vis.sort(function(a,b){return a[0]-b[0]});vis=vis.slice(0,6).map(function(a){return a[1]})}
+  vis.forEach(function(o){o.el.style.transform='translate('+fx.toFixed(2)+'px,'+fy.toFixed(2)+'px) scale('+fz.toFixed(4)+')';nt.push(o.el)});
+  // lean the card closest to the centre of the screen: a 2D shear equal to a 2-3 degree rotateX/rotateY seen head-on.
+  // (A real 3D perspective() puts the card on its own compositing layer in WebKit, which cut frame rates in testing.)
+  var best=null,bd=1e18;DC.forEach(function(o){if(!hit(o.r,v,0))return;var d=Math.hypot(o.r.x+o.r.w/2-cx,o.r.y+o.r.h/2-cy);if(d<bd){bd=d;best=o}});
+  if(best&&DEPTH.tilt){var ry=cl(dv.x*.2,3),rx=cl(-dv.y*.2,3);best.el.style.transform='skew('+(-ry*.3).toFixed(2)+'deg,'+(rx*.3).toFixed(2)+'deg) scale('+(1-0.004*Math.max(Math.abs(rx),Math.abs(ry))).toFixed(4)+')';nt.push(best.el)}
+  dTouched.forEach(function(el){if(nt.indexOf(el)<0)el.style.transform=''});dTouched=nt;
+  dRaf=requestAnimationFrame(dstep)}
 // ---- animation
 var anim=null;
-function fly(cx,cy,ns,dur){stopAnim();ns=clampS(ns);var cy0=((vh+TOP-BOT)/2-ty)/s,cx0=(vw/2-tx)/s,s0=s,t0=performance.now();dur=RM?0:(dur||650);
+function fly(cx,cy,ns,dur,keep){stopAnim();if(!keep||!lock||ns<lock.s*0.85){lock=null}pendLock=null;ns=clampS(ns);var cy0=((vh+TOP-BOT)/2-ty)/s,cx0=(vw/2-tx)/s,s0=s,t0=performance.now();dur=RM?0:(dur||650);
   moving();
   function set(k){var ls=Math.log(s0)+(Math.log(ns)-Math.log(s0))*k;s=Math.exp(ls);
     // keep the motion feeling like a zoom: interpolate the centre in screen space of the end state
@@ -70,7 +121,7 @@ function all(){var cx=(vw/2-tx)/s,cy=(vh/2-ty)/s;fly(cx,cy,minS)}
 // ---- moving / settle (will-change only while moving so text re-rasterises crisp at rest)
 var st=0;
 function moving(){clearTimeout(st);st=setTimeout(function(){if(!ptr.size&&!anim&&!inert)settle()},220)}
-function settle(){clearTimeout(st);lazy();repaint()}
+function settle(){clearTimeout(st);enter();if(!ptr.size&&!anim&&!inert&&dTouched.length){depthReset();if(dRaf){cancelAnimationFrame(dRaf);dRaf=0}}if(pendLock&&!anim){lock=pendLock;pendLock=null;clampT();apply()}lazy();repaint()}
 function repaint(){var o=W.style.transform;W.style.transform=o+' translate(0.01px,0)';void W.offsetWidth;requestAnimationFrame(function(){W.style.transform=o;W.classList.toggle('rp')})}
 // ---- pointers
 var ptr=new Map(),g=null,moved=0,sup=false,vel={x:0,y:0,t:0},inert=0,caps=[];
@@ -107,6 +158,8 @@ VP.addEventListener('click',function(e){
   if(sup){e.preventDefault();e.stopPropagation();sup=false;return}
   var now=performance.now(),x=e.clientX,y=e.clientY;
   if(e.target.closest('a,button')){lastTap.t=0;return}
+  var tb=s>=0.2&&e.target.closest(READ)&&e.target.closest('p,li,h4,h5,.echo,.lead');
+  if(tb){clearTimeout(pend);lastTap.t=0;e.preventDefault();readFit(tb,x,y);return}
   if(now-lastTap.t<320&&Math.hypot(x-lastTap.x,y-lastTap.y)<40){clearTimeout(pend);lastTap.t=0;var ns=clampS(s*(e.shiftKey?1/2.6:2.6));
     var cx=(x-tx)/s,cy=(y-ty)/s;var tcx=cx+(vw/2-x)/ns,tcy=cy+((vh+TOP-BOT)/2-y)/ns;fly(tcx,tcy,ns,420);return}
   lastTap={t:now,x:x,y:y};
@@ -124,7 +177,7 @@ document.addEventListener('keydown',function(e){if(e.target.closest&&e.target.cl
 W.addEventListener('focusin',function(e){var b=e.target.getBoundingClientRect();if(b.top>TOP&&b.bottom<vh-BOT&&b.left>0&&b.right<vw&&lod>=1)return;var z=e.target.closest('[data-z]')||e.target;flyRect(wrect(z),T2*1.1,true)});
 // ---- buttons
 document.querySelector('.ctl').addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var a=b.getAttribute('data-a'),c=[vw/2,(vh+TOP-BOT)/2];
-  if(a==='in')fly((c[0]-tx)/s,(c[1]-ty)/s,s*2,360);else if(a==='out')fly((c[0]-tx)/s,(c[1]-ty)/s,s/2,360);else if(a==='home')home();else all()});
+  if(a==='in')fly((c[0]-tx)/s,(c[1]-ty)/s,s*2,360,1);else if(a==='out')fly((c[0]-tx)/s,(c[1]-ty)/s,s/2,360,1);else if(a==='home')home();else all()});
 // ---- level indicator
 var LV=document.getElementById('lvl'),NAMES=['Overview','Themes & items','Full detail'];
 function setLvl(){var i=LV.querySelectorAll('i');for(var n=0;n<3;n++)i[n].className=n<=lod?'on':'';LV.querySelector('span').textContent=NAMES[lod]}
@@ -138,7 +191,7 @@ function hit(a,b,m){return a.x<b.x+b.w+m&&a.x+a.w>b.x-m&&a.y<b.y+b.h+m&&a.y+a.h>
 var DPR=Math.min(3,window.devicePixelRatio||1);
 function lazy(){var v=view(),m=Math.max(v.w,v.h)*.25;
   IM.forEach(function(o){if(!hit(o.r,v,m))return;var im=o.el;
-    if(!im._hi&&o.r.w*s*DPR>560){im._hi=1;var hi=new Image();hi.decoding='async';hi.onload=function(){im.src=hi.src};hi.src=im.getAttribute('data-l')}});
+    if(!im._hi&&o.r.w*s*DPR>(im.naturalWidth||480)*1.15){im._hi=1;var hi=new Image();hi.decoding='async';hi.onload=function(){im.src=hi.src};hi.src=im.getAttribute('data-l')}});
   if(!mapDone&&hit(R.map._r,v,m)){mapDone=true;fetch('assets/cmap.svg').then(function(r){return r.text()}).then(function(t){var sl=W.querySelectorAll('.svgslot');
     sl.forEach(function(el,i){el.innerHTML=i?t.replace(/id="cmh"/g,'id="cmh2"').replace(/url\(#cmh\)/g,'url(#cmh2)'):t})}).catch(function(){mapDone=false})}}
 // ---- minimap
@@ -162,6 +215,8 @@ function boot(keep){var c=null;if(keep&&homeR){c={x:(vw/2-tx)/s,y:((vh+TOP-BOT)/
 var rz=0;function onRz(){clearTimeout(rz);rz=setTimeout(function(){var old=mode;var z=vsize();boot((z.w/z.h<1.05?'port':'land')===old)},150)}
 addEventListener('resize',onRz);if(VV)VV.addEventListener('resize',onRz);
 boot(false);
+// diagrams: inline SVG (crisp at any zoom) fetched after first paint; slots already have their final size
+setTimeout(function(){[].forEach.call(W.querySelectorAll('.dgslot[data-src]'),function(el){fetch(el.getAttribute('data-src')).then(function(r){return r.text()}).then(function(t){el.innerHTML=t;el.removeAttribute('data-src')}).catch(function(){})})},400);
 if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){boot(hinted)});
 window.__zoom={get:function(){return{s:s,tx:tx,ty:ty,lod:lod,mode:mode,box:box,home:homeR}},fly:fly,flyRect:flyRect,wrect:wrect,el:function(id){return wrect(document.getElementById(id))},T1:T1,T2:T2};
 })();
