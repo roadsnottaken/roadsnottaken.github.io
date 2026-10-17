@@ -130,3 +130,6 @@ Used on alt-a, alt-b, alt-c and in the main site's "1. The plan" figure.
 - Third crossing: causeway near Brockton Point and tunnel (1969 favoured design): vancouver-freeway-essay.md. The North Shore landing isn't sourced, so the line stops mid-inlet.
 - Junction markers show where the segments described above meet. Interchange designs weren't sourced and aren't drawn.
 - Viaduct status, Northeast False Creek Plan, 898 Main St MOU, False Creek North/South, Coal Harbour, seawall length, SkyTrain/SeaBus dates: the history and future essays.
+
+## Homepage thumbnails (October 2026)
+assets/hub-a.jpg, hub-b.jpg, hub-c.jpg and hub-s.jpg are screenshots of this project's own pages (alt-a, alt-b, alt-c, story). They contain only the licensed archive photos and OSM-derived map credited above. No AI imagery.
