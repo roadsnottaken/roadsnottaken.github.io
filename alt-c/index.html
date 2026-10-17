@@ -47,7 +47,7 @@ body.export .poster{width:680px;margin:0;box-shadow:none;min-height:0}
 body.export .poster{width:900px;display:grid;grid-template-columns:600px 1fr;grid-template-areas:"top top" "map nums" "map bul" "cta cta" "fine fine";grid-template-rows:auto auto 1fr auto auto;min-height:1125px}
 body.export .top{grid-area:top}body.export .map{grid-area:map;border-right:4px solid var(--ink)}body.export .nums{grid-area:nums;display:flex;flex-direction:column}
 body.export .nums>div{border-left:0!important;border-bottom:3px solid var(--ink)}body.export .bul{grid-area:bul}body.export .cta{grid-area:cta}body.export .fine{grid-area:fine}
-body.export .cm-bar,body.export .cm-note,body.export .cm-key{display:none}body.export .map .cmap{border-bottom:0}</style><link rel="stylesheet" href="../assets/cmap.css"></head><body>
+body.export .cm-bar,body.export .cm-note,body.export .cm-key{display:none}body.export .map .cmap{border-bottom:0}.homebar{position:sticky;top:0;z-index:50;display:flex;gap:1.2rem;padding:.55rem max(1rem,env(safe-area-inset-left));background:#16181d;border-bottom:3px solid #e0452a;font:600 .9rem Oswald,"Arial Narrow",sans-serif;letter-spacing:.06em;text-transform:uppercase}.homebar a{color:#f7f1e3;text-decoration:none;min-height:28px;display:inline-flex;align-items:center}body.export .homebar{display:none}</style><link rel="stylesheet" href="../assets/cmap.css"></head><body><nav class="homebar"><a href="../">← Home</a><a href="../story/">Full story</a></nav>
 <main class="poster" id="poster">
 <div class="top"><span class="k">Vancouver · Oct 17, 2026</span><h1>Neighbours stopped a freeway through our core. <em>Now it's our turn to choose.</em></h1></div>
 <div class="nums"><div><span class="num">500+</span><span>people at city hall, Nov 23, 1967</span></div><div><span class="num">21,000+</span><span>petition signatures, 1972</span></div><div><span class="num">28 km</span><span>of seawall we kept</span></div></div>
@@ -57,7 +57,7 @@ body.export .cm-bar,body.export .cm-note,body.export .cm-key{display:none}body.e
 <li data-n="2"><b>Stopped:</b> by residents, merchants and experts. Chinatown and Strathcona survived; Hogan's Alley largely did not.</li>
 <li data-n="3"><b>Next:</b> the viaduct lands, transit across the inlet, a shoreline facing rising seas, and the Stanley Park forest.</li>
 </ul>
-<div class="cta"><strong>Vote. Read the plans. Show up.</strong><a href="/">Read the full story →</a></div>
+<div class="cta"><strong>Vote. Read the plans. Show up.</strong><a href="../story/">Read the full story →</a></div>
 <p class="fine">Nonpartisan; endorses no candidate or party. Facts from the project's history and future essays. Map © OpenStreetMap contributors (ODbL); plan routes approximate. roadsnottaken.github.io</p>
 </main>
 <script>if(new URLSearchParams(location.search).get('export'))document.body.classList.add('export');</script>
