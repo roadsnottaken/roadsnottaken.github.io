@@ -1,0 +1,60 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The roads not taken: Vancouver chose its core. It's choosing again.</title><meta name="description" content="Vancouverites stopped the freeways that would have cut through their city's core. That choice made the city we know, and the same kind of choice is in front of us now.">
+<meta property="og:title" content="The roads not taken: Vancouver chose its core. It's choosing again."><meta property="og:description" content="Vancouverites stopped the freeways that would have cut through their city's core. That choice made the city we know, and the same kind of choice is in front of us now.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap">
+<style>
+:root{--ink:#16181d;--paper:#efe6d2;--paper2:#f7f1e3;--red:#e0452a;--head:"Oswald","Arial Narrow","Helvetica Neue",Impact,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3,.num,.btn,.k{font-family:var(--head);text-transform:uppercase;letter-spacing:.01em}
+a{color:#b8361f}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 1.4rem;background:var(--red);color:#fff;text-decoration:none;font-weight:700;font-size:1.1rem;border-radius:4px}
+.photo{filter:grayscale(1) sepia(.4) contrast(1.08)}
+.atag{font:600 .68rem/1.3 ui-monospace,Menlo,Consolas,monospace;text-transform:uppercase;letter-spacing:.05em}
+.rt-plan{fill:none;stroke:var(--red);stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+.rt-built{fill:none;stroke:#8d8d8d;stroke-width:12;stroke-linecap:round}
+.rt-pt circle{fill:var(--ink);stroke:#fff;stroke-width:3}
+.rt-pt text{font:700 26px var(--head);fill:var(--ink);paint-order:stroke;stroke:var(--paper);stroke-width:6px;text-transform:uppercase}
+.rt-stamp rect{fill:none;stroke:var(--red);stroke-width:8}.rt-stamp text{font:700 64px var(--head);fill:var(--red)}
+svg.route-svg{display:block;width:100%;height:auto;background:#1f2a33}
+footer{background:var(--ink);color:#cfc6b3;padding:1.4rem 1.2rem calc(1.4rem + env(safe-area-inset-bottom));font-size:.82rem;text-align:center}footer a{color:#fff}
+
+body{background:#2a2c31}
+.poster{width:min(100vw,600px);margin:0 auto;background:var(--paper);min-height:100svh;display:flex;flex-direction:column}
+@media(min-width:700px){.poster{margin:24px auto;min-height:0;box-shadow:0 10px 40px rgba(0,0,0,.5)}}
+.top{background:var(--ink);color:#fff;padding:1.1rem 1.1rem .9rem}
+.top .k{color:var(--red);font-size:.9rem;letter-spacing:.2em}
+.top h1{font-size:clamp(2rem,9vw,3.3rem);line-height:.95;margin:.25rem 0 0}
+.top h1 em{font-style:normal;color:var(--red)}
+.nums{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:4px solid var(--ink)}
+.nums div{padding:.7rem .6rem;border-right:2px solid var(--ink);text-align:center}.nums div:last-child{border-right:0}
+.nums .num{display:block;font-size:clamp(1.7rem,8vw,2.7rem);line-height:1;color:var(--red);font-weight:700}
+.nums span:last-child{font-size:.74rem;line-height:1.2;display:block;margin-top:.25rem}
+.map{position:relative}.map svg{border-bottom:4px solid var(--ink)}
+.map .rt-stamp{opacity:1}
+.bul{list-style:none;margin:0;padding:.8rem 1.1rem;display:grid;gap:.5rem}
+.bul li{padding-left:2rem;position:relative;font-size:.95rem;line-height:1.35}
+.bul li b{font-family:var(--head);text-transform:uppercase}
+.bul li::before{content:attr(data-n);position:absolute;left:0;top:0;width:1.5rem;height:1.5rem;background:var(--ink);color:#fff;font:700 .9rem/1.5rem var(--head);text-align:center}
+.cta{background:var(--red);color:#fff;padding:.9rem 1.1rem;display:flex;gap:.8rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.cta strong{font-family:var(--head);text-transform:uppercase;font-size:1.3rem;line-height:1.05}
+.cta a{background:#fff;color:var(--ink);min-height:44px;display:inline-flex;align-items:center;padding:0 1rem;border-radius:4px;font:700 1rem var(--head);text-transform:uppercase;text-decoration:none}
+.fine{font-size:.66rem;color:#5a5346;padding:.5rem 1.1rem .7rem;line-height:1.3}
+body.export .poster{width:680px;margin:0;box-shadow:none;min-height:0}
+
+</style></head><body>
+<main class="poster" id="poster">
+<div class="top"><span class="k">Vancouver · Oct 17, 2026</span><h1>Neighbours stopped a freeway through our core. <em>Now it's our turn to choose.</em></h1></div>
+<div class="nums"><div><span class="num">500+</span><span>people at city hall, Nov 23, 1967</span></div><div><span class="num">21,000+</span><span>petition signatures, 1972</span></div><div><span class="num">28 km</span><span>of seawall we kept</span></div></div>
+<div class="map"><svg class="route-svg" viewBox="0 0 1200 943" role="img" aria-labelledby="rt"><title id="rt">Approximate routes of the unbuilt 1960s freeway plan, drawn over a real coastline</title><image href="../assets/coast-downtown.jpg" width="1200" height="943"/><polyline class="rt-plan" pathLength="1" points="315.0,379.7 405.0,411.9 453.8,437.2 457.5,483.2 487.5,517.7 585.0,520.0 660.0,520.0 900.0,506.2 1050.0,494.7"><title>1967 waterfront freeway (approximate, unbuilt)</title></polyline><polyline class="rt-plan" pathLength="1" points="465.0,517.7 465.0,713.1 465.0,885.5"><title>Columbia/Quebec corridors (approximate, unbuilt)</title></polyline><polyline class="rt-plan" pathLength="1" points="300.0,368.2 352.5,270.4 375.0,184.1 412.5,80.6"><title>Third crossing of Burrard Inlet (approximate, unbuilt)</title></polyline><polyline class="rt-built" pathLength="1" points="412.5,483.2 487.5,506.2"><title>Georgia & Dunsmuir viaducts (built)</title></polyline><g class="rt-pt"><circle cx="485" cy="487" r="9"/><text x="499" y="477">Chinatown</text></g><g class="rt-pt"><circle cx="570" cy="512" r="9"/><text x="584" y="502">Strathcona</text></g><g class="rt-pt"><circle cx="503" cy="522" r="9"/><text x="517" y="544">Hogan's Alley</text></g><g class="rt-pt"><circle cx="173" cy="230" r="9"/><text x="187" y="220">Stanley Park</text></g><g class="rt-pt"><circle cx="454" cy="437" r="9"/><text x="468" y="427">Gastown</text></g><g class="rt-stamp" transform="translate(760 640) rotate(-9)"><rect x="-210" y="-58" width="420" height="116" rx="8"/><text x="0" y="16" text-anchor="middle">STOPPED 1968–72</text></g></svg></div>
+<ul class="bul">
+<li data-n="1"><b>Planned:</b> a 1967 elevated freeway through the waterfront and Chinatown, and a tunnel near Stanley Park.</li>
+<li data-n="2"><b>Stopped:</b> by residents, merchants and experts. Chinatown and Strathcona survived; Hogan's Alley largely did not.</li>
+<li data-n="3"><b>Next:</b> the viaduct lands, transit across the inlet, a shoreline facing rising seas, and the Stanley Park forest.</li>
+</ul>
+<div class="cta"><strong>Vote. Read the plans. Show up.</strong><a href="/">Read the full story →</a></div>
+<p class="fine">Nonpartisan; endorses no candidate or party. Facts from the project's history and future essays. Routes approximate; coastline from AWS Terrain Tiles. roadsnottaken.github.io</p>
+</main>
+<script>if(new URLSearchParams(location.search).get('export')){document.body.classList.add('export');var P=document.getElementById('poster'),sv=P.querySelector('.map svg');sv.setAttribute('preserveAspectRatio','xMidYMid slice');sv.style.height='300px';var other=P.offsetHeight-300;sv.style.height=Math.max(220,850-other)+'px';}</script>
+</body></html>
