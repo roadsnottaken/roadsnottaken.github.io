@@ -603,3 +603,458 @@ These are SVG files drawn with Python (shapely) from the open data listed. No fi
 
 ### dg-offleash.svg: "Where dogs can run"
 - Source: City of Vancouver Open Data, "Dog off-leash parks" (https://opendata.vancouver.ca/explore/dataset/dog-off-leash-parks/). It lists 54 mapped polygons in 42 parks, and its `area_in_square_meters` field sums to 65.0 ha. Also used: "Parks polygon representation" and "Shoreline 2002", downloaded Oct 17, 2026. These dataset counts differ from the Park Board figures in item 09 (36 areas, about 68 ha), and the diagram says so.
+
+## Earliest imagery and Then-to-now photos (added October 17, 2026)
+
+These were added for the "Before the city" and "Then to now" regions. Every file is public domain, "no known copyright restrictions", CC0 or CC BY (no ShareAlike) as stated on its Wikimedia Commons page; files with unclear provenance were skipped (for example a CPR "Jigger" photo credited only to Facebook, a Beaver photo dated "1830s", and a mis-categorised "TWN 1923" file). Historic photos and charts are pre-tinted duotone copies.
+
+**A note on titles and names.** Many archival titles use outdated or offensive terms (for example "Indian lodges", "Indian Village", "Mission Reserve"). The **Title** line below keeps the archive's title exactly, so the item can be found, but the captions on the site use respectful descriptions and the Nations' own names as they publish them: xʷməθkʷəy̓əm (Musqueam), Sḵwx̱wú7mesh (Squamish) and səlilwətaɬ (Tsleil-Waututh; spelled as on the Nation’s own website). Where an archive does not say which Nation a place or person belonged to, the caption does not guess.
+
+### e3-vancouver-chart-1798.jpg
+- **Title:** A chart shewing part of the coast of N.W. America - with the tracks of His Majesty's sloop Discovery and armed tender Chatham LOC 2003627084
+- **Date:** 1798
+- **Creator:** George Vancouver; Joseph Baker et al.; G.G. & J. Robinson (publisher)
+- **Source:** https://commons.wikimedia.org/wiki/File:A_chart_shewing_part_of_the_coast_of_N.W._America_-_with_the_tracks_of_His_Majesty%27s_sloop_Discovery_and_armed_tender_Chatham_LOC_2003627084.jpg
+- **Original holding / ID:** Library of Congress, item 2003627084
+- **Licence:** Public domain
+- **Caption:** Chart from the 1792 voyage of the Discovery and Chatham, published 1798
+- **Theme:** Before the city · 1790s
+
+### e3-galiano-carta-1795.jpg
+- **Title:** Carta esferica de los reconocimientos hechos en 1792 en la costa N.O. de America para examinar la entrada de Juan de Fuca, y la internacion de sus canales navegables. Levantada de orden del Rey Nuestro Señor abordo... - btv1b53089856k
+- **Date:** 1795
+- **Creator:** Dionisio Alcalá Galiano (cartographer)
+- **Source:** https://commons.wikimedia.org/wiki/File:Carta_esferica_de_los_reconocimientos_hechos_en_1792_en_la_costa_N.O._de_America_para_examinar_la_entrada_de_Juan_de_Fuca,_y_la_internacion_de_sus_canales_navegables._Levantada_de_orden_del_Rey_Nuestro_Se%C3%B1or_abordo..._-_btv1b53089856k.jpg
+- **Original holding / ID:** Bibliothèque nationale de France, btv1b53089856k
+- **Licence:** Public domain
+- **Caption:** Spanish chart of the 1792 Sutil and Mexicana survey (Galiano and Valdés)
+- **Theme:** Before the city · 1790s
+
+### e3-admiralty-1922-1860.jpg
+- **Title:** Admiralty Chart No 1922 Fraser River and Burrard Inlet, Published 1860
+- **Date:** Published 1860 (this printing later)
+- **Creator:** United Kingdom Hydrographic Office; survey by Capt. G.H. Richards
+- **Source:** https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1922_Fraser_River_and_Burrard_Inlet,_Published_1860.jpg
+- **Original holding / ID:** via raremaps.com (Barry Lawrence Ruderman), item 68029
+- **Licence:** Public domain
+- **Caption:** Royal Navy survey chart of the Fraser River and Burrard Inlet, surveyed from HMS Plumper 1859–60
+- **Theme:** Before the city · 1850s
+
+### e3-admiralty-1917-1865.jpg
+- **Title:** Admiralty Chart No 1917 Vancouver Island and Adjacent Shores of British Columbia Surveyed by Captn. G. H. Richards, R.N. . . . 1859-1865 . , Published 1865, Corrections to 1929
+- **Date:** Published 1865, corrections to 1929
+- **Creator:** United Kingdom Hydrographic Office; survey by Capt. G.H. Richards
+- **Source:** https://commons.wikimedia.org/wiki/File:Admiralty_Chart_No_1917_Vancouver_Island_and_Adjacent_Shores_of_British_Columbia_Surveyed_by_Captn._G._H._Richards,_R.N._._._._1859-1865_._,_Published_1865,_Corrections_to_1929.jpg
+- **Original holding / ID:** via raremaps.com, item 69884
+- **Licence:** Public domain
+- **Caption:** Admiralty chart of Vancouver Island and the adjacent mainland coast, surveyed 1859–65
+- **Theme:** Before the city · 1860s
+
+### e3-boas-map-1887.jpg
+- **Title:** DIE INDIANERSTÄMME von VANCOUVER Iᴰ̣ und an der KÜSTE von BRITISCH-COLUMBIA
+- **Date:** 1887
+- **Creator:** Franz Boas
+- **Source:** https://commons.wikimedia.org/wiki/File:DIE_INDIANERST%C3%84MME_von_VANCOUVER_I%E1%B4%B0%CC%A3_und_an_der_K%C3%9CSTE_von_BRITISCH-COLUMBIA.jpg
+- **Original holding / ID:** Petermanns Mitteilungen 33 (1887)
+- **Licence:** Public domain
+- **Caption:** Franz Boas’s 1887 map of the Nations of the BC coast (historical research map; its group names are 19th-century spellings)
+- **Theme:** Before the city · 1880s
+
+### e3-dally-lodges-burrard-a.jpg
+- **Title:** Indian lodges, Burrards Inlet
+- **Date:** [1867 or 1868]
+- **Creator:** Frederick Dally
+- **Source:** https://commons.wikimedia.org/wiki/File:Indian_lodges,_Burrards_Inlet_(15361322462).jpg
+- **Original holding / ID:** UBC Library Rare Books and Special Collections, Langmann Collection
+- **Licence:** No known copyright restrictions
+- **Caption:** Plank houses on Burrard Inlet, photographed 1867 or 1868
+- **Theme:** Before the city · 1860s
+
+### e3-dally-lodges-burrard-b.jpg
+- **Title:** Indian lodges, Burrards Inlet
+- **Date:** [1867 or 1868]
+- **Creator:** Frederick Dally
+- **Source:** https://commons.wikimedia.org/wiki/File:Indian_lodges,_Burrards_Inlet_(15361635635).jpg
+- **Original holding / ID:** UBC Library Rare Books and Special Collections, Langmann Collection
+- **Licence:** No known copyright restrictions
+- **Caption:** Plank houses and canoes on Burrard Inlet, 1867 or 1868
+- **Theme:** Before the city · 1860s
+
+### e3-moodyville-1875.jpg
+- **Title:** View of Moodyville, B.C.
+- **Date:** 1875
+- **Creator:** Unknown
+- **Source:** https://commons.wikimedia.org/wiki/File:View_of_Moodyville,_B.C._(12679465593).jpg
+- **Original holding / ID:** UBC Archives
+- **Licence:** No known copyright restrictions
+- **Caption:** The Moodyville sawmill port on the north shore of Burrard Inlet
+- **Theme:** Then to now · 1870s
+
+### e3-village-coal-harbour-1886.jpg
+- **Title:** Indian Village at Coal Harbour
+- **Date:** 1886
+- **Creator:** Unknown
+- **Source:** https://commons.wikimedia.org/wiki/File:Indian_Village_at_Coal_Harbour.gif
+- **Original holding / ID:** BC Archives (Royal BC Museum)
+- **Licence:** Public domain
+- **Caption:** A village at Coal Harbour, 1886
+- **Theme:** Before the city · 1880s
+
+### e3-mission-reserve-1886.jpg
+- **Title:** Mission Reserve opposite Vancouver, circa 1886
+- **Date:** circa 1886
+- **Creator:** Norman Caple
+- **Source:** https://commons.wikimedia.org/wiki/File:Mission_Reserve_opposite_Vancouver,_circa_1886.jpg
+- **Original holding / ID:** City of Vancouver Archives, SGN 1460
+- **Licence:** Public domain
+- **Caption:** Eslhá7an (Mission Reserve, North Vancouver) and St. Paul’s church, c. 1886
+- **Theme:** Before the city · 1880s
+
+### e3-hastings-sawmill-1886.jpg
+- **Title:** Hastings Sawmill yard across from Stanley Park, Vancouver, Canada 1886
+- **Date:** 1886
+- **Creator:** J.A. Brock
+- **Source:** https://commons.wikimedia.org/wiki/File:Hastings_Sawmill_yard_across_from_Stanley_Park,_Vancouver,_Canada_1886.jpg
+- **Original holding / ID:** City of Vancouver Archives
+- **Licence:** Public domain
+- **Caption:** Hastings Sawmill yard, looking across the water toward Stanley Park
+- **Theme:** Then to now · 1880s
+
+### e3-lumber-ships-1890.jpg
+- **Title:** Lumber ships, Hastings Sawmill, Vancouver, 1890
+- **Date:** 1890
+- **Creator:** Unknown
+- **Source:** https://commons.wikimedia.org/wiki/File:Lumber_ships,_Hastings_Sawmill,_Vancouver,_1890.jpg
+- **Original holding / ID:** City of Vancouver Archives
+- **Licence:** Public domain
+- **Caption:** Lumber ships loading at Hastings Sawmill
+- **Theme:** Then to now · 1890s
+
+### e3-douglas-fir-1887.jpg
+- **Title:** Coast Douglas-fir in Vancouver 1887
+- **Date:** 1887
+- **Creator:** William McFarlane Notman
+- **Source:** https://commons.wikimedia.org/wiki/File:Coast_Douglas-fir_in_Vancouver_1887.jpg
+- **Original holding / ID:** McCord Stewart Museum, VIEW-1803
+- **Licence:** Public domain
+- **Caption:** A coast Douglas-fir of the original forest, Vancouver
+- **Theme:** Before the city · 1880s
+
+### e3-great-cedar-1897.jpg
+- **Title:** Great cedar tree, Stanley Park, Vancouver, BC, 1897
+- **Date:** 1897
+- **Creator:** William McFarlane Notman
+- **Source:** https://commons.wikimedia.org/wiki/File:Great_cedar_tree,_Stanley_Park,_Vancouver,_BC,_1897.jpg
+- **Original holding / ID:** McCord Stewart Museum, VIEW-3138
+- **Licence:** Public domain
+- **Caption:** A great western redcedar in Stanley Park
+- **Theme:** Before the city · 1890s
+
+### e3-canoes-brockton-1897.jpg
+- **Title:** Canoes and a boathouse at Brockton Point 1897
+- **Date:** 1897
+- **Creator:** From the collection of James Skitt Matthews
+- **Source:** https://commons.wikimedia.org/wiki/File:Canoes_and_a_boathouse_at_Brockton_Point_1897.jpg
+- **Original holding / ID:** City of Vancouver Archives
+- **Licence:** Public domain
+- **Caption:** Canoes and a boathouse at Brockton Point
+- **Theme:** Then to now · 1890s
+
+### e3-devine-before-fire-1886.jpg
+- **Title:** Harry Torkington Devine (July 28, 1865 - December 17, 1938), Vancouver before the fire (CVA LGN 450-452 realigned)
+- **Date:** 1886
+- **Creator:** Harry T. Devine; stitched by Flickr user jmv
+- **Source:** https://commons.wikimedia.org/wiki/File:Harry_Torkington_Devine_(July_28,_1865_-_December_17,_1938),_Vancouver_before_the_fire_(CVA_LGN_450-452_realigned).jpg
+- **Original holding / ID:** City of Vancouver Archives, LGN 450–452
+- **Licence:** Public domain
+- **Caption:** The waterfront about a month before the fire of June 1886 (three photos stitched by a Commons contributor)
+- **Theme:** Then to now · 1880s
+
+### e3-maple-tree-corner-1886.jpg
+- **Title:** Maple Tree Corner Vancouver 1886
+- **Date:** 1886
+- **Creator:** Harry T. Devine
+- **Source:** https://commons.wikimedia.org/wiki/File:Maple_Tree_Corner_Vancouver_1886.jpg
+- **Original holding / ID:** City of Vancouver Archives, Str P83
+- **Licence:** Public domain
+- **Caption:** Carrall Street at Water Street, the “Maple Tree” corner
+- **Theme:** Then to now · 1880s
+
+### e3-false-creek-7th-birch-1890.jpg
+- **Title:** Looking west across False Creek from 7th Avenue and Birch Street Vancouver circa 1890
+- **Date:** circa 1890
+- **Creator:** From the collection of James Skitt Matthews
+- **Source:** https://commons.wikimedia.org/wiki/File:Looking_west_across_False_Creek_from_7th_Avenue_and_Birch_Street_Vancouver_circa_1890.jpg
+- **Original holding / ID:** City of Vancouver Archives, Van Sc P41.1
+- **Licence:** Public domain
+- **Caption:** Looking west across False Creek and its tidal flats, with the Granville Street Bridge and CPR trestle
+- **Theme:** Before the city · 1890s
+
+### e3-carr-senakw-1908.jpg
+- **Title:** "Indian Encampment" by Emily Carr, c. 1908, depicting Senakw
+- **Date:** c. 1908
+- **Creator:** Emily Carr
+- **Source:** https://commons.wikimedia.org/wiki/File:%22Indian_Encampment%22_by_Emily_Carr,_c._1908,_depicting_Senakw.jpg
+- **Original holding / ID:** See Commons file page
+- **Licence:** Public domain
+- **Caption:** Sen̓áḵw, the Sḵwx̱wú7mesh village near today’s Burrard Bridge, painted by Emily Carr
+- **Theme:** Before the city · 1900s
+
+### e3-chief-george-1906.jpg
+- **Title:** Chief George and daughter
+- **Date:** 1906
+- **Creator:** Unknown
+- **Source:** https://commons.wikimedia.org/wiki/File:Chief_George_and_daughter.jpg
+- **Original holding / ID:** BC Archives (Royal BC Museum)
+- **Licence:** Public domain
+- **Caption:** Chepx̱im Siy̓am (Chief George) of Sen̓áḵw with his daughter
+- **Theme:** Before the city · 1900s
+
+### e3-squamish-leaders-1906.jpg
+- **Title:** Skwxwu7mesh Siiyamiyn
+- **Date:** 1906
+- **Creator:** Unknown
+- **Source:** https://commons.wikimedia.org/wiki/File:Skwxwu7mesh_Siiyamiyn.jpg
+- **Original holding / ID:** Reproduced in Matthews, Conversations with Khahtsahlano
+- **Licence:** Public domain
+- **Caption:** Sḵwx̱wú7mesh leaders on the North Vancouver wharf seeing off Joe Capilano for England
+- **Theme:** Before the city · 1900s
+
+### e3-musqueam-chiefs-1913.jpg
+- **Title:** Xwmetskwiyam Image 001
+- **Date:** 24 June 1913
+- **Creator:** Unknown
+- **Source:** https://commons.wikimedia.org/wiki/File:Xwmetskwiyam_Image_001.png
+- **Original holding / ID:** BC Archives (Royal BC Museum)
+- **Licence:** Public domain
+- **Caption:** xʷməθkʷəy̓əm (Musqueam) leaders, 1913
+- **Theme:** Before the city · 1910s
+
+### e3-cpr-townsite-1887.jpg
+- **Title:** City of Vancouver Canadian Pacific town site 1887
+- **Date:** 1887
+- **Creator:** Ross and Ceperley, Real Estate and Insurance Agents
+- **Source:** https://commons.wikimedia.org/wiki/File:City_of_Vancouver_Canadian_Pacific_town_site_1887.jpg
+- **Original holding / ID:** City of Vancouver Archives
+- **Licence:** Public domain
+- **Caption:** Real-estate map of the CPR townsite, 1887
+- **Theme:** Then to now · 1880s
+
+### e3-port-moody-camp-1886.jpg
+- **Title:** People at logging camp in Port Moody, British Columbia, 1886 (AL+CA 7098)
+- **Date:** 1886
+- **Creator:** J.A. Brock
+- **Source:** https://commons.wikimedia.org/wiki/File:People_at_logging_camp_in_Port_Moody,_British_Columbia,_1886_(AL%2BCA_7098).jpg
+- **Original holding / ID:** University of Washington Libraries, AL+CA 7098
+- **Licence:** Public domain
+- **Caption:** A logging camp at Port Moody, at the head of Burrard Inlet
+- **Theme:** Then to now · 1880s
+
+### e3-beaver-wreck-1888.jpg
+- **Title:** Wreck of the steamboat BEAVER, Prospect Point, British Columbia, 1888
+- **Date:** 1888
+- **Creator:** Unknown
+- **Source:** https://commons.wikimedia.org/wiki/File:Wreck_of_the_steamboat_BEAVER,_Prospect_Point,_British_Columbia,_1888_(TRANSPORT_409).jpg
+- **Original holding / ID:** University of Washington Libraries, TRANSPORT 409
+- **Licence:** Public domain
+- **Caption:** Wreck of the steamer Beaver at Prospect Point
+- **Theme:** Then to now · 1880s
+
+### e3-chief-harry-1916.jpg
+- **Title:** Portrait of Chief Harry, North Vancouver
+- **Date:** [1916?]
+- **Creator:** C.S. Hatch
+- **Source:** https://commons.wikimedia.org/wiki/File:Portrait_of_Chief_Harry,_North_Vancouver_(12993361173).jpg
+- **Original holding / ID:** UBC Archives
+- **Licence:** No known copyright restrictions
+- **Caption:** Chief Harry, North Vancouver
+- **Theme:** Then to now · 1910s
+
+### e3-granville-bridge-1888.jpg
+- **Title:** Granville Street Bridge Vancouver circa 1888
+- **Date:** circa 1888
+- **Creator:** From the collection of James Skitt Matthews
+- **Source:** https://commons.wikimedia.org/wiki/File:Granville_Street_Bridge_Vancouver_circa_1888.jpg
+- **Original holding / ID:** City of Vancouver Archives, SGN 20
+- **Licence:** Public domain
+- **Caption:** The first Granville Street Bridge across False Creek
+- **Theme:** Then to now · 1880s
+
+### e3-council-after-fire-1886.jpg
+- **Title:** First Vancouver City Council Meeting after the fire. VPL 1089
+- **Date:** 1886
+- **Creator:** H.T. Devine
+- **Source:** https://commons.wikimedia.org/wiki/File:First_Vancouver_City_Council_Meeting_after_the_fire._VPL_1089.jpg
+- **Original holding / ID:** Vancouver Public Library, 1089
+- **Licence:** No known copyright restrictions
+- **Caption:** The first City Council meeting after the fire, in a tent
+- **Theme:** Then to now · 1880s
+
+### e3-empress-india-1891.jpg
+- **Title:** Empress of India passing through First Narrows Vancouver 1891
+- **Date:** 29 April 1891
+- **Creator:** From the collection of James Skitt Matthews
+- **Source:** https://commons.wikimedia.org/wiki/File:Empress_of_India_passing_through_First_Narrows_Vancouver_1891.jpg
+- **Original holding / ID:** City of Vancouver Archives, Bo P430
+- **Licence:** Public domain
+- **Caption:** The Empress of India entering through the First Narrows
+- **Theme:** Then to now · 1890s
+
+### m3-burrard-bridge-bikelane-2009.jpg
+- **Title:** Burrard bridge bike lane
+- **Date:** July 2009
+- **Creator:** Janos/Janus (Flickr)
+- **Source:** https://commons.wikimedia.org/wiki/File:Burrard_bridge_bike_lane.jpg
+- **Original holding / ID:** Flickr 3708822979
+- **Licence:** CC BY 2.0
+- **Caption:** The Burrard Bridge bike lane in its first days
+- **Theme:** Then to now · 2000s
+
+### m3-granville-market-2015.jpg
+- **Title:** Granville Island Public Market 2015
+- **Date:** 2015
+- **Creator:** Jay Esplana
+- **Source:** https://commons.wikimedia.org/wiki/File:Granville_Island_Public_Market_2015.jpg
+- **Original holding / ID:** —
+- **Licence:** CC BY 4.0
+- **Caption:** Granville Island Public Market
+- **Theme:** Then to now · 2010s
+
+### m3-habitat-island-2020.jpg
+- **Title:** Habitat Island, Olympic Village during coronavirus pandemic
+- **Date:** 2020
+- **Creator:** GoToVan (Flickr)
+- **Source:** https://commons.wikimedia.org/wiki/File:Habitat_Island,_Olympic_Village_during_coronavirus_pandemic_(49761668033).jpg
+- **Original holding / ID:** Flickr 49761668033
+- **Licence:** CC BY 2.0
+- **Caption:** Habitat Island, False Creek
+- **Theme:** Then to now · 2020s
+
+### m3-athletes-village-2010.jpg
+- **Title:** Athletes Village, Vancouver 2010
+- **Date:** February 2010
+- **Creator:** Jonathan Pope
+- **Source:** https://commons.wikimedia.org/wiki/File:Athletes_Village,_Vancouver_2010.jpg
+- **Original holding / ID:** —
+- **Licence:** CC BY 2.0
+- **Caption:** Athletes Village (now Olympic Village) during the 2010 Games
+- **Theme:** Then to now · 2010s
+
+### m3-skytrain-columbia-2006.jpg
+- **Title:** SkyTrain enters Columbia Station
+- **Date:** 2006
+- **Creator:** Richard Eriksson
+- **Source:** https://commons.wikimedia.org/wiki/File:SkyTrain_enters_Columbia_Station.jpg
+- **Original holding / ID:** —
+- **Licence:** CC BY 2.0
+- **Caption:** SkyTrain entering Columbia Station, New Westminster
+- **Theme:** Then to now · 2000s
+
+### m3-millennium-gate-2013.jpg
+- **Title:** Millennium Gate Vancouver
+- **Date:** 2013
+- **Creator:** Boris Kasimov (Flickr)
+- **Source:** https://commons.wikimedia.org/wiki/File:Millennium_Gate_Vancouver_(9555419191).jpg
+- **Original holding / ID:** Flickr 9555419191
+- **Licence:** CC BY 2.0
+- **Caption:** Chinatown’s Millennium Gate
+- **Theme:** Then to now · 2010s
+
+### m3-robson-dancing-2016.jpg
+- **Title:** Friday Night Dancing, July 15th, 2016
+- **Date:** July 2016
+- **Creator:** GoToVan (Flickr)
+- **Source:** https://commons.wikimedia.org/wiki/File:Friday_Night_Dancing,_July_15th,_2016_(27721517663).jpg
+- **Original holding / ID:** Flickr 27721517663
+- **Licence:** CC BY 2.0
+- **Caption:** Friday-night dancing at Robson Square
+- **Theme:** Then to now · 2010s
+
+### m3-seawall-2011.jpg
+- **Title:** Vancouver Sea Wall
+- **Date:** 2011
+- **Creator:** Guilhem Vellut (Flickr)
+- **Source:** https://commons.wikimedia.org/wiki/File:Vancouver_Sea_Wall_(5875495275).jpg
+- **Original holding / ID:** Flickr 5875495275
+- **Licence:** CC BY 2.0
+- **Caption:** The seawall
+- **Theme:** Then to now · 2010s
+
+### m3-beaver-lake-2011.jpg
+- **Title:** Beaver Lake @ Stanley Park
+- **Date:** 2011
+- **Creator:** Guilhem Vellut (Flickr)
+- **Source:** https://commons.wikimedia.org/wiki/File:Beaver_Lake_@_Stanley_Park_(5775275476).jpg
+- **Original holding / ID:** Flickr 5775275476
+- **Licence:** CC BY 2.0
+- **Caption:** Beaver Lake, Stanley Park
+- **Theme:** Then to now · 2010s
+
+### m3-false-creek-seawall-2020.jpg
+- **Title:** False Creek Seawall during coronavirus pandemic
+- **Date:** April 2020
+- **Creator:** GoToVan (Flickr)
+- **Source:** https://commons.wikimedia.org/wiki/File:False_Creek_Seawall_during_coronavirus_pandemic_(49767333551).jpg
+- **Original holding / ID:** Flickr 49767333551
+- **Licence:** CC BY 2.0
+- **Caption:** Walking and cycling on the False Creek seawall
+- **Theme:** Then to now · 2020s
+
+## Before the city: research, data and the 1850s map (added October 17, 2026)
+
+The map "Before the city: the 1850s" (assets/zoom/dg-before-1850s.svg) and the 3D page (before/) are **original drawings**. No Nation's map or image was copied or traced. Names are spelled as each Nation publishes them; where two Nations name the same place, both names are given. Only places with a published source are shown, and the dots mark general areas. The site and evidence data, with a source link for every line, is in before/data.json.
+
+**Inspiration (not traced):** Bruce Macdonald, *Vancouver: A Visual History* (Talonbooks, 1992). Caption used: "After the approach of Bruce Macdonald, Vancouver: A Visual History, 1992. Original drawing from cited sources." We did not use the user's photos of the book's map.
+
+### Research by the Nations (linked and credited; nothing reproduced)
+- Musqueam Indian Band: place names map, https://www.musqueam.bc.ca/our-story/our-territory/place-names-map/ ; "Portion of c̓əsnaʔəm village and burial site returned", https://www.musqueam.bc.ca/portion-of-c%CC%93%C9%99sna%CA%94%C9%99m-village-and-burial-site-returned-to-musqueam-indian-band/
+- Musqueam Teaching Kit (Musqueam and the Museum of Anthropology at UBC), https://www2.moa.ubc.ca/musqueamteachingkit/ (chapters 1, 4 and 6)
+- Musqueam rights recognition agreement text (Crown-Indigenous Relations and Northern Affairs Canada): place names xʷməlc̓θən, c̓əsnaʔəm, sqʷsaθən, sɬχil̕əx; "120+" place names, https://rcaanc-cirnac.gc.ca/eng/1772569109838/1772569128589
+- Squamish Nation (Sḵwx̱wú7mesh Úxwumixw): Sen̓áḵw, https://www.squamish.net/partnerships-entities/partnerships/senakw/ ; senakw.com, "The land", https://senakw.com/the-land/
+- Squamish Atlas, Kwi Awt Stelmexw / Snichim Foundation (X̱wáy̓x̱way; seasonal villages including Sen̓áḵw and Iy̓ál̓mexw), https://squamishatlas.com/ . Its maps need permission to reproduce, so we link only.
+- Eslhá7an (Mission IR No. 1), the spelling from the Squamish Nation's Squamish–English Dictionary (2011), as cited at https://en.wikipedia.org/wiki/Eslha7an
+- Tsleil-Waututh Nation, "Our Story" (oral history of up to 10,000 people; over 600 members today; səlilwət = Burrard Inlet), https://twnation.ca/our-story/
+- Jesse Morin, expert report for the Tsleil-Waututh Nation (TWN Sacred Trust), https://twnsacredtrust.ca/wp-content/uploads/2015/05/Morin-Expert-Report-PUBLIC-VERSION-sm.pdf
+
+### Other researchers and institutions (linked and credited)
+- Museum of Anthropology at UBC, "c̓əsnaʔəm, the city before the city", https://moa.ubc.ca/exhibition/c%CC%93%C9%99sna%CA%94%C9%99m-the-city-before-the-city/
+- City of Vancouver, "Musqueam territory", https://vancouver.ca/people-programs/musqueam-territory.aspx ; "City of Reconciliation", https://vancouver.ca/people-programs/city-of-reconciliation.aspx
+- PLOS One (2023), radiocarbon chronology for təmtəmíxʷtən and Burrard Inlet, https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0289797
+- UBC Institute for the Oceans and Fisheries (2023), chum fishery at təmtəmíxʷtən, https://oceans.ubc.ca/2023/08/30/salmon-bones-confirm-sustainable-chum-fishery-for-2500-years-under-tsleil-waututh-nation/
+- UBC thesis, ecosystem model of Burrard Inlet 1750–1980 (an estimate), https://doi.org/10.14288/1.0445601
+- Major J.S. Matthews, *Early Vancouver*, vol. 4 (City of Vancouver Archives), Stanley Park driveway, 1888, https://archives.vancouver.ca/projects/EarlyVan/SearchEarlyVan/Vol4pdf/MatthewsEarlyVancouverVol4_StanleyParkDriveway1888.pdf
+- Sean Kheraj, "Stanley Park", The Canadian Encyclopedia, https://thecanadianencyclopedia.ca/en/article/stanley-park
+- Jean Barman, *Stanley Park's Secret* (Harbour Publishing, 2005), https://harbourpublishing.com/products/9781550173468 (further reading)
+- BC Studies, "The Kitsilano Scandal", https://ojs.library.ubc.ca/index.php/bcstudies/article/view/198880 ; BC Studies article citing Cole Harris, "Voices of Smallpox around the Strait of Georgia" (in *The Resettlement of British Columbia*, UBC Press, 1997), https://ojs.library.ubc.ca/index.php/bcstudies/article/view/184507
+- Robert Boyd's 1862 smallpox estimate, as summarised by HistoryLink, https://www.historylink.org/File/5171 (coast-wide, not a Vancouver figure)
+- CBC News (2019), Sen̓áḵw history, https://www.cbc.ca/news/canada/british-columbia/little-known-history-of-squamish-nation-land-in-vancouver-1.5104584
+- Native Land Digital, https://native-land.ca/ (further reading)
+
+### Data used to draw the map and the 3D terrain
+- Shoreline and streams, 1880–1920: Lesack & Proctor, "Vancouver's Old Streams" (UBC Library, Borealis), **CC0 1.0**, doi:10.5683/SP2/UEJGTV, digitised from Sharon J. Proctor, *Vancouver's Old Streams* (Vancouver Public Aquarium Association, 1978). This is the best open shoreline we found; it maps 1880–1920, not the 1850s, and the map says so.
+- Terrain: AWS Terrain Tiles (Mapzen Terrarium), zoom 13, https://registry.opendata.aws/terrain-tiles/ . Elevation is today's, raised 2× in 3D.
+- Today's coastline and the Fraser River: © OpenStreetMap contributors, ODbL, https://www.openstreetmap.org/copyright
+- "Shore filled since the 1880s" (about 4.6 km²) is our own approximate calculation: the area inside the 1880–1920 shoreline that is land at sea level today. Piers and jetties were removed from the 1850s view with a simple filter.
+- 3D software: three.js r160 (MIT licence), vendored at before/vendor/ with its licence.
+
+## Then to now: sources for the dated wins (added October 17, 2026)
+Every win on the timeline has a date and a source:
+- Seawall begun 1917; Stanley Park loop completed September 21, 1980; 28 km today: https://vancouver.ca/parks-recreation-culture/seawall.aspx
+- Chinatown freeway route dropped 1968; remaining proposals died 1972: Vancouver Heritage Foundation, https://placesthatmatter.ca/location/georgia-st-viaduct/
+- SPOTA, 1968, at the Chan family's kitchen table, 600+ members: https://placesthatmatter.ca/location/walter-and-mary-lee-chan-house/
+- West End traffic calming 1973–74; False Creek South planned 1974 and built from 1975; Expo Line December 1985 / January 1986; 1997 Transportation Plan: this site's history essay (essays/history.html) and its sources
+- Granville Island transferred to CMHC 1973: https://www.pps.org/article/how-granville-island-came-to-be ; Public Market opened July 12, 1979: https://granvilleisland.com/news/the-public-markets-44th-anniversary
+- Granville Mall 1974: https://web.archive.org/web/20120717031034/http:/vancouver.ca/commsvcs/currentplanning/granvilleredesign/history.htm
+- Robson Square completed 1983: https://placesthatmatter.ca/location/robson-square/
+- Greenways Plan, July 1995: https://vancouver.ca/files/cov/vancouver-greenways-plan-1995.pdf
+- Sen̓áḵw land returned 2003: https://www.squamish.net/partnerships-entities/partnerships/senakw/
+- Stanley Park windstorm (December 2006) and restoration: https://vancouver.ca/parks-recreation-culture/stanley-park-restoration.aspx
+- Herring spawn found in False Creek, March 2009: https://falsecreekcc.ca/true-or-false-creek-station02/ ; https://vancouversun.com/news/metro/vancouver-wildlife-returning-to-the-city ; net panels: https://www.squamishstreamkeepers.org/what-we-do/pacific-herring-restoration/herring-restoration-in-false-creek-vancouver-bc/
+- Burrard Bridge bike-lane trial opened July 13, 2009: https://council.vancouver.ca/20091103/documents/ttra1.pdf
+- Chinatown National Historic Site, 2011: https://www.pc.gc.ca/apps/DFHD/page_nhs_eng.aspx?id=12951
+- Still Creek chum, 2012 (first in nearly eight decades; through 2016): https://stillmoonarts.ca/streamkeepers/ ; CBC 2013: https://www.cbc.ca/news/canada/british-columbia/salmon-make-a-miraculous-reappearance-in-east-vancouver-1.2416126
+- Hinge Park beaver, April 2013: https://vancouversun.com/news/metro/olympic-village-gets-furry-new-resident-beaver-moves-in ; lodge, January 2016: https://www.cbc.ca/news/canada/british-columbia/olympic-village-beavers-stay-1.3389265
+- Hinge Park wetland and rainwater: https://vancouver.ca/home-property-development/green-rainwater-infrastructure-projects.aspx
+- 800 Robson permanent plaza, April 20, 2016: https://vancouver.ca/streets-transportation/robson-plaza-consultation.aspx ; https://council.vancouver.ca/20160420/documents/cfsc1c.pdf
+- Hogan's Alley MOU, September 2022: https://vancouver.ca/people-programs/hogan-s-alley-mou.aspx ; https://www.hogansalleysociety.org/aboutus
+- UNDRIP Strategy approved October 25, 2022: https://vancouver.ca/news-calendar/council-approves-groundbreaking-undrip-strategy-for-vancouver.aspx
