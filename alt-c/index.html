@@ -43,18 +43,22 @@ body{background:#2a2c31}
 .fine{font-size:.66rem;color:#5a5346;padding:.5rem 1.1rem .7rem;line-height:1.3}
 body.export .poster{width:680px;margin:0;box-shadow:none;min-height:0}
 
-</style></head><body>
+.map .cmap{border:0;border-bottom:4px solid var(--ink);max-width:none}
+body.export .poster{width:900px;display:grid;grid-template-columns:600px 1fr;grid-template-areas:"top top" "map nums" "map bul" "cta cta" "fine fine";grid-template-rows:auto auto 1fr auto auto;min-height:1125px}
+body.export .top{grid-area:top}body.export .map{grid-area:map;border-right:4px solid var(--ink)}body.export .nums{grid-area:nums;display:flex;flex-direction:column}
+body.export .nums>div{border-left:0!important;border-bottom:3px solid var(--ink)}body.export .bul{grid-area:bul}body.export .cta{grid-area:cta}body.export .fine{grid-area:fine}
+body.export .cm-bar,body.export .cm-note,body.export .cm-key{display:none}body.export .map .cmap{border-bottom:0}</style><link rel="stylesheet" href="../assets/cmap.css"></head><body>
 <main class="poster" id="poster">
 <div class="top"><span class="k">Vancouver · Oct 17, 2026</span><h1>Neighbours stopped a freeway through our core. <em>Now it's our turn to choose.</em></h1></div>
 <div class="nums"><div><span class="num">500+</span><span>people at city hall, Nov 23, 1967</span></div><div><span class="num">21,000+</span><span>petition signatures, 1972</span></div><div><span class="num">28 km</span><span>of seawall we kept</span></div></div>
-<div class="map"><svg class="route-svg" viewBox="0 0 1200 943" role="img" aria-labelledby="rt"><title id="rt">Approximate routes of the unbuilt 1960s freeway plan, drawn over a real coastline</title><image href="../assets/coast-downtown.jpg" width="1200" height="943"/><polyline class="rt-plan" pathLength="1" points="315.0,379.7 405.0,411.9 453.8,437.2 457.5,483.2 487.5,517.7 585.0,520.0 660.0,520.0 900.0,506.2 1050.0,494.7"><title>1967 waterfront freeway (approximate, unbuilt)</title></polyline><polyline class="rt-plan" pathLength="1" points="465.0,517.7 465.0,713.1 465.0,885.5"><title>Columbia/Quebec corridors (approximate, unbuilt)</title></polyline><polyline class="rt-plan" pathLength="1" points="300.0,368.2 352.5,270.4 375.0,184.1 412.5,80.6"><title>Third crossing of Burrard Inlet (approximate, unbuilt)</title></polyline><polyline class="rt-built" pathLength="1" points="412.5,483.2 487.5,506.2"><title>Georgia & Dunsmuir viaducts (built)</title></polyline><g class="rt-pt"><circle cx="485" cy="487" r="9"/><text x="499" y="477">Chinatown</text></g><g class="rt-pt"><circle cx="570" cy="512" r="9"/><text x="584" y="502">Strathcona</text></g><g class="rt-pt"><circle cx="503" cy="522" r="9"/><text x="517" y="544">Hogan's Alley</text></g><g class="rt-pt"><circle cx="173" cy="230" r="9"/><text x="187" y="220">Stanley Park</text></g><g class="rt-pt"><circle cx="454" cy="437" r="9"/><text x="468" y="427">Gastown</text></g><g class="rt-stamp" transform="translate(760 640) rotate(-9)"><rect x="-210" y="-58" width="420" height="116" rx="8"/><text x="0" y="16" text-anchor="middle">STOPPED 1968–72</text></g></svg></div>
+<div class="map"><div class="cmap" data-src="../assets/cmap.svg" data-mode="planned"></div></div>
 <ul class="bul">
 <li data-n="1"><b>Planned:</b> a 1967 elevated freeway through the waterfront and Chinatown, and a tunnel near Stanley Park.</li>
 <li data-n="2"><b>Stopped:</b> by residents, merchants and experts. Chinatown and Strathcona survived; Hogan's Alley largely did not.</li>
 <li data-n="3"><b>Next:</b> the viaduct lands, transit across the inlet, a shoreline facing rising seas, and the Stanley Park forest.</li>
 </ul>
 <div class="cta"><strong>Vote. Read the plans. Show up.</strong><a href="/">Read the full story →</a></div>
-<p class="fine">Nonpartisan; endorses no candidate or party. Facts from the project's history and future essays. Routes approximate; coastline from AWS Terrain Tiles. roadsnottaken.github.io</p>
+<p class="fine">Nonpartisan; endorses no candidate or party. Facts from the project's history and future essays. Map © OpenStreetMap contributors (ODbL); plan routes approximate. roadsnottaken.github.io</p>
 </main>
-<script>if(new URLSearchParams(location.search).get('export')){document.body.classList.add('export');var P=document.getElementById('poster'),sv=P.querySelector('.map svg');sv.setAttribute('preserveAspectRatio','xMidYMid slice');sv.style.height='300px';var other=P.offsetHeight-300;sv.style.height=Math.max(220,850-other)+'px';}</script>
-</body></html>
+<script>if(new URLSearchParams(location.search).get('export'))document.body.classList.add('export');</script>
+<script src="../assets/cmap.js"></script></body></html>
