@@ -196,3 +196,57 @@ img.pre,svg.pre{transform:scale(.94);opacity:.35}
 [data-mode=port] .dgrow{flex-wrap:wrap}[data-mode=port] .dg{flex:1 1 100%}
 .wall{columns:5;column-gap:12px}.wall figure{margin:0 0 12px}
 .wall figcaption{font-size:13px}
+/* ---- Before the city + Then to now (added Oct 17, 2026) ---- */
+.nn,.nn *{text-transform:none!important}
+.rg.bf,.rg.tl{width:2700px}
+.bf .nations{margin:0;font:italic 400 52px/1.2 var(--serif);color:var(--bone)}
+.bfgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.3fr) minmax(0,1fr);gap:44px;margin-top:34px;align-items:start}
+.bftext p{margin:0 0 18px;font:400 25px/1.5 Georgia,serif;color:var(--bone)}
+.bftext .cite{font-size:.72em;color:var(--dim)}
+.b3d{display:block;margin-top:26px;text-decoration:none;color:var(--bone);border:2px solid var(--amber);background:var(--ink2)}
+.b3d .ph{display:block;aspect-ratio:16/9;overflow:hidden}.b3d .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.b3d .go{display:block;padding:16px 18px 2px;font:700 48px var(--cond);text-transform:uppercase;color:var(--hot);letter-spacing:.02em}
+.b3d .gs{display:block;padding:0 18px 16px;font:400 17px/1.35 Georgia,serif;color:var(--dim)}
+.bfmap{margin:0;border:2px solid rgba(239,227,204,.25)}
+.bfmap figcaption{font:400 11px/1.45 Georgia,serif;color:var(--dim);padding:8px 10px}
+.bfmap figcaption i{color:var(--amber)}
+.evp .mk,.bfsites .mk,.bfres .mk{margin:0 0 10px;font:600 22px var(--cond);letter-spacing:.24em;text-transform:uppercase;color:var(--amber)}
+.evn{margin:0 0 14px;font:italic 15px/1.4 Georgia,serif;color:var(--dim)}
+.evi{border-left:3px solid var(--amber);padding:2px 0 2px 14px;margin:0 0 16px}
+.evi b{display:block;font:500 15px/1.25 var(--cond);letter-spacing:.06em;color:var(--dim)}
+.evi span{display:block;font:700 28px/1.15 var(--serif);color:var(--bone);margin:3px 0}
+.evi small{display:block;font:400 11.5px/1.35 Georgia,serif;color:var(--dim)}
+.evi a,.bfsites a,.bfres a,.wins a,.bfnote a,.tln a,.bfmap a{color:var(--amber)}
+.bfrow{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:44px;margin-top:34px;padding-top:20px;border-top:2px solid rgba(239,227,204,.25)}
+.bfsites ul{margin:0;padding:0;list-style:none;columns:2;column-gap:28px}
+.bfsites li{break-inside:avoid;margin:0 0 12px;font:400 15px/1.45 Georgia,serif;color:var(--bone)}
+.bfsites li b{font:600 19px/1.2 "Noto Sans","Segoe UI",system-ui,sans-serif;color:#ffe2b8}
+.bfsites li i{color:var(--dim)}
+.bfsites li span{display:block;font-size:11px;color:var(--dim)}
+.bfres h5{margin:0 0 6px;font:500 15px var(--cond);letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+.bfres ul{margin:0 0 14px;padding-left:18px;columns:2;column-gap:24px;font:400 14px/1.45 Georgia,serif}
+.bfres p{font:400 12px/1.4 Georgia,serif;color:var(--dim)}
+.bfstrip{margin-top:30px;columns:8;column-gap:10px}
+.bfstrip figure{break-inside:avoid;margin:0 0 12px}
+.bfstrip figcaption,.tli figcaption{padding:5px 2px 2px;font:400 9px/1.35 Georgia,serif;color:var(--dim)}
+.at{display:block;font-style:italic;opacity:.8}
+.bfnote{margin:18px 0 0;max-width:1500px;font:400 17px/1.5 Georgia,serif;color:var(--dim)}
+.bfnote b{color:var(--bone)}
+.tl .tw{max-width:none}
+.kl{display:inline-block;margin-left:18px;font:500 20px var(--cond);letter-spacing:.08em;color:var(--bone)}
+.kl i{display:inline-block;width:22px;height:8px;margin:0 6px 0 16px;vertical-align:middle}
+.k-c{--k:var(--hot)}.k-p{--k:var(--amber)}.k-n{--k:#8fd0a6}.k-h{--k:#8a7f6d}
+.kl i{background:var(--k)}
+.tlg{list-style:none;margin:34px 0 0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:30px}
+.dec{background:var(--ink2);border-top:6px solid var(--amber);padding:18px 18px 20px}
+.dk{margin:0;font:700 62px/1 var(--cond);color:var(--amber);letter-spacing:.02em}
+.dec h3{margin:6px 0 14px;font:italic 700 30px/1.15 var(--serif);color:var(--bone)}
+.tli{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
+.tli figure{margin:0}.tli figure:only-child{grid-column:1/3}
+.wins{list-style:none;margin:0;padding:0}
+.win{border-left:5px solid var(--k);padding:2px 0 2px 12px;margin:0 0 14px;font:400 17px/1.4 Georgia,serif;color:var(--bone)}
+.win b{display:block;font:600 18px var(--cond);letter-spacing:.06em;color:var(--k)}
+.win small{display:block;font:400 11px/1.3 Georgia,serif;color:var(--dim)}
+.tln{margin:22px 0 0;font:400 16px/1.5 Georgia,serif;color:var(--dim)}
+[data-mode=port] .tlg{grid-template-columns:repeat(4,minmax(0,1fr))}
+[data-mode=port] .bfstrip{columns:7}

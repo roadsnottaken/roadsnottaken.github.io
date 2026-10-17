@@ -9,25 +9,22 @@ var s=1,tx=0,ty=0,minS=0.02,lod=-1,box={x:0,y:0,w:1,h:1},homeR=null,allR=null,mo
 var VV=window.visualViewport,TOP=56,BOT=0;
 function vsize(){return VV?{w:Math.round(VV.width),h:Math.round(VV.height)}:{w:innerWidth,h:innerHeight}}
 var vw=vsize().w,vh=vsize().h;
-var R={};['hero','t1','t2','t3','map','story','archive','essays'].forEach(function(k){R[k]=document.getElementById('rg-'+k)});
-var ROWS={land:[['hero'],['t1','t2','t3'],['map','story','archive'],['essays']],port:[['hero'],['t1','t2'],['t3','map'],['story','archive'],['essays']]};
+var R={};['before','hero','tl','t1','t2','t3','map','story','archive','essays'].forEach(function(k){R[k]=document.getElementById('rg-'+k)});
+var ROWS={land:[['before'],['hero'],['tl'],['t1','t2','t3'],['map','story','archive'],['essays']],port:[['before'],['hero'],['tl'],['t1','t2'],['t3','map'],['story','archive'],['essays']]};
 var GAP=50;
 function layout(){
   var vz=vsize();vw=vz.w;vh=vz.h;
   var m=vw/vh<1.05?'port':'land';mode=m;W.setAttribute('data-mode',m);
   var rows=ROWS[m],y=0,maxw=0,placed=[];
-  R.hero.style.width='';
+  R.hero.style.width='';R.before.style.width='';R.tl.style.width='';
   rows.forEach(function(r){var w=0;r.forEach(function(k,i){w+=R[k].offsetWidth+(i?GAP:0)});maxw=Math.max(maxw,w)});
   // the hero spans the full row width so there is no empty dark margin beside it
-  R.hero.style.width=maxw+'px';
+  R.hero.style.width=maxw+'px';R.before.style.width=maxw+'px';R.tl.style.width=maxw+'px';
   rows.forEach(function(r){var w=0,h=0;r.forEach(function(k,i){w+=R[k].offsetWidth+(i?GAP:0);h=Math.max(h,R[k].offsetHeight)});
     var x=(maxw-w)/2;r.forEach(function(k){var el=R[k];el.style.left=x+'px';el.style.top=y+'px';el._r={x:x,y:y,w:el.offsetWidth,h:el.offsetHeight};x+=el.offsetWidth+GAP});y+=h+GAP});
   box={x:0,y:0,w:maxw,h:y-GAP};W.style.width=box.w+'px';W.style.height=box.h+'px';
-  var hk=m==='port'?['hero','t1','t2','t3']:['hero','t1','t2','t3'];
-  homeR=union(hk.map(function(k){return R[k]._r}));
-  // in portrait, the "home" view is the hero plus the three theme headers
-  if(m==='port'){var t3=R.t3._r,hd=R.t3.querySelector('.rh');homeR=union([R.hero._r,{x:t3.x,y:t3.y,w:t3.w,h:hd.offsetHeight+40},R.t1._r]);homeR.h=t3.y+hd.offsetHeight+40-homeR.y}
-  else{var hd1=R.t1.querySelector('.rh');homeR={x:R.t1._r.x,y:0,w:R.t3._r.x+R.t3._r.w-R.t1._r.x,h:R.t1._r.y+hd1.offsetHeight+380}}
+  // home: the 'Before the city' region and the hero message, which open the canvas
+  homeR=union([R.before._r,R.hero._r]);
   allR=box;
   // 1898 map backdrop behind the theme rows
   var BG=document.getElementById('bgmap');if(BG){var y0=R.t1._r.y-30,y1=m==='port'?R.t3._r.y+R.t3._r.h:R.t1._r.y+Math.max(R.t1._r.h,R.t2._r.h,R.t3._r.h);BG.style.cssText='left:0;top:'+y0+'px;width:'+box.w+'px;height:'+(y1-y0+30)+'px'}
@@ -197,7 +194,7 @@ function lazy(){var v=view(),m=Math.max(v.w,v.h)*.25;
 // ---- minimap
 var MM=document.getElementById('mm'),MMI=MM.querySelector('.mmi'),MV=MM.querySelector('.vw'),mk=1;
 function buildMinimap(){var mw=vw<500?92:128,mh=vw<500?120:120;mk=Math.min(mw/box.w,mh/box.h);MM.style.width=(box.w*mk+4)+'px';MM.style.height=(box.h*mk+4)+'px';
-  MMI.innerHTML='';Object.keys(R).forEach(function(k){var r=R[k]._r,i=document.createElement('i');i.className=k==='hero'?'h':/^t\d/.test(k)?'t':'';
+  MMI.innerHTML='';Object.keys(R).forEach(function(k){var r=R[k]._r,i=document.createElement('i');i.className=(k==='hero'||k==='before')?'h':/^t\d/.test(k)?'t':'';
     i.style.cssText='left:'+(2+r.x*mk)+'px;top:'+(2+r.y*mk)+'px;width:'+Math.max(2,r.w*mk)+'px;height:'+Math.max(2,r.h*mk)+'px';i.title=R[k].getAttribute('data-name')||k;MMI.appendChild(i)})}
 function drawMM(){var v=view();var x=Math.max(0,v.x),y=Math.max(0,v.y),x1=Math.min(box.w,v.x+v.w),y1=Math.min(box.h,v.y+v.h);
   MV.style.cssText='left:'+(2+x*mk)+'px;top:'+(2+y*mk)+'px;width:'+Math.max(3,(x1-x)*mk)+'px;height:'+Math.max(3,(y1-y)*mk)+'px'}
