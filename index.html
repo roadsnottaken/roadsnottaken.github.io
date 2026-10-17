@@ -2,79 +2,69 @@
 <title>Roads Not Taken: Vancouver chose its core. It's choosing again.</title>
 <meta name="description" content="Vancouverites stopped the freeways that would have cut through their city's core. That choice made the city we know, and the same kind of choice is in front of us now.">
 <meta property="og:title" content="Roads Not Taken: Vancouver chose its core. It's choosing again."><meta property="og:description" content="Vancouverites stopped the freeways that would have cut through their city's core. That choice made the city we know, and the same kind of choice is in front of us now."><meta property="og:image" content="alt-c/poster.png">
+<meta name="theme-color" content="#0d0c0b">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap">
-<link rel="stylesheet" href="assets/cmap.css">
-<style>
-:root{--ink:#16181d;--paper:#f7f1e3;--paper2:#efe6d2;--red:#e0452a;--head:Oswald,"Arial Narrow","Roboto Condensed",sans-serif}
-*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
-a{color:inherit}
-.bar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:1rem;padding:.6rem max(1rem,env(safe-area-inset-left));background:var(--ink);border-bottom:3px solid var(--red);font:600 .9rem var(--head);letter-spacing:.06em;text-transform:uppercase}
-.bar a{color:var(--paper);text-decoration:none;min-height:30px;display:inline-flex;align-items:center}.bar .brand{margin-right:auto;font-size:1.05rem}
-.bar .opt{display:none}@media(min-width:700px){.bar .opt{display:inline-flex}}
-.hero{background:var(--ink);color:#fff;padding:2.6rem max(1.1rem,env(safe-area-inset-left)) 2.4rem;position:relative;overflow:hidden}
-.hero::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,255,255,.025) 3px 4px);pointer-events:none}
-.in{max-width:1100px;margin:0 auto;position:relative}
-.k{display:inline-block;background:var(--red);color:#fff;font:600 .85rem var(--head);letter-spacing:.16em;padding:.15rem .6rem;text-transform:uppercase}
-.hero h1{font:700 clamp(2.5rem,9vw,5.6rem)/.95 var(--head);text-transform:uppercase;margin:.8rem 0 1rem;max-width:14ch}
-.hero h1 em{font-style:normal;color:var(--red)}
-.hero p.msg{font-size:clamp(1.1rem,2.6vw,1.45rem);max-width:40ch;color:#efe6d2;margin:0 0 1.4rem}
-.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 1.2rem;background:var(--red);color:#fff;text-decoration:none;font:600 1rem var(--head);letter-spacing:.06em;text-transform:uppercase;border:3px solid var(--red)}
-.btn.ghost{background:transparent;border-color:#efe6d2;color:#efe6d2;margin-left:.5rem}
-section{padding:2.4rem max(1rem,env(safe-area-inset-left))}
-h2{font:700 clamp(1.8rem,5vw,2.8rem)/1 var(--head);text-transform:uppercase;margin:0 0 .5rem}
-.lede{margin:0 0 1.2rem;max-width:60ch;color:#4a4236}
-.mapsec{background:var(--paper2)}
-.grid{display:grid;grid-template-columns:1fr;gap:1rem}
-@media(min-width:620px){.grid{grid-template-columns:1fr 1fr}}@media(min-width:980px){.grid{grid-template-columns:repeat(3,1fr)}}
-.card{display:flex;flex-direction:column;background:#fff;border:3px solid var(--ink);text-decoration:none;box-shadow:6px 6px 0 var(--ink);transition:transform .15s,box-shadow .15s}
-.card:hover,.card:focus-visible{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--red)}
-.card img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;border-bottom:3px solid var(--ink);background:var(--ink)}
-.card .t{padding:.8rem .9rem 1rem}.card h3{font:700 1.35rem/1.05 var(--head);text-transform:uppercase;margin:0 0 .3rem}
-.card p{margin:0;font-size:.95rem;color:#4a4236}.card .go{display:block;margin-top:.5rem;font:600 .9rem var(--head);color:var(--red);letter-spacing:.06em;text-transform:uppercase}
-.card .extra{padding:0 .9rem .9rem;margin-top:auto}.card .extra a{font:600 .9rem var(--head);text-transform:uppercase;letter-spacing:.05em;color:var(--ink);display:inline-flex;min-height:40px;align-items:center;border-bottom:2px solid var(--red)}
-.cardwrap{display:flex;flex-direction:column}
-.dl{display:grid;gap:.8rem}@media(min-width:780px){.dl{grid-template-columns:repeat(3,1fr)}}
-.dl a{display:block;padding:1rem;border:3px solid var(--ink);background:#fff;text-decoration:none}
-.dl b{display:block;font:700 1.2rem/1.1 var(--head);text-transform:uppercase}.dl span{font-size:.92rem;color:#4a4236}
-.dl .fmt{display:inline-block;margin-top:.4rem;background:var(--ink);color:#fff;font:600 .75rem var(--head);letter-spacing:.1em;padding:.1rem .45rem}
-.links{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;font:600 1rem var(--head);text-transform:uppercase;letter-spacing:.05em}
-.links a{min-height:44px;display:inline-flex;align-items:center;border-bottom:2px solid var(--red);text-decoration:none}
-footer{background:var(--ink);color:#d9cfb9;padding:1.6rem max(1rem,env(safe-area-inset-left)) calc(1.6rem + env(safe-area-inset-bottom));font-size:.9rem}
-footer a{color:#fff}
-@media (prefers-reduced-motion:reduce){.card{transition:none}}
-</style></head><body>
-<nav class="bar" aria-label="Site"><a class="brand" href="./">Roads Not Taken</a><a class="opt" href="#explore">Explore</a><a class="opt" href="#read">Read</a><a href="story/">Full story</a></nav>
-<header class="hero"><div class="in"><span class="k">Vancouver · Election day Oct 17, 2026</span>
-<h1>Vancouver chose its core. <em>It's choosing again.</em></h1>
-<p class="msg">Vancouverites stopped the freeways that would have cut through their city's core. That choice made the city we know, and the same kind of choice is in front of us now.</p>
-<a class="btn" href="#explore">Choose how to explore ↓</a><a class="btn ghost" href="story/">Full story</a></div></header>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Playfair+Display:ital,wght@0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="assets/cmap.css"><link rel="stylesheet" href="hub.css">
+<script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&'IntersectionObserver' in window)document.documentElement.classList.add('mo')</script>
+</head><body>
+<div class="grain" aria-hidden="true"></div><div class="vig" aria-hidden="true"></div>
 
-<section class="mapsec" id="map"><div class="in"><h2>Planned vs. what we got</h2>
-<p class="lede">Switch between the 1967 freeway plan and today's city. Tap any label for a one-line note, and pinch or use + / − to zoom. Dashed red lines are approximate.</p>
-<div class="cmap" data-src="assets/cmap.svg" data-mode="planned"></div></div></section>
+<header class="hero">
+ <div class="mast"><a class="ttl" href="./">Roads Not Taken</a><nav aria-label="Site"><a class="x" href="#explore">Explore</a><a class="x" href="#read">Read</a><a href="story/">Full story</a></nav></div>
+ <div class="duo"><img src="assets/arch-chinatown-pender-1928.jpg" alt="East Pender Street in Chinatown, 1928" fetchpriority="high"></div>
+ <span class="cap">Chinatown, E Pender St, 1928 · VPL 22642</span>
+ <div class="copy">
+  <span class="kick rv" style="--i:0">Vancouver · October 17, 2026</span>
+  <h1><span class="a rv" style="--i:1">Vancouver chose</span> <span class="b rv" style="--i:2">its core.</span> <span class="c rv" style="--i:3">It's choosing again.</span></h1>
+  <p class="msg rv" style="--i:4">Vancouverites stopped the freeways that would have cut through their city's core. That choice made the city we know, and the same kind of choice is in front of us now.</p>
+  <a class="scroll rv" style="--i:5" href="#explore">Choose how to explore ↓</a>
+ </div>
+</header>
 
-<section id="explore"><div class="in"><h2>Choose how to explore</h2><p class="lede">The same story six ways, from a 30-second read to the full history.</p>
-<div class="grid">
-<a class="card" href="alt-a/"><img src="assets/hub-a.jpg" alt="Then / Now / Next page preview" loading="lazy"><div class="t"><h3>Then / Now / Next</h3><p>Three big moments in 30 seconds, followed by the evidence.</p><span class="go">Scroll the story →</span></div></a>
-<a class="card" href="alt-b/"><img src="assets/hub-b.jpg" alt="What if? comparison page preview" loading="lazy"><div class="t"><h3>What if?</h3><p>Flip between the freeway city that was planned and the city we got.</p><span class="go">Compare →</span></div></a>
-<div class="card cardwrap"><a href="alt-c/" style="text-decoration:none;display:flex;flex-direction:column"><img src="assets/hub-c.jpg" alt="Poster preview" loading="lazy"><div class="t"><h3>The poster</h3><p>One screen to share: three numbers, one map and one ask.</p><span class="go">Open the poster →</span></div></a><div class="extra"><a href="alt-c/poster.png" download="roads-not-taken-poster.png">⤓ Download image (1080×1350)</a></div></div>
-<a class="card" href="story/"><img src="assets/hub-s.jpg" alt="Full story page preview" loading="lazy"><div class="t"><h3>The full story</h3><p>The plan, who stopped it, what grew instead, and what's next.</p><span class="go">Read →</span></div></a>
-<div class="card cardwrap"><a href="story/#models" style="text-decoration:none;display:flex;flex-direction:column"><img src="assets/thumb-terrain.jpg" alt="3D terrain model preview" loading="lazy"><div class="t"><h3>3D models &amp; terrain</h3><p>Explore the North Shore terrain and three concept models in 3D.</p><span class="go">Open the models →</span></div></a><div class="extra"><a href="terrain.html">Terrain only (full screen) →</a></div></div>
-<a class="card" href="story/#explore-map"><img src="assets/thumb-map.jpg" alt="Interactive map preview" loading="lazy"><div class="t"><h3>The interactive map</h3><p>Unbuilt freeways, neighbourhoods, transit and Stanley Park in layers.</p><span class="go">Open the map →</span></div></a>
-</div></div></section>
+<section class="pull">
+ <div class="rv"><blockquote>“Neighbours sat at kitchen tables, knocked on doors and showed up at hearings that <em>ran past midnight.</em>”</blockquote><span class="by">From the future essay</span></div>
+ <div class="duo amber strip rv"><img src="assets/arch-panorama-1910.jpg" alt="Panorama of Vancouver, 1910" loading="lazy"></div>
+</section>
 
-<section class="mapsec" id="read"><div class="in"><h2>Read &amp; download</h2>
-<div class="dl">
-<a href="essays/history.html"><b>The Roads Not Taken</b><span>How Vancouver grew up without freeways: the history essay.</span><br><span class="fmt">ESSAY · HTML</span></a>
-<a href="essays/future.html"><b>The City That Kept Its Options Open</b><span>Vancouver's next fifty years. Speculation is labelled.</span><br><span class="fmt">ESSAY · HTML</span></a>
-<a href="downloads/vancouver-campaign-final.pdf" download><b>The Freeway Vancouver Never Built</b><span>The campaign kit: articles, thread and archive photos, ready to print.</span><br><span class="fmt">PDF · 18 PAGES</span></a>
-</div>
-<div class="links" style="margin-top:1.4rem"><a href="story/#sources">Sources</a><a href="assets/CREDITS.md">Image &amp; map credits</a><a href="alt-c/poster.png" download="roads-not-taken-poster.png">Poster image</a></div>
-</div></section>
+<section class="spread" id="map">
+ <div class="head rv"><span class="no" aria-hidden="true">1967</span><h2>The city they drew.<br>The city we got.<span>Planned vs. built · tap, flip, zoom</span></h2></div>
+ <div class="frame rv"><div class="cmap" data-src="assets/cmap.svg" data-mode="planned"></div></div>
+ <p class="bigcap rv"><b>The map</b>Switch between the 1967 freeway plan and today's city. Tap any label for a one-line note, and pinch or use + / − to zoom. Dashed red lines are approximate.</p>
+</section>
 
-<footer><div class="in"><p><b>Nonpartisan.</b> This is a civic information project for the October 17, 2026 Vancouver municipal election. It doesn't endorse or name any candidate or party. Facts come from the project's history and future essays and its Stanley Park fact sheet, and speculation is labelled.</p>
-<p>Archive photos: City of Vancouver Archives, Vancouver Public Library and Library and Archives Canada (public domain or no known restrictions). Map data © OpenStreetMap contributors (ODbL). No AI-generated images. <a href="assets/CREDITS.md">Full credits</a>.</p></div></footer>
+<section class="toc" id="explore">
+ <span class="lab rv">Contents</span>
+ <h2 class="rv">Choose how <em>to explore</em></h2>
+ <ol>
+  <li class="rv"><a href="alt-a/"><span class="n">01</span><span class="t">Then / Now / <i>Next</i></span><span class="d">Three big moments in 30 seconds, followed by the evidence.</span></a><div class="duo peek" aria-hidden="true"><img src="assets/arch-hastings-carrall-1920s.jpg" alt="" loading="lazy"></div></li>
+  <li class="rv"><a href="alt-b/"><span class="n">02</span><span class="t">What <i>if?</i></span><span class="d">Flip between the freeway city that was planned and the city we got.</span></a><div class="duo amber peek" aria-hidden="true"><img src="assets/map-panoramic-1898.jpg" alt="" loading="lazy"></div></li>
+  <li class="rv"><a href="alt-c/"><span class="n">03</span><span class="t">The <i>poster</i></span><span class="d">One screen to share: three numbers, one map and one ask.</span></a><a class="sub" href="alt-c/poster.png" download="roads-not-taken-poster.png">⤓ Download image (1080×1350)</a><div class="duo peek" aria-hidden="true"><img src="assets/hub-c.jpg" alt="" loading="lazy"></div></li>
+  <li class="rv"><a href="story/"><span class="n">04</span><span class="t">The full <i>story</i></span><span class="d">The plan, who stopped it, what grew instead, and what's next.</span></a><div class="duo amber peek" aria-hidden="true"><img src="assets/arch-burrard-inlet-1890s.jpg" alt="" loading="lazy"></div></li>
+  <li class="rv"><a href="story/#models"><span class="n">05</span><span class="t">3D models <i>&amp; terrain</i></span><span class="d">Explore the North Shore terrain and three concept models in 3D.</span></a><a class="sub" href="terrain.html">Terrain only (full screen) →</a><div class="duo peek" aria-hidden="true"><img src="assets/thumb-terrain.jpg" alt="" loading="lazy"></div></li>
+  <li class="rv"><a href="story/#explore-map"><span class="n">06</span><span class="t">The interactive <i>map</i></span><span class="d">Unbuilt freeways, neighbourhoods, transit and Stanley Park in layers.</span></a><div class="duo amber peek" aria-hidden="true"><img src="assets/thumb-map.jpg" alt="" loading="lazy"></div></li>
+ </ol>
+</section>
+
+<section class="read" id="read">
+ <span class="lab rv">Read &amp; download</span>
+ <h2 class="rv">The long read.</h2>
+ <ul>
+  <li class="rv"><a href="essays/history.html"><span class="f">Essay · HTML</span><span class="h">The Roads Not Taken</span><span class="s">How Vancouver grew up without freeways: the history essay.</span></a></li>
+  <li class="rv"><a href="essays/future.html"><span class="f">Essay · HTML</span><span class="h">The City That Kept Its Options Open</span><span class="s">Vancouver's next fifty years. Speculation is labelled.</span></a></li>
+  <li class="rv"><a href="downloads/vancouver-campaign-final.pdf" download><span class="f">PDF · 18 pages</span><span class="h">The Freeway Vancouver Never Built</span><span class="s">The campaign kit: articles, thread and archive photos, ready to print.</span></a></li>
+ </ul>
+ <div class="more rv"><a href="story/#sources">Sources</a><a href="assets/CREDITS.md">Image &amp; map credits</a><a href="alt-c/poster.png" download="roads-not-taken-poster.png">Poster image</a></div>
+</section>
+
+<footer class="colo"><div class="in"><p class="big">The roads not taken.</p>
+<p><b>Nonpartisan.</b> This is a civic information project for the October 17, 2026 Vancouver municipal election. It doesn't endorse or name any candidate or party. Facts come from the project's history and future essays and its Stanley Park fact sheet, and speculation is labelled.</p>
+<p>Archive photos: City of Vancouver Archives, Vancouver Public Library and Library and Archives Canada (public domain or no known restrictions), shown here with a duotone tint. Map data © OpenStreetMap contributors (ODbL). No AI-generated images. <a href="assets/CREDITS.md">Full credits</a>.</p></div></footer>
 <script src="assets/cmap.js"></script>
+<script>
+(function(){if(!document.documentElement.classList.contains('mo'))return;var els=[].slice.call(document.querySelectorAll('.rv'));
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});
+els.forEach(function(el){io.observe(el)});
+setTimeout(function(){els.forEach(function(el){el.classList.add('in')})},3000);})();
+</script>
 </body></html>
