@@ -28,9 +28,9 @@ var extra={start:['Start','6 steps','The story in brief.'],gained:info.gained,te
 for(var k in extra)if(!info[k]&&extra[k])info[k]=extra[k];
 // static thumbnails instead of live map / 3D
 function thumb(src,label,open){var b=document.createElement('button');b.type='button';b.className='pthumb';b.dataset.open=open;b.innerHTML='<img src="'+src+'" alt="" loading="lazy"><span>'+label+'</span>';return b}
-var lb=document.getElementById('leaflet');lb.parentNode.insertBefore(thumb('assets/thumb-map.jpg','Tap to open the interactive map (© OpenStreetMap contributors)','map'),lb);
-[].forEach.call(document.querySelectorAll('.m3d'),function(m){m.parentNode.insertBefore(thumb('assets/thumb-'+m.dataset.model+'.jpg','Tap to open in 3D','model:'+m.dataset.model),m)});
-var ts=document.getElementById('terrain-slot');ts.parentNode.insertBefore(thumb('assets/thumb-terrain.jpg','Tap to open the 3D terrain','terrain'),ts);
+var lb=document.getElementById('leaflet');lb.parentNode.insertBefore(thumb('../assets/thumb-map.jpg','Tap to open the interactive map (© OpenStreetMap contributors)','map'),lb);
+[].forEach.call(document.querySelectorAll('.m3d'),function(m){m.parentNode.insertBefore(thumb('../assets/thumb-'+m.dataset.model+'.jpg','Tap to open in 3D','model:'+m.dataset.model),m)});
+var ts=document.getElementById('terrain-slot');ts.parentNode.insertBefore(thumb('../assets/thumb-terrain.jpg','Tap to open the 3D terrain','terrain'),ts);
 
 /* ---------- full-screen viewer for map / 3D ---------- */
 var pov=document.createElement('div');pov.className='pov';pov.setAttribute('role','dialog');pov.setAttribute('aria-modal','true');pov.hidden=true;
@@ -39,7 +39,7 @@ var body=pov.querySelector('.pov-body'),opened=null,home=null,homeNext=null;
 function openItem(what){
  var el;
  if(what==='map'){el=lb}
- else if(what==='terrain'){el=document.createElement('iframe');el.src='terrain.html';el.title='3D terrain model';el.className='pov-frame'}
+ else if(what==='terrain'){el=document.createElement('iframe');el.src='../terrain.html';el.title='3D terrain model';el.className='pov-frame'}
  else{el=document.querySelector('.m3d[data-model="'+what.split(':')[1]+'"]')}
  if(el.parentNode){home=el.parentNode;homeNext=el.nextSibling}else home=null;
  body.appendChild(el);opened=el;pov.hidden=false;
@@ -158,7 +158,7 @@ pv.addEventListener('wheel',function(e){e.preventDefault();if(e.ctrlKey||Math.ab
 
 /* ---------- toolbar + minimap ---------- */
 var tool=document.createElement('div');tool.className='ptool';
-tool.innerHTML='<button type="button" class="pfit" aria-label="Fit all">⤢ Fit all</button><div class="pmini" aria-hidden="true"><i></i></div>';
+tool.innerHTML='<a class="pfit phome" href="../" aria-label="Home">← Home</a><button type="button" class="pfit" aria-label="Fit all">⤢ Fit all</button><div class="pmini" aria-hidden="true"><i></i></div>';
 document.body.appendChild(tool);
 tool.querySelector('.pfit').addEventListener('click',function(){fitAll(true)});
 var mm=tool.querySelector('.pmini'),mr=mm.querySelector('i');

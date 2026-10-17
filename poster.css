@@ -50,3 +50,4 @@ html.poster nav.top,html.poster #overview,html.poster #zoomout,html.poster #toto
 .plabel{padding:3px 5px 4px;background:rgba(255,255,255,.82);border-left-width:3px}
 .plabel b{font-size:8.5px}.plabel em{font-size:13px}.plabel span{font-size:8.5px}
 .z-fit .plabel span{display:none}
+.phome{display:inline-flex;align-items:center;text-decoration:none;background:#16181d!important}
