@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="poster.css">
-<link rel="stylesheet" href="v3.css">
+<link rel="stylesheet" href="v3.css"><link rel="stylesheet" href="assets/cmap.css">
 <script>if(window.matchMedia("(max-width:700px)").matches)document.documentElement.classList.add("poster")</script></head>
 <body>
 <nav class="top"><a href="#top" class="brand">Roads Not Taken</a>
@@ -44,9 +44,7 @@
 <figure class="wide"><img loading="lazy" src="assets/georgia-seymour-log.jpg" alt="Huge log at Georgia and Seymour streets, 1886"><figcaption>Huge log at Georgia and Seymour streets, 1886. Photo: J.A. Brock. City of Vancouver Archives, Tr P13. Public domain.</figcaption></figure>
 <ol id="tl" class="tl"></ol>
 <div id="tl-detail" class="tl-detail" aria-live="polite"></div>
-<figure class="route-fig" id="route-fig">
-<svg class="route-svg" viewBox="0 0 1200 943" role="img" aria-labelledby="rt"><title id="rt">Approximate routes of the unbuilt 1960s freeway plan, drawn over a real coastline</title><image href="assets/coast-downtown.jpg" width="1200" height="943"/><polyline class="rt-plan" pathLength="1" points="315.0,379.7 405.0,411.9 453.8,437.2 457.5,483.2 487.5,517.7 585.0,520.0 660.0,520.0 900.0,506.2 1050.0,494.7"><title>1967 waterfront freeway (approximate, unbuilt)</title></polyline><polyline class="rt-plan" pathLength="1" points="465.0,517.7 465.0,713.1 465.0,885.5"><title>Columbia/Quebec corridors (approximate, unbuilt)</title></polyline><polyline class="rt-plan" pathLength="1" points="300.0,368.2 352.5,270.4 375.0,184.1 412.5,80.6"><title>Third crossing of Burrard Inlet (approximate, unbuilt)</title></polyline><polyline class="rt-built" pathLength="1" points="412.5,483.2 487.5,506.2"><title>Georgia & Dunsmuir viaducts (built)</title></polyline><g class="rt-pt"><circle cx="485" cy="487" r="9"/><text x="499" y="477">Chinatown</text></g><g class="rt-pt"><circle cx="570" cy="512" r="9"/><text x="584" y="502">Strathcona</text></g><g class="rt-pt"><circle cx="503" cy="522" r="9"/><text x="517" y="544">Hogan's Alley</text></g><g class="rt-pt"><circle cx="173" cy="230" r="9"/><text x="187" y="220">Stanley Park</text></g><g class="rt-pt"><circle cx="454" cy="437" r="9"/><text x="468" y="427">Gastown</text></g><g class="rt-stamp" transform="translate(760 640) rotate(-9)"><rect x="-210" y="-58" width="420" height="116" rx="8"/><text x="0" y="16" text-anchor="middle">STOPPED 1968–72</text></g></svg>
-<figcaption><span class="atag">Schematic · approximate</span> The 1967 plan's unbuilt routes (red) and the viaducts that were built (grey), using the same approximate geometry as the interactive map. The coastline is drawn from AWS Terrain Tiles elevation data. The routes follow the history essay's descriptions, not engineering drawings.</figcaption></figure>
+<figure class="route-fig" id="route-fig"><div class="cmap" data-src="assets/cmap.svg" data-mode="planned"></div><figcaption><span class="atag">Map · plan routes approximate</span> The 1967 plan and related proposals (dashed red: approximate traces from the history essay and Wikipedia) against what was built (SkyTrain, SeaBus, seawall, viaducts). Tap a label for a one-line note. Streets, rail, seawall and coastline © OpenStreetMap contributors (ODbL).</figcaption></figure>
 <p class="bridge"><span>Why it matters:</span> A plan this big was stopped by ordinary residents. <a href="#kept">Who stopped it →</a></p>
 </section>
 <section id="kept" class="alt"><h2>2. Who stopped it, and how</h2>
@@ -248,7 +246,7 @@
 <button id="zoomout" class="zoomout" type="button" aria-label="Zoom out to overview">⊖ Overview</button>
 <a href="#top" id="totop" class="totop" aria-label="Back to top">↑</a>
 <script src="app.js"></script>
-<script src="motion.js"></script>
+<script src="assets/cmap.js"></script><script src="motion.js"></script>
 <script src="poster.js"></script>
 <script src="map.js" defer></script>
 <script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js","three/addons/":"https://unpkg.com/three@0.160.0/examples/jsm/"}}</script>
