@@ -1,0 +1,333 @@
+{
+ "title": "Before the city: the 1850s",
+ "caption": "After the approach of Bruce Macdonald, Vancouver: A Visual History, 1992. Original drawing from cited sources.",
+ "note": "Locations are approximate and shown at a general scale only. Names are spelled as the Nations publish them. Only sites with a published source are shown; many more places existed (Musqueam alone records 120+ place names), so blank areas are not empty land.",
+ "sites": [
+  {
+   "id": "xwayxway",
+   "name": "X̱wáy̓x̱way",
+   "en": "Lumberman's Arch, Stanley Park",
+   "lat": 49.2993,
+   "lon": -123.1366,
+   "kind": "Village",
+   "nation": "Sḵwx̱wú7mesh (Squamish), per the Squamish Atlas",
+   "use": "Winter village; a large shell midden.",
+   "facts": [
+    "Squamish people lived here for over 3,000 years; a longhouse over 60 m long housed about 100 people (Squamish Atlas).",
+    "The shell midden was about 8 ft deep and \"acres in extent\"; it was used to surface the first park road in 1888 (Matthews, Early Vancouver, vol. 4).",
+    "Families were pushed out by road building in the 1880s; one family stayed until 1923 (Squamish Atlas)."
+   ],
+   "src": [
+    [
+     "Squamish Atlas (Kwi Awt Stelmexw)",
+     "https://squamishatlas.com/mapster-wp-polygon/x%cc%b1way%cc%93x%cc%b1way/"
+    ],
+    [
+     "Matthews, Early Vancouver vol. 4 (City of Vancouver Archives)",
+     "https://archives.vancouver.ca/projects/EarlyVan/SearchEarlyVan/Vol4pdf/MatthewsEarlyVancouverVol4_StanleyParkDriveway1888.pdf"
+    ],
+    [
+     "Kheraj, 'Stanley Park', The Canadian Encyclopedia",
+     "https://thecanadianencyclopedia.ca/en/article/stanley-park"
+    ]
+   ],
+   "short": "Village; large shell midden"
+  },
+  {
+   "id": "senakw",
+   "name": "Sen̓áḵw",
+   "en": "Vanier Park, south end of Burrard Bridge",
+   "lat": 49.2745,
+   "lon": -123.143,
+   "kind": "Village",
+   "nation": "Sḵwx̱wú7mesh (Squamish)",
+   "use": "Seasonal fishing, then a permanent village from about 1860. The Nation describes elk in the forests, cranberries in the marshes, and sturgeon and seal along the coast.",
+   "facts": [
+    "One of 23 ancestral Squamish villages (Squamish Nation).",
+    "In 1913 families were forcibly removed and put on a barge (Squamish Nation; senakw.com). CBC reports about 20 families, roughly 150 people.",
+    "In 2003 the courts returned 10.48 acres of the original 80-acre reserve (Squamish Nation)."
+   ],
+   "src": [
+    [
+     "Squamish Nation: Sen̓áḵw",
+     "https://www.squamish.net/partnerships-entities/partnerships/senakw/"
+    ],
+    [
+     "senakw.com: The land",
+     "https://senakw.com/the-land/"
+    ],
+    [
+     "Squamish Atlas: seasonal villages",
+     "https://squamishatlas.com/wp-map-category/seasonal-village/"
+    ],
+    [
+     "CBC News, 2019",
+     "https://www.cbc.ca/news/canada/british-columbia/little-known-history-of-squamish-nation-land-in-vancouver-1.5104584"
+    ]
+   ],
+   "short": "Fishing; village from c. 1860; elk, cranberries, sturgeon, seal"
+  },
+  {
+   "id": "iyalmexw",
+   "name": "Iy̓ál̓mexw / ʔəy̓alməxʷ",
+   "en": "Jericho Beach",
+   "lat": 49.2722,
+   "lon": -123.198,
+   "kind": "Village / seasonal camp",
+   "nation": "Named by both Sḵwx̱wú7mesh (Iy̓ál̓mexw) and xʷməθkʷəy̓əm (ʔəy̓alməxʷ)",
+   "use": "Summer fishing (Squamish Atlas).",
+   "facts": [
+    "The Squamish Atlas records summer fishing at Iy̓ál̓mexw.",
+    "The Musqueam Teaching Kit (Museum of Anthropology) names ʔəy̓alməxʷ as \"Jericho Village\"."
+   ],
+   "src": [
+    [
+     "Squamish Atlas: seasonal villages",
+     "https://squamishatlas.com/wp-map-category/seasonal-village/"
+    ],
+    [
+     "Musqueam Teaching Kit, MOA",
+     "https://www2.moa.ubc.ca/musqueamteachingkit/"
+    ]
+   ],
+   "short": "Summer fishing"
+  },
+  {
+   "id": "csnam",
+   "name": "c̓əsnaʔəm",
+   "en": "Marpole, by the Fraser's North Arm",
+   "lat": 49.206,
+   "lon": -123.139,
+   "kind": "Village and burial site",
+   "nation": "xʷməθkʷəy̓əm (Musqueam)",
+   "use": "A major village at the river mouth.",
+   "facts": [
+    "First occupied almost 5,000 years ago (MOA); the City dates it to \"at least 4,000 years\".",
+    "One of the largest villages about 2,000–2,500 years ago (MOA, Musqueam). About 1,500 years ago people moved to xʷməθkʷəy̓əm (Musqueam).",
+    "Designated a National Historic Site in 1933 as the Marpole Midden. Part of the site at 8902 Milton Street has been returned to Musqueam."
+   ],
+   "src": [
+    [
+     "Musqueam: portion of c̓əsnaʔəm returned",
+     "https://www.musqueam.bc.ca/portion-of-c%CC%93%C9%99sna%CA%94%C9%99m-village-and-burial-site-returned-to-musqueam-indian-band/"
+    ],
+    [
+     "MOA: c̓əsnaʔəm, the city before the city",
+     "https://moa.ubc.ca/exhibition/c%CC%93%C9%99sna%CA%94%C9%99m-the-city-before-the-city/"
+    ],
+    [
+     "City of Vancouver: Musqueam territory",
+     "https://vancouver.ca/people-programs/musqueam-territory.aspx"
+    ]
+   ],
+   "short": "Major village, first occupied 4,000–5,000 years ago"
+  },
+  {
+   "id": "musqueam",
+   "name": "xʷməθkʷəy̓əm",
+   "en": "Musqueam, at the mouth of the Fraser's North Arm",
+   "lat": 49.231,
+   "lon": -123.199,
+   "kind": "Main village",
+   "nation": "xʷməθkʷəy̓əm (Musqueam)",
+   "use": "The main winter village at the river mouth.",
+   "facts": [
+    "The Musqueam Teaching Kit says the main winter village was always at the mouth of the Fraser.",
+    "Today the main community is on Musqueam IR No. 2 (Government of Canada agreement text)."
+   ],
+   "src": [
+    [
+     "Musqueam Teaching Kit, MOA (ch. 6)",
+     "https://www2.moa.ubc.ca/musqueamteachingkit/media/pdf/Chapter%206_Eng.pdf"
+    ],
+    [
+     "Musqueam rights recognition agreement (CIRNAC)",
+     "https://rcaanc-cirnac.gc.ca/eng/1772569109838/1772569128589"
+    ]
+   ],
+   "short": "Main winter village at the river mouth"
+  },
+  {
+   "id": "sqwsathen",
+   "name": "sqʷsaθən",
+   "en": "Sea Island",
+   "lat": 49.195,
+   "lon": -123.18,
+   "kind": "Named place",
+   "nation": "xʷməθkʷəy̓əm (Musqueam)",
+   "use": "No use is stated in the source we cite.",
+   "facts": [
+    "Named in the Musqueam rights recognition agreement."
+   ],
+   "src": [
+    [
+     "Musqueam rights recognition agreement (CIRNAC)",
+     "https://rcaanc-cirnac.gc.ca/eng/1772569109838/1772569128589"
+    ]
+   ],
+   "short": "Place name (no use stated in our source)"
+  },
+  {
+   "id": "slhxilex",
+   "name": "sɬχil̕əx",
+   "en": "Siwash Rock",
+   "lat": 49.3127,
+   "lon": -123.1555,
+   "kind": "Named place",
+   "nation": "xʷməθkʷəy̓əm (Musqueam)",
+   "use": "No use is stated in the source we cite.",
+   "facts": [
+    "Named in the Musqueam rights recognition agreement. The English name uses an outdated term."
+   ],
+   "src": [
+    [
+     "Musqueam rights recognition agreement (CIRNAC)",
+     "https://rcaanc-cirnac.gc.ca/eng/1772569109838/1772569128589"
+    ]
+   ],
+   "short": "Place name (no use stated in our source)"
+  },
+  {
+   "id": "xwmelchthen",
+   "name": "xʷməlc̓θən",
+   "en": "Capilano River",
+   "lat": 49.3186,
+   "lon": -123.138,
+   "kind": "Named place",
+   "nation": "xʷməθkʷəy̓əm (Musqueam)",
+   "use": "No use is stated in the source we cite.",
+   "facts": [
+    "Named in the Musqueam rights recognition agreement."
+   ],
+   "src": [
+    [
+     "Musqueam rights recognition agreement (CIRNAC)",
+     "https://rcaanc-cirnac.gc.ca/eng/1772569109838/1772569128589"
+    ]
+   ],
+   "short": "Place name (no use stated in our source)"
+  },
+  {
+   "id": "temtem",
+   "name": "təmtəmíxʷtən",
+   "en": "Belcarra, Burrard Inlet",
+   "lat": 49.315,
+   "lon": -122.926,
+   "kind": "Village (archaeological site)",
+   "nation": "səlilwətaɬ (Tsleil-Waututh)",
+   "use": "Chum salmon fishery for about 2,500 years.",
+   "facts": [
+    "The earliest levels date to about 1550 BCE (PLOS One, 2023).",
+    "Salmon bones show a chum fishery from about 850 BCE to 1650 CE (UBC, 2023)."
+   ],
+   "src": [
+    [
+     "PLOS One, 2023 (Burrard Inlet chronology)",
+     "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0289797"
+    ],
+    [
+     "UBC Oceans, 2023",
+     "https://oceans.ubc.ca/2023/08/30/salmon-bones-confirm-sustainable-chum-fishery-for-2500-years-under-tsleil-waututh-nation/"
+    ]
+   ],
+   "short": "Chum salmon fishery, c. 850 BCE–1650 CE"
+  }
+ ],
+ "waters": [
+  {
+   "name": "səlilwət",
+   "en": "Burrard Inlet",
+   "lat": 49.301,
+   "lon": -123.06,
+   "src": "Tsleil-Waututh Nation, Our Story"
+  }
+ ],
+ "evidence": [
+  {
+   "k": "Human presence in the region",
+   "v": "about 9,000 years",
+   "s": "MOA; the Musqueam Teaching Kit names səw̓q̓ʷeqsən as a village of about 9,000 years ago",
+   "u": "https://moa.ubc.ca/exhibition/c%CC%93%C9%99sna%CA%94%C9%99m-the-city-before-the-city/"
+  },
+  {
+   "k": "c̓əsnaʔəm first occupied",
+   "v": "4,000–5,000 years ago",
+   "s": "City of Vancouver (at least 4,000); MOA (almost 5,000)",
+   "u": "https://moa.ubc.ca/exhibition/c%CC%93%C9%99sna%CA%94%C9%99m-the-city-before-the-city/"
+  },
+  {
+   "k": "X̱wáy̓x̱way",
+   "v": "over 3,000 years",
+   "s": "Squamish Atlas; Stanley Park artifacts over 3,200 years old (Kheraj)",
+   "u": "https://squamishatlas.com/mapster-wp-polygon/x%cc%b1way%cc%93x%cc%b1way/"
+  },
+  {
+   "k": "təmtəmíxʷtən earliest levels",
+   "v": "about 1550 BCE",
+   "s": "PLOS One, 2023",
+   "u": "https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0289797"
+  },
+  {
+   "k": "Tsleil-Waututh villages before contact",
+   "v": "8–14 villages, up to several thousand people; at least 5 villages in 1846",
+   "s": "Morin expert report, Tsleil-Waututh Sacred Trust",
+   "u": "https://twnsacredtrust.ca/wp-content/uploads/2015/05/Morin-Expert-Report-PUBLIC-VERSION-sm.pdf"
+  },
+  {
+   "k": "Tsleil-Waututh population before contact",
+   "v": "up to 10,000 (oral history)",
+   "s": "Tsleil-Waututh Nation. Over 600 members today.",
+   "u": "https://twnation.ca/our-story/"
+  },
+  {
+   "k": "Burrard Inlet decline, 1750–1980",
+   "v": "about 88% (model estimate)",
+   "s": "UBC thesis, ecosystem model of Burrard Inlet",
+   "u": "https://doi.org/10.14288/1.0445601"
+  },
+  {
+   "k": "Smallpox, 1782",
+   "v": "up to about three-quarters of Salish people (estimate)",
+   "s": "Cole Harris (1997), cited in BC Studies",
+   "u": "https://ojs.library.ubc.ca/index.php/bcstudies/article/view/184507"
+  },
+  {
+   "k": "Smallpox, 1862 (coast-wide, not a Vancouver figure)",
+   "v": "about 14,000 deaths, roughly half the Indigenous people from Victoria to Alaska (estimate)",
+   "s": "Robert Boyd, via HistoryLink",
+   "u": "https://www.historylink.org/File/5171"
+  },
+  {
+   "k": "Sen̓áḵw, 1913",
+   "v": "about 20 families (about 150 people) removed",
+   "s": "CBC News; Squamish Nation",
+   "u": "https://www.cbc.ca/news/canada/british-columbia/little-known-history-of-squamish-nation-land-in-vancouver-1.5104584"
+  },
+  {
+   "k": "Musqueam place names",
+   "v": "120+",
+   "s": "Musqueam rights recognition agreement",
+   "u": "https://rcaanc-cirnac.gc.ca/eng/1772569109838/1772569128589"
+  },
+  {
+   "k": "Shore filled since the 1880s (shown in orange)",
+   "v": "about 4.6 km² (our calculation, approximate)",
+   "s": "UBC Vancouver's Old Streams shoreline (CC0) compared with today's sea level in AWS Terrain Tiles",
+   "u": "https://borealisdata.ca/dataset.xhtml?persistentId=doi:10.5683/SP2/UEJGTV"
+  }
+ ],
+ "data": [
+  [
+   "Shoreline and streams, 1880–1920: Lesack & Proctor, Vancouver's Old Streams (UBC Library, CC0 1.0), from Sharon J. Proctor, Vancouver's Old Streams (Vancouver Public Aquarium Association, 1978)",
+   "https://doi.org/10.5683/SP2/UEJGTV"
+  ],
+  [
+   "Terrain: AWS Terrain Tiles (Mapzen Terrarium), open elevation data",
+   "https://registry.opendata.aws/terrain-tiles/"
+  ],
+  [
+   "Today's coastline: © OpenStreetMap contributors (ODbL)",
+   "https://www.openstreetmap.org/copyright"
+  ]
+ ]
+}
