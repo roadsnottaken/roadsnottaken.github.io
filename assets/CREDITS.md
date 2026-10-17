@@ -115,3 +115,18 @@ Every image on this site is a real photograph, a historic map, or a graphic draw
 ## Not used
 - viaduct-1971.jpg and old-viaduct-demolition.jpg: City of Vancouver copyright.
 - No freely licensed historic photo of Hogan's Alley was found with a clear licence, so none is shown.
+
+## Comparison map (assets/cmap.svg, cmap.js, cmap.css), October 2026
+
+Used on alt-a, alt-b, alt-c and in the main site's "1. The plan" figure.
+
+**Today's geography** (streets, Georgia & Dunsmuir viaducts, SkyTrain Expo/Millennium/Canada Lines and the Broadway extension, SeaBus route, seawall segments named "Seawall"/"Stanley Park Seawall", coastline, parks, Chinatown and Strathcona boundaries, Stanley Park Causeway and Lions Gate Bridge)
+© OpenStreetMap contributors. Data available under the Open Database License (ODbL) 1.0: https://www.openstreetmap.org/copyright. Retrieved 16 Oct 2026 via the Overpass API (overpass-api.de). Projected to Web Mercator and simplified; the SVG is a produced work derived from OSM data.
+
+**1960s plan alignments (all approximate, drawn dashed and labelled "approx.")**
+- Waterfront freeway along Burrard Inlet, through Maple Tree Square and Chinatown at Carrall St, then the Prior St corridor toward Highway 1; Columbia/Quebec corridors; Georgia Viaduct link: vancouver-freeway-essay.md (1967 Vancouver Transportation Study). Drawn on today's OSM street geometry where the essay names a street (Prior, Carrall, Columbia, Quebec).
+- Gore Avenue connector, freeway through southern Strathcona, "some 15 blocks" cleared: Wikipedia, "Strathcona, Vancouver" (CC BY-SA 4.0), retrieved 16 Oct 2026.
+- Hogan's Alley extent (between Union and Prior, about Main to Jackson): Wikipedia, "Hogan's Alley, Vancouver" (CC BY-SA 4.0), retrieved 16 Oct 2026.
+- Third crossing: causeway near Brockton Point and tunnel (1969 favoured design): vancouver-freeway-essay.md. The North Shore landing isn't sourced, so the line stops mid-inlet.
+- Junction markers show where the segments described above meet. Interchange designs weren't sourced and aren't drawn.
+- Viaduct status, Northeast False Creek Plan, 898 Main St MOU, False Creek North/South, Coal Harbour, seawall length, SkyTrain/SeaBus dates: the history and future essays.
