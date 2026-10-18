@@ -44,7 +44,7 @@ footer{background:var(--ink);color:#cfc6b3;border-top:6px solid var(--signal)}fo
 /* archive photos */
 figure.archive{margin:2rem 0}
 .aframe{background:#e7dcc4;padding:10px;border:1px solid #c9b994;box-shadow:0 2px 0 #c9b994,0 10px 22px rgba(40,30,10,.18)}
-.aframe img{width:100%;height:auto;filter:grayscale(1) sepia(.42) contrast(1.08) brightness(.96)}
+.aframe img{width:100%;height:auto}
 figure.archive.big .aframe img{max-height:none}
 figure.archive.pano{margin:0;max-width:none}
 figure.archive.pano .aframe{padding:6px 0;border-left:0;border-right:0}
