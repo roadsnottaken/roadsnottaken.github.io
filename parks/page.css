@@ -1,0 +1,44 @@
+/* Parks: simple scroll pages (options, the land, sources, full story). Same park-sign style as the zoom view. */
+:root{--bg:#13271c;--bg2:#1b3526;--bg3:#224130;--board:#245236;--cream:#f2e8cf;--dim:#b8c2a6;--sun:#f2b148;--moss:#8fca86;--wood:#d08a52;
+ --sign:Oswald,"Arial Narrow",sans-serif;--serif:"Playfair Display",Georgia,serif;--sans:"Noto Sans","Segoe UI",system-ui,sans-serif}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--cream);font:1.06rem/1.65 var(--sans)}
+a{color:var(--sun)}
+.top{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:.8rem;flex-wrap:wrap;padding:.55rem max(1rem,env(safe-area-inset-left));background:var(--bg);border-bottom:3px solid var(--wood);font:500 .74rem var(--sign);letter-spacing:.18em;text-transform:uppercase}
+.top a{color:var(--cream);text-decoration:none;min-height:38px;display:inline-flex;align-items:center}
+.top .ttl{font:700 1.1rem var(--sign);letter-spacing:.08em;gap:.45rem}
+.top .ttl i{display:inline-block;width:16px;height:16px;border-radius:50% 50% 4px 4px;background:var(--moss);box-shadow:inset 0 -4px 0 #2b5a33}
+.top nav{display:flex;gap:.9rem;flex-wrap:wrap}
+main{max-width:46rem;margin:0 auto;padding:1.4rem 1.1rem 3rem}
+.sign{margin:.6rem 0 1.6rem;padding:1.1rem 1.3rem 1.3rem;background:var(--board);border:6px solid var(--wood);border-radius:18px;box-shadow:inset 0 0 0 2px var(--cream)}
+.sign .tk{margin:0;font:500 .8rem var(--sign);letter-spacing:.26em;text-transform:uppercase;color:var(--sun)}
+.sign h1{margin:.3rem 0 .5rem;font:700 clamp(2.1rem,7vw,3.4rem)/1 var(--sign);text-transform:uppercase}
+.sign h1 em{font:italic 700 .9em var(--serif);text-transform:none;color:var(--moss)}
+.sign p{margin:.4rem 0 0}
+h2{margin:2.2rem 0 .6rem;padding-top:.7rem;border-top:3px solid var(--moss);font:700 1.6rem/1.15 var(--sign);text-transform:uppercase}
+h3{margin:1.5rem 0 .4rem;font:600 1.15rem var(--sign);letter-spacing:.04em;text-transform:uppercase;color:var(--sun)}
+figure{margin:1.2rem 0;border:3px solid var(--wood);border-radius:12px;overflow:hidden;background:var(--bg2)}
+figure img,figure svg{display:block;width:100%;height:auto}
+figcaption{padding:.5rem .8rem .6rem;font-size:.8rem;line-height:1.45;color:var(--dim)}
+figcaption a{color:var(--dim)}
+.uv{display:inline-block;padding:0 .35em;margin:0 .15em;border-radius:3px;background:var(--sun);color:var(--bg);font:700 .72em var(--sign);letter-spacing:.08em;text-transform:uppercase;vertical-align:.08em}
+.ill{display:inline-block;padding:.2em .6em;border-radius:6px;background:var(--sun);color:var(--bg);font:700 .75rem var(--sign);letter-spacing:.18em;text-transform:uppercase}
+blockquote{margin:1rem 0;padding:.6rem 1rem;border-left:4px solid var(--moss);background:var(--bg3);border-radius:0 10px 10px 0}
+ul.names{list-style:none;padding:0}
+ul.names li{margin:0 0 .8rem;padding:.7rem .9rem;background:var(--bg2);border-left:5px solid var(--moss);border-radius:0 10px 10px 0}
+ul.names b{display:block;font-size:1.2rem;color:#ffe2b8}
+ul.names i{display:block;font:600 .8rem var(--sign);font-style:normal;letter-spacing:.12em;text-transform:uppercase;color:var(--moss)}
+ol.asks{padding-left:1.4rem}
+ol.asks li{margin:0 0 .8rem}
+ol.asks li::marker{font:700 1.1rem var(--sign);color:var(--sun)}
+.srcl{padding-left:1.2rem;font-size:.92rem}
+.srcl li{margin:0 0 .45rem;overflow-wrap:anywhere}
+.next{display:grid;grid-template-columns:repeat(auto-fit,minmax(13rem,1fr));gap:.8rem;margin:2rem 0 0}
+.next a{display:block;padding:.8rem 1rem;border:3px solid var(--wood);border-radius:12px;background:var(--bg2);color:var(--cream);text-decoration:none}
+.next a b{display:block;font:700 1.1rem var(--sign);text-transform:uppercase;color:var(--sun)}
+.tw{overflow-x:auto;margin:1rem 0}
+table{border-collapse:collapse;width:100%;min-width:34rem;font-size:.9rem}
+th,td{padding:.45rem .5rem;border-bottom:1px solid rgba(242,232,207,.2);text-align:left;vertical-align:top}
+th{font:600 .75rem var(--sign);letter-spacing:.14em;text-transform:uppercase;color:var(--sun)}
+footer{max-width:46rem;margin:0 auto;padding:1rem 1.1rem 2.5rem;border-top:3px solid var(--wood);font-size:.85rem;color:var(--dim)}
