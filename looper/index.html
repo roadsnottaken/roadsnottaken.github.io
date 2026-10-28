@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<title>Looper</title>
+<meta name="description" content="Looper: a calm, dark multitrack loop and demo recorder for your phone.">
+<meta name="theme-color" content="#1a1714">
+<meta name="color-scheme" content="dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Looper">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preload" href="fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="app">
+  <section class="transport panel">
+    <button class="btn play" id="play" aria-label="Play or stop"><svg width="20" height="20" viewBox="0 0 20 20"><path id="playIcon" d="M6 4l11 6-11 6z" fill="#c47f62"/></svg></button>
+    <div class="bpm">
+      <button class="btn pm" id="bpmDown" aria-label="Slower">−</button>
+      <button class="bpmval" id="tap" aria-label="Tap tempo"><b id="bpmNum">80</b><span id="bpmLab">BPM · TAP</span></button>
+      <button class="btn pm" id="bpmUp" aria-label="Faster">+</button>
+    </div>
+    <button class="btn met" id="click" aria-label="Metronome"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M6 2h6l3 14H3z"/><path d="M9 12 13 4"/></svg>Click</button>
+    <div class="counter"><span id="bb">1.1</span><small>BAR · BEAT</small><div class="beats" id="beats"><i></i><i></i><i></i><i></i></div></div>
+  </section>
+
+  <section id="tracks" aria-label="Tracks"></section>
+
+  <section class="fx panel">
+    <div class="fxcol"><div class="knob" id="revKnob" role="slider" aria-label="Reverb" tabindex="0"><svg viewBox="0 0 58 58" width="58" height="58"><circle cx="29" cy="29" r="25" fill="none" stroke="#3a332c" stroke-width="4" stroke-dasharray="117.8 157" stroke-linecap="round" transform="rotate(135 29 29)"/><circle id="revArc" cx="29" cy="29" r="25" fill="none" stroke="#c47f62" stroke-width="4" stroke-dasharray="20 157" stroke-linecap="round" transform="rotate(135 29 29)"/><circle cx="29" cy="29" r="17" fill="#2f2a25"/><line id="revPtr" x1="29" y1="29" x2="29" y2="15" stroke="#cfc5b8" stroke-width="2.5" stroke-linecap="round"/></svg></div><span class="fxlab" id="revLab">Reverb 15%</span></div>
+    <div class="divider"></div>
+    <div class="fxcol" style="justify-content:center;gap:14px"><button class="toggle" id="lofi" aria-label="Lofi" aria-pressed="true"><i></i></button><span class="fxlab">Lofi</span></div>
+    <div class="divider"></div>
+    <div class="fxcol" style="flex:1"><div class="eq" id="eq"></div><span class="fxlab">EQ</span></div>
+  </section>
+
+  <nav class="bottom">
+    <button class="pill" id="openExport">Export</button>
+    <button class="pill" id="openSetup">Setup</button>
+  </nav>
+  <p class="foot" id="foot">Tap a circle to record. Tap a track name for EQ, overdub, undo.</p>
+</main>
+
+<div class="sheet" id="sheet" hidden><div class="sheetbg" data-close></div><div class="sheetbody"><div class="grab"></div><div id="sheetContent"></div><button class="pill wide" data-close>Done</button></div></div>
+
+<div class="overlay" id="start">
+  <div class="ovbox">
+    <svg width="72" height="72" viewBox="0 0 84 84"><circle cx="42" cy="42" r="36" fill="none" stroke="#3a332c" stroke-width="6"/><circle cx="42" cy="42" r="36" fill="none" stroke="#c47f62" stroke-width="6" stroke-linecap="round" stroke-dasharray="226" stroke-dashoffset="60" transform="rotate(-90 42 42)"/><circle cx="42" cy="42" r="9" fill="#a5564c"/></svg>
+    <h1>Looper</h1>
+    <button class="pill big" id="startBtn">Tap to start</button>
+    <p>On iPhone, turn the silent switch off (ringer on) or Looper may play quietly or not at all.</p>
+    <p>Wired headphones give the tightest timing and stop the speaker bleeding into the mic. Bluetooth adds a lot of delay.</p>
+  </div>
+</div>
+<div class="toast" id="toast" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
